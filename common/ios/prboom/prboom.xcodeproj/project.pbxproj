@@ -798,6 +798,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/prboom.dst;
 				GCC_VERSION = "";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -809,6 +810,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/prboom.dst;
 				GCC_VERSION = "";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

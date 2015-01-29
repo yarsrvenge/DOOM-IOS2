@@ -237,17 +237,17 @@ AudioStreamBasicDescription getStreamFormat( void ) {
 
     // The AudioUnitSampleType data type is the recommended type for sample data in audio
     //    units. This obtains the byte size of the type for use in filling in the ASBD.
-    size_t bytesPerSample = sizeof (AudioUnitSampleType);
+    size_t bytesPerSample = sizeof (SInt32);
 
     // Fill the application audio format struct's fields to define a linear PCM, 
     //        stereo, noninterleaved stream at the hardware sample rate.
     streamFormat.mFormatID          = kAudioFormatLinearPCM;
-    streamFormat.mFormatFlags       = kAudioFormatFlagsAudioUnitCanonical;
-    streamFormat.mBytesPerPacket    = bytesPerSample;
+    streamFormat.mFormatFlags       = kAudioFormatFlagIsSignedInteger | kAudioFormatFlagsNativeEndian | kAudioFormatFlagIsPacked | kAudioFormatFlagIsNonInterleaved | (kAudioUnitSampleFractionBits << kLinearPCMFormatFlagsSampleFractionShift);
+    streamFormat.mBytesPerPacket    = (int)bytesPerSample;
     streamFormat.mFramesPerPacket   = 1;
-    streamFormat.mBytesPerFrame     = bytesPerSample;
+    streamFormat.mBytesPerFrame     = (int)bytesPerSample;
     streamFormat.mChannelsPerFrame  = 2;                    // 2 indicates stereo
-    streamFormat.mBitsPerChannel    = 8 * bytesPerSample;
+    streamFormat.mBitsPerChannel    = (int)(8 * bytesPerSample);
     streamFormat.mSampleRate        = ID_GRAPH_SAMPLE_RATE;
 
 
@@ -283,12 +283,12 @@ static void printASBD( AudioStreamBasicDescription asbd ) {
     
     NSLog (@"  Sample Rate:         %10.0f",  asbd.mSampleRate);
     NSLog (@"  Format ID:           %10s",    formatIDString);
-    NSLog (@"  Format Flags:        %10lX",    asbd.mFormatFlags);
-    NSLog (@"  Bytes per Packet:    %10lu",    asbd.mBytesPerPacket);
-    NSLog (@"  Frames per Packet:   %10lu",    asbd.mFramesPerPacket);
-    NSLog (@"  Bytes per Frame:     %10lu",    asbd.mBytesPerFrame);
-    NSLog (@"  Channels per Frame:  %10lu",    asbd.mChannelsPerFrame);
-    NSLog (@"  Bits per Channel:    %10lu",    asbd.mBitsPerChannel);
+    NSLog (@"  Format Flags:        %10X",    (unsigned int)asbd.mFormatFlags);
+    NSLog (@"  Bytes per Packet:    %10u",    (unsigned int)asbd.mBytesPerPacket);
+    NSLog (@"  Frames per Packet:   %10u",    (unsigned int)asbd.mFramesPerPacket);
+    NSLog (@"  Bytes per Frame:     %10u",    (unsigned int)asbd.mBytesPerFrame);
+    NSLog (@"  Channels per Frame:  %10u",    (unsigned int)asbd.mChannelsPerFrame);
+    NSLog (@"  Bits per Channel:    %10u",    (unsigned int)asbd.mBitsPerChannel);
 }
 
 
@@ -473,8 +473,8 @@ static OSStatus inputRenderCallback (
 			inNumberFrames, ioData->mNumberBuffers,
 			audioBuffer->mDataByteSize, audioBuffer->mNumberChannels );
 	*/
-	AudioUnitSampleType * hardwareBufferLeft = (AudioUnitSampleType *) audioBufferLeft->mData;
-	AudioUnitSampleType * hardwareBufferRight = (AudioUnitSampleType *) audioBufferRight->mData;
+	SInt32 * hardwareBufferLeft = (SInt32 *) audioBufferLeft->mData;
+	SInt32 * hardwareBufferRight = (SInt32 *) audioBufferRight->mData;
 	
 	
 	// EAS_Render always produces BUFFER_SIZE_IN_MONO_SAMPLES frames per call. Currently, this

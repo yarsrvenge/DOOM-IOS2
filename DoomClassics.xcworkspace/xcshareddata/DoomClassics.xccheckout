@@ -10,31 +10,31 @@
 	<string>DoomClassics</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>40E496C3-3EE7-4817-AA8A-3CCAB01855DC</key>
-		<string>https://github.com/JFareal/id-Mobile.git</string>
+		<key>AFCD75038D6968E1A6D7656825C56D406A03FDD3</key>
+		<string>https://github.com/johnnyw/DOOM-IOS2.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DoomClassics/DoomClassics.xcworkspace</string>
+	<string>DoomClassics.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>40E496C3-3EE7-4817-AA8A-3CCAB01855DC</key>
-		<string>../..</string>
+		<key>AFCD75038D6968E1A6D7656825C56D406A03FDD3</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/JFareal/id-Mobile.git</string>
+	<string>https://github.com/johnnyw/DOOM-IOS2.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>40E496C3-3EE7-4817-AA8A-3CCAB01855DC</string>
+	<string>AFCD75038D6968E1A6D7656825C56D406A03FDD3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>40E496C3-3EE7-4817-AA8A-3CCAB01855DC</string>
+			<string>AFCD75038D6968E1A6D7656825C56D406A03FDD3</string>
 			<key>IDESourceControlWCCName</key>
-			<string>id Mobile</string>
+			<string>DOOM-IOS2</string>
 		</dict>
 	</array>
 </dict>

@@ -231,7 +231,7 @@ int I_GetSfxLumpNum (sfxinfo_t *sfx) {
 	*d = 0;
 	pkWav_t *pkwav = PK_FindWav( va( "newsfx/DS%s.wav", upper ) );	
 	
-	return pkwav - pkWavs;
+	return (int)(pkwav - pkWavs);
 }
 
 // Starts a sound in a particular sound channel.
@@ -275,7 +275,7 @@ void I_StopSound(int handle) {}
 // Returns 0 if no longer playing, 1 if playing.
 boolean I_SoundIsPlaying(int handle) { 
 
-	channel_t *ch = (channel_t *)handle;
+	channel_t *ch = (channel_t *)&handle;
 	if ( !ch ) {
 		return false;
 	}

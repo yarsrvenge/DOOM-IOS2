@@ -34,11 +34,11 @@ int SysIphoneMicroseconds() {
 	gettimeofday( &tp, &tzp );
 	
 	if( ! secbase ) {
-		secbase = tp.tv_sec;
+		secbase = (int)tp.tv_sec;
 		return tp.tv_usec;
 	}
 	
-	int curtime = (tp.tv_sec - secbase) * 1000000 + tp.tv_usec;
+	int curtime = (int)((tp.tv_sec - secbase) * 1000000 + tp.tv_usec);
 	
 	return curtime;
 }

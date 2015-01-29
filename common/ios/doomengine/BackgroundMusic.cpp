@@ -99,7 +99,7 @@ void CalculateBytesForTime (AudioStreamBasicDescription & inDesc, UInt32 inMaxPa
 	
 	if (inDesc.mFramesPerPacket) {
 		Float64 numPacketsForTime = inDesc.mSampleRate / inDesc.mFramesPerPacket * inSeconds;
-		*outBufferSize = (long unsigned int)numPacketsForTime * inMaxPacketSize;
+		*outBufferSize = (UInt32)numPacketsForTime * inMaxPacketSize;
 	} else {
 		// if frames per packet is zero, then the codec has no predictable packet == time
 		// so we can't tailor this (we don't know how many Packets represent a time period

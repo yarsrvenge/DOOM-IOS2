@@ -197,6 +197,8 @@ Called by the system when a player's state changes (for example, they connect or
         case GKPlayerStateDisconnected:
             matchHandler->playerDisconnected( NSStringToStdString( playerID ) );
 			break;
+        default:
+            break;
     }
 }
 

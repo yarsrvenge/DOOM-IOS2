@@ -54,7 +54,7 @@ void DoomGameCenterMatch::allPlayersConnectedImpl( std::vector<std::string> conn
 	if ( IsServer() ) {	
 		printf( "Server broadcasting initial setup packet.\n" );
 		
-		numPlayersToJoin = connectedPlayerIDs.size();
+		numPlayersToJoin = (int)connectedPlayerIDs.size();
 		assert( numPlayersToJoin > 0 );
 		SendGameCenterSetup();
 	}

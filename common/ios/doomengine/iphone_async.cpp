@@ -360,7 +360,7 @@ void SendSetupPacketIfNecessary() {
 		if ( setupPacket.playerID[i] == 0 ) {
 			continue;
 		}
-		int r = sendto( gameSocket, &setupPacket, sizeof( setupPacket ), 0, 
+		int r = (int)sendto( gameSocket, &setupPacket, sizeof( setupPacket ), 0,
 					   &netPlayers[i].peer.address, sizeof( netPlayers[i].peer.address ) );
 		if ( r == -1 ) {
 			Com_Printf( "UDP sendTo failed: %s\n", strerror( errno ) );
@@ -919,7 +919,7 @@ void iphoneAsyncTic() {
 							}
 						}
 					}
-					int	packetSize = (byte *)cmd_p - (byte *)&gp;
+					int	packetSize = (int)((byte *)cmd_p - (byte *)&gp);
 					(void)packetSize;
 					
 					// use the most recent tic that both the client and

@@ -562,6 +562,7 @@
 					"\"$(SRCROOT)/../../embeddedaudiosynthesis/arm-hybrid-22k/lib\"",
 					"\"$(SRCROOT)/../../embeddedaudiosynthesis/arm-wt-22k/lib\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -579,6 +580,7 @@
 					"\"$(SRCROOT)/../../embeddedaudiosynthesis/arm-hybrid-22k/lib\"",
 					"\"$(SRCROOT)/../../embeddedaudiosynthesis/arm-wt-22k/lib\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
