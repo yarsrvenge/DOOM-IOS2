@@ -275,7 +275,7 @@ void I_StopSound(int handle) {}
 // Returns 0 if no longer playing, 1 if playing.
 boolean I_SoundIsPlaying(int handle) { 
 
-	channel_t *ch = (channel_t *)&handle;
+	channel_t *ch = handle;
 	if ( !ch ) {
 		return false;
 	}
