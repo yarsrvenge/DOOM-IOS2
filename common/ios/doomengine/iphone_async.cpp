@@ -32,6 +32,8 @@
 
 #include "ios/GameCenter.h"
 
+#include "GameController.h"
+
 typedef struct {
 	int	msecFromLast;
 	int	msecToExecute;
@@ -510,7 +512,6 @@ float RotorControl( ibutton_t *hud ) {
 	return deltaAngle / (2*M_PI);	
 }
 
-#define TURBOTHRESHOLD  0x32
 static int ClampMove( int v ) {
 	if ( v > TURBOTHRESHOLD ) {
 		return TURBOTHRESHOLD;
@@ -520,7 +521,6 @@ static int ClampMove( int v ) {
 	}
 	return v;
 }
-
 
 /*
  ==================
@@ -645,7 +645,7 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
 	sidemove = TURBOTHRESHOLD * AxisHit( &huds.sideStick );
 	
 	huds.turnStick.scale = stickTurn->value / 128.0f;
-	cmd->angleturn = -1500.0f * AxisHit( &huds.turnStick );
+	cmd->angleturn = -ROTATETHRESHOLD * AxisHit( &huds.turnStick );
 	
 	// rotary wheel
 	cmd->angleturn -= rotorTurn->value * RotorControl( &huds.turnRotor );
@@ -653,7 +653,7 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
 	// accelerometer tilting
 	sidemove += tiltMove->value * DeadBandAdjust( tilt, tiltDeadBand->value );
 	cmd->angleturn -= tiltTurn->value * DeadBandAdjust( tilt, tiltDeadBand->value );
-	
+    
 	// clamp movements
 	cmd->forwardmove = ClampMove( forwardmove );
 	cmd->sidemove = ClampMove( sidemove );
@@ -697,6 +697,9 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
 			cmd->buttons |= newweapon<<BT_WEAPONSHIFT;
 		}
 	}
+    
+    // Use bluetooth controller input, if one is connected
+    iphoneControllerInput(cmd);
 }
 
 /*

@@ -51,6 +51,8 @@
 		C86CA85814B4F3C40057FF54 /* iphone_delegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C86CA85214B4F3C40057FF54 /* iphone_delegate.h */; };
 		C86CA85914B4F3C40057FF54 /* iphone_delegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C86CA85314B4F3C40057FF54 /* iphone_delegate.mm */; };
 		C86CA85A14B4F3C40057FF54 /* iphone_glViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C86CA85414B4F3C40057FF54 /* iphone_glViewController.h */; };
+		C8AEB0D51A7ABCEC00A5ED1B /* GameController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8AEB0D41A7ABCEC00A5ED1B /* GameController.mm */; };
+		C8AEB0D81A7ABFB700A5ED1B /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AEB0D71A7ABFB700A5ED1B /* GameController.framework */; };
 		C8DB8AD014BDFBE80006467C /* iphone_sys.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8DB8ACF14BDFBE80006467C /* iphone_sys.mm */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +141,9 @@
 		C86CA85214B4F3C40057FF54 /* iphone_delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphone_delegate.h; sourceTree = "<group>"; };
 		C86CA85314B4F3C40057FF54 /* iphone_delegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iphone_delegate.mm; sourceTree = "<group>"; };
 		C86CA85414B4F3C40057FF54 /* iphone_glViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphone_glViewController.h; sourceTree = "<group>"; };
+		C8AEB0D41A7ABCEC00A5ED1B /* GameController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameController.mm; sourceTree = "<group>"; };
+		C8AEB0D61A7ABCFF00A5ED1B /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		C8AEB0D71A7ABFB700A5ED1B /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		C8DB8ACF14BDFBE80006467C /* iphone_sys.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iphone_sys.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8AEB0D81A7ABFB700A5ED1B /* GameController.framework in Frameworks */,
 				3DC1CAF814B641CC00680D02 /* libprboom.a in Frameworks */,
 				3DC1C84814B627E600680D02 /* libEmbeddedAudioSynthesis.a in Frameworks */,
 				3D15600C14B51250000D33AA /* libtess.a in Frameworks */,
@@ -242,6 +248,7 @@
 		3DE6943B1489AFDE0049CAA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8AEB0D71A7ABFB700A5ED1B /* GameController.framework */,
 				3DE6943C1489AFDE0049CAA4 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -287,6 +294,8 @@
 				3DE6946A1489B0850049CAA4 /* SoundEngine.h */,
 				3D5BB94814B79BFE00A9A7FB /* DoomGameCenterMatch.h */,
 				3D5BB94914B79BFE00A9A7FB /* DoomGameCenterMatch.cpp */,
+				C8AEB0D41A7ABCEC00A5ED1B /* GameController.mm */,
+				C8AEB0D61A7ABCFF00A5ED1B /* GameController.h */,
 			);
 			path = doomengine;
 			sourceTree = "<group>";
@@ -422,6 +431,7 @@
 				3DE694751489B0850049CAA4 /* EAGLView.m in Sources */,
 				3DE694761489B0850049CAA4 /* gles_glue.c in Sources */,
 				3DE694781489B0850049CAA4 /* ipak.c in Sources */,
+				C8AEB0D51A7ABCEC00A5ED1B /* GameController.mm in Sources */,
 				3DE6947C1489B0850049CAA4 /* iphone_email.m in Sources */,
 				3DE6947D1489B0850049CAA4 /* iphone_main.c in Sources */,
 				3DE6947E1489B0850049CAA4 /* iphone_mapSelect.c in Sources */,

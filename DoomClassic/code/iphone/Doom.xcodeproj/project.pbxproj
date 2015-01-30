@@ -45,6 +45,7 @@
 		C8012E8D14B6750D00B0E213 /* MissionMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E8B14B6750A00B0E213 /* MissionMenuViewController.mm */; };
 		C8012E8E14B6750D00B0E213 /* MissionMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8012E8C14B6750B00B0E213 /* MissionMenuView.xib */; };
 		C86CA86414B4FF2B0057FF54 /* Doom_App.m in Sources */ = {isa = PBXBuildFile; fileRef = C86CA86314B4FF2B0057FF54 /* Doom_App.m */; };
+		C8AEB0DD1A7AD73500A5ED1B /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AEB0DC1A7AD73500A5ED1B /* GameController.framework */; };
 		C8DB8A5914BB88AC0006467C /* ControlsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5114BB88AC0006467C /* ControlsMenuView~ipad.xib */; };
 		C8DB8A5A14BB88AC0006467C /* CreditsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5214BB88AC0006467C /* CreditsMenuView~ipad.xib */; };
 		C8DB8A5B14BB88AC0006467C /* EpisodeMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5314BB88AC0006467C /* EpisodeMenuView~ipad.xib */; };
@@ -128,6 +129,7 @@
 		C8012E8C14B6750B00B0E213 /* MissionMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionMenuView.xib; sourceTree = "<group>"; };
 		C86CA86214B4FF2B0057FF54 /* Doom_App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doom_App.h; sourceTree = "<group>"; };
 		C86CA86314B4FF2B0057FF54 /* Doom_App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doom_App.m; sourceTree = "<group>"; };
+		C8AEB0DC1A7AD73500A5ED1B /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		C8DB8A5114BB88AC0006467C /* ControlsMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ControlsMenuView~ipad.xib"; sourceTree = "<group>"; };
 		C8DB8A5214BB88AC0006467C /* CreditsMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CreditsMenuView~ipad.xib"; sourceTree = "<group>"; };
 		C8DB8A5314BB88AC0006467C /* EpisodeMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "EpisodeMenuView~ipad.xib"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8AEB0DD1A7AD73500A5ED1B /* GameController.framework in Frameworks */,
 				1391CE171882E5F40049671C /* libprboom.a in Frameworks */,
 				1391CE151882E5A30049671C /* libidmobilelib.a in Frameworks */,
 				13E3CC5F17F236840075D40A /* GameKit.framework in Frameworks */,
@@ -226,6 +229,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8AEB0DC1A7AD73500A5ED1B /* GameController.framework */,
 				1391CE161882E5F40049671C /* libprboom.a */,
 				1391CE141882E5A30049671C /* libidmobilelib.a */,
 				13E3CC5E17F236840075D40A /* GameKit.framework */,

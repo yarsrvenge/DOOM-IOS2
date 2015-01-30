@@ -40,6 +40,7 @@
 		C8A629671497F510002EF3F5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A629661497F510002EF3F5 /* QuartzCore.framework */; };
 		C8A6296914980C5B002EF3F5 /* RenderContext.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A6296814980C5B002EF3F5 /* RenderContext.h */; };
 		C8A6296B14980C6E002EF3F5 /* RenderContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8A6296A14980C6E002EF3F5 /* RenderContext.mm */; };
+		C8AEB0DB1A7AD6D600A5ED1B /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AEB0D91A7AD28E00A5ED1B /* GameController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		C8A629661497F510002EF3F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C8A6296814980C5B002EF3F5 /* RenderContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderContext.h; sourceTree = "<group>"; };
 		C8A6296A14980C6E002EF3F5 /* RenderContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RenderContext.mm; sourceTree = "<group>"; };
+		C8AEB0D91A7AD28E00A5ED1B /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8AEB0DB1A7AD6D600A5ED1B /* GameController.framework in Frameworks */,
 				C8011C9414C0EC70007AC5C5 /* StoreKit.framework in Frameworks */,
 				C8A629671497F510002EF3F5 /* QuartzCore.framework in Frameworks */,
 				C8A629651497F509002EF3F5 /* OpenGLES.framework in Frameworks */,
@@ -115,6 +118,7 @@
 		3D80884914928766002D6CC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8AEB0D91A7AD28E00A5ED1B /* GameController.framework */,
 				C8011C9314C0EC70007AC5C5 /* StoreKit.framework */,
 				C8A629661497F510002EF3F5 /* QuartzCore.framework */,
 				C8A629641497F508002EF3F5 /* OpenGLES.framework */,

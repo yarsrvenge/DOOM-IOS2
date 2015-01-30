@@ -399,11 +399,11 @@ void iphoneStartup() {
 	// load the binary config file
 	FILE *f = fopen( va( "%s/binaryConfig.bin", SysIphoneGetDocDir() ), "rb" );
 	if ( f ) {
-		long version;
+		int version;
 		
 		version = 0;
 		fread( &version, 1, sizeof( version ), f );
-		if ( version != VERSION_BCONFIG ) {
+		if ( version != (int)VERSION_BCONFIG ) {
 			Com_Printf( "Binary config file bad version.\n" );
 		} else {
 			fread( &playState, 1, sizeof( playState ), f );
@@ -411,7 +411,7 @@ void iphoneStartup() {
 
 			version = 0;
 			fread( &version, 1, sizeof( version ), f );
-			if ( version != VERSION_BCONFIG ) {
+			if ( version != (int)VERSION_BCONFIG ) {
 				Com_Error( "Binary config file bad trailing version.\n" );
 			}
 		}
