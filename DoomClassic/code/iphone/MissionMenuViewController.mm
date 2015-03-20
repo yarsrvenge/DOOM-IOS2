@@ -88,6 +88,11 @@
                                             CGRectGetMaxY(lastElement4.frame)
                                             )];
     
+    [mapScroller5 setContentSize:CGSizeMake(
+                                            mapScroller5.bounds.size.width,
+                                            CGRectGetMaxY(lastElement5.frame)
+                                            )];
+    
     [ playButton setEnabled: NO ];
     [ playLabel setEnabled: NO ];
     
@@ -107,12 +112,15 @@
     mapScroller2.alpha = 0.0f;
     mapScroller3.alpha = 0.0f;
     mapScroller4.alpha = 0.0f;
-    
-    
+    mapScroller5.alpha = 0.0f;
+
     switch( episodeSelected ) {
             
         case 0:
-            selectedScroller = mapScroller1;
+            if(gameSelected == 0)
+                selectedScroller = mapScroller1;
+            else
+                selectedScroller = mapScroller5;
             break;
         case 1:
             selectedScroller = mapScroller2;
@@ -149,6 +157,16 @@
 - (void) setEpisode: (int) episode {
     
     episodeSelected = episode;
+}
+
+/*
+ ========================
+ Doom_MissionMenuViewController::setGame
+ ========================
+ */
+- (void) setGame: (int) game {
+    
+    gameSelected = game;
 }
 
 /*
@@ -229,7 +247,7 @@
     
     localStartmap.map = mapSelected;
     localStartmap.episode = episodeSelected;
-    localStartmap.dataset = 0;
+    localStartmap.dataset = gameSelected;
     localStartmap.skill = skillLevel;
     
     StartSinglePlayerGame( localStartmap );
@@ -258,9 +276,9 @@
     mapSelected = map;
     
     int mapTag = episode * 10 + ( map - 1 );
-    selectedMap = (idLabelButton *)[ self.view viewWithTag: mapTag ];
+    //selectedMap = (idLabelButton *)[ self.view viewWithTag: mapTag ];
     
-    [selectedMap setEnabled: NO];
+    //[selectedMap setEnabled: NO];
     
     Sound_StartLocalSound( "iphone/controller_down_01_SILENCE.wav" );
 }
@@ -464,5 +482,40 @@
     [ self playMap: 0: 4: 9 ];
 }
 
+- (IBAction)MAP01 {
+    [self playMap:gameSelected :0 :1];
+}
+
+- (IBAction)MAP02 {
+    [self playMap:gameSelected :0 :2];
+}
+
+- (IBAction)MAP03 {
+    [self playMap:gameSelected :0 :3];
+}
+
+- (IBAction)MAP04 {
+    [self playMap:gameSelected :0 :4];
+}
+
+- (IBAction)MAP05 {
+    [self playMap:gameSelected :0 :5];
+}
+
+- (IBAction)MAP06 {
+    [self playMap:gameSelected :0 :6];
+}
+
+- (IBAction)MAP07 {
+    [self playMap:gameSelected :0 :7];
+}
+
+- (IBAction)MAP08 {
+    [self playMap:gameSelected :0 :8];
+}
+
+- (IBAction)MAP09 {
+    [self playMap:gameSelected :0 :9];
+}
 
 @end

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Doom_MissionMenuViewController">
@@ -16,10 +15,12 @@
                 <outlet property="lastElement2" destination="46" id="86"/>
                 <outlet property="lastElement3" destination="64" id="85"/>
                 <outlet property="lastElement4" destination="53" id="84"/>
+                <outlet property="lastElement5" destination="2b0-sU-YwZ" id="P1F-TA-Qfj"/>
                 <outlet property="mapScroller1" destination="26" id="83"/>
                 <outlet property="mapScroller2" destination="16" id="82"/>
                 <outlet property="mapScroller3" destination="5" id="81"/>
                 <outlet property="mapScroller4" destination="13" id="80"/>
+                <outlet property="mapScroller5" destination="B6B-j3-OuS" id="VeH-RH-Xuf"/>
                 <outlet property="mediumSelection" destination="10" id="74"/>
                 <outlet property="mediumSelectionLabel" destination="4" id="75"/>
                 <outlet property="nightmareSelectionLabel" destination="11" id="77"/>
@@ -773,6 +774,184 @@
                     </subviews>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                 </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" indicatorStyle="white" id="B6B-j3-OuS" userLabel="Map Selection Scroll">
+                    <rect key="frame" x="139" y="46" width="284" height="137"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ift-n8-Gb7" userLabel="MAP01: Entryway" customClass="idLabelButton">
+                            <rect key="frame" x="7" y="8" width="270" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <size key="titleShadowOffset" width="1" height="2"/>
+                            <state key="normal" title="MAP01: Entryway">
+                                <color key="titleColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="MAP01" destination="-1" eventType="touchUpInside" id="WPD-Vv-h9D"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="41" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x9m-OE-7wO" userLabel="MAP02: Underhalls" customClass="idLabelButton">
+                            <rect key="frame" x="7" y="53" width="270" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <size key="titleShadowOffset" width="1" height="2"/>
+                            <state key="normal" title="MAP02: Underhalls">
+                                <color key="titleColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="MAP02" destination="-1" eventType="touchUpInside" id="BcD-Bc-2Bt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ekg-yu-0n0" customClass="idLabelButton">
+                            <rect key="frame" x="7" y="98" width="270" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <size key="titleShadowOffset" width="1" height="2"/>
+                            <state key="normal" title="MAP03: The Gauntlet">
+                                <color key="titleColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="MAP03" destination="-1" eventType="touchUpInside" id="Cyr-go-RA7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="43" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CK5-ka-Q4V" customClass="idLabelButton">
+                            <rect key="frame" x="7" y="142" width="270" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <size key="titleShadowOffset" width="1" height="2"/>
+                            <state key="normal" title="MAP04: The Focus">
+                                <color key="titleColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="MAP04" destination="-1" eventType="touchUpInside" id="phn-NP-pqa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="44" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CIy-Tc-CcY" customClass="idLabelButton">
+                            <rect key="frame" x="7" y="187" width="270" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <size key="titleShadowOffset" width="1" height="2"/>
+                            <state key="normal" title="MAP05: The Waste Tunnels">
+                                <color key="titleColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="MAP05" destination="-1" eventType="touchUpInside" id="vH3-7m-NRc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="45" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6ZK-n3-ntO" customClass="idLabelButton">
+                            <rect key="frame" x="7" y="232" width="270" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <size key="titleShadowOffset" width="1" height="2"/>
+                            <state key="normal" title="MAP06: The Crusher">
+                                <color key="titleColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="MAP06" destination="-1" eventType="touchUpInside" id="Tfu-i3-7YK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="46" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bxF-uc-p0b" customClass="idLabelButton">
+                            <rect key="frame" x="7" y="277" width="270" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <size key="titleShadowOffset" width="1" height="2"/>
+                            <state key="normal" title="MAP07: Dead Simple">
+                                <color key="titleColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="MAP07" destination="-1" eventType="touchUpInside" id="NHk-nI-nXO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="47" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TtP-6v-caN" customClass="idLabelButton">
+                            <rect key="frame" x="7" y="322" width="270" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <size key="titleShadowOffset" width="1" height="2"/>
+                            <state key="normal" title="MAP08: Tricks &amp; Traps">
+                                <color key="titleColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="MAP08" destination="-1" eventType="touchUpInside" id="q6m-DE-LNw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="48" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2b0-sU-YwZ" customClass="idLabelButton">
+                            <rect key="frame" x="7" y="367" width="270" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <size key="titleShadowOffset" width="1" height="2"/>
+                            <state key="normal" title="MAP09: The Pit">
+                                <color key="titleColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="MAP09" destination="-1" eventType="touchUpInside" id="moR-Av-fLi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6" customClass="idLabelButton">
                     <rect key="frame" x="259" y="189" width="44" height="21"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -953,8 +1132,8 @@
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
@@ -974,4 +1153,9 @@
         <image name="UpArrow" width="16" height="16"/>
         <image name="UpArrow_Highlighted.png" width="80" height="36"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

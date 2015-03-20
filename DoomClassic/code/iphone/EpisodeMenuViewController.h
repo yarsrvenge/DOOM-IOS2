@@ -40,7 +40,7 @@
     
 }
 
-- (IBAction) BackToMain;
+- (IBAction) BackToSelectGame;
 - (IBAction) NextToMissions;
 
 

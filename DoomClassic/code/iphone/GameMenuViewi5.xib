@@ -4,28 +4,28 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Doom_EpisodeMenuViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Doom_GameMenuViewController">
             <connections>
-                <outlet property="epi1Button" destination="49" id="60"/>
-                <outlet property="epi2Button" destination="48" id="61"/>
-                <outlet property="epi3Button" destination="47" id="62"/>
-                <outlet property="epi4Button" destination="46" id="63"/>
-                <outlet property="nextButton" destination="33" id="64"/>
+                <outlet property="doom2Button" destination="48" id="rUB-Vd-gbr"/>
+                <outlet property="doomButton" destination="49" id="Fxq-eE-LAS"/>
+                <outlet property="finalDoomPlutoniaButton" destination="46" id="KVQ-Am-Gka"/>
+                <outlet property="finalDoomTntButton" destination="47" id="0iT-tm-nYB"/>
+                <outlet property="nextButton" destination="33" id="MLB-BL-WYg"/>
                 <outlet property="nextLabel" destination="35" id="65"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="MenuBackground.png" id="32" userLabel="Background">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                    <rect key="frame" x="42" y="0.0" width="480" height="320"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="33" customClass="idLabelButton">
-                    <rect key="frame" x="425" y="264" width="50" height="50"/>
+                    <rect key="frame" x="467" y="264" width="50" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                     <state key="normal" image="NextButton.png">
@@ -36,12 +36,12 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="NextToMissions" destination="-1" eventType="touchUpInside" id="68"/>
+                        <action selector="NextToMissions" destination="-1" eventType="touchUpInside" id="VWz-CO-b5j"/>
                         <outlet property="label" destination="35" id="59"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="34" customClass="idLabelButton">
-                    <rect key="frame" x="0.0" y="264" width="50" height="50"/>
+                    <rect key="frame" x="42" y="264" width="50" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                     <state key="normal" image="BackButton.png">
@@ -53,26 +53,26 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="BackToMain" destination="-1" eventType="touchUpInside" id="67"/>
+                        <action selector="BackToMain" destination="-1" eventType="touchUpInside" id="EpJ-zm-jtV"/>
                         <outlet property="label" destination="36" id="58"/>
                     </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Next" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="35" customClass="idLabel">
-                    <rect key="frame" x="435" y="259" width="29" height="18"/>
+                    <rect key="frame" x="477" y="259" width="29" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                     <color key="textColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="highlightedColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Back" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="36" customClass="idLabel">
-                    <rect key="frame" x="9" y="259" width="32" height="18"/>
+                    <rect key="frame" x="51" y="259" width="32" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                     <color key="textColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </label>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="37">
-                    <rect key="frame" x="68" y="8" width="344" height="304"/>
+                    <rect key="frame" x="110" y="8" width="344" height="304"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="49" customClass="idLabelButton">
@@ -88,8 +88,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="SelectEpisode1" destination="-1" eventType="touchUpInside" id="69"/>
-                                <outlet property="label" destination="38" id="50"/>
+                                <action selector="SelectDoom" destination="-1" eventType="touchUpInside" id="7dN-nK-TF6"/>
                                 <outlet property="label2" destination="39" id="51"/>
                             </connections>
                         </button>
@@ -106,8 +105,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="SelectEpisode2" destination="-1" eventType="touchUpInside" id="70"/>
-                                <outlet property="label" destination="40" id="52"/>
+                                <action selector="SelectDoom2" destination="-1" eventType="touchUpInside" id="IOe-iS-1yT"/>
                                 <outlet property="label2" destination="41" id="53"/>
                             </connections>
                         </button>
@@ -124,8 +122,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="SelectEpisode3" destination="-1" eventType="touchUpInside" id="71"/>
-                                <outlet property="label" destination="42" id="54"/>
+                                <action selector="SelectFinalDoomTnt" destination="-1" eventType="touchUpInside" id="AIw-6j-iEg"/>
                                 <outlet property="label2" destination="43" id="55"/>
                             </connections>
                         </button>
@@ -142,66 +139,37 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="SelectEpisode4" destination="-1" eventType="touchUpInside" id="72"/>
-                                <outlet property="label" destination="45" id="56"/>
+                                <action selector="SelectFinalDoomPlutonia" destination="-1" eventType="touchUpInside" id="OKo-nl-Y0n"/>
                                 <outlet property="label2" destination="44" id="57"/>
                             </connections>
                         </button>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#EPISODE_IV" lineBreakMode="tailTruncation" minimumFontSize="10" id="45" customClass="idLabel">
-                            <rect key="frame" x="37" y="245" width="81" height="18"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Thy Flesh Consumed" lineBreakMode="tailTruncation" minimumFontSize="10" id="44" customClass="idLabel">
-                            <rect key="frame" x="37" y="260" width="192" height="24"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ultimate DOOM" lineBreakMode="tailTruncation" minimumFontSize="10" id="39" customClass="idLabel">
+                            <rect key="frame" x="37" y="31" width="212" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                             <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Inferno" lineBreakMode="tailTruncation" minimumFontSize="10" id="43" customClass="idLabel">
-                            <rect key="frame" x="37" y="188" width="63" height="24"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DOOM II: Hell on Earth" lineBreakMode="tailTruncation" minimumFontSize="10" id="41" customClass="idLabel">
+                            <rect key="frame" x="37" y="103" width="212" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                             <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#EPISODE_III" lineBreakMode="tailTruncation" minimumFontSize="10" id="42" customClass="idLabel">
-                            <rect key="frame" x="37" y="173" width="79" height="18"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="The Shores of Hell" lineBreakMode="tailTruncation" minimumFontSize="10" id="41" customClass="idLabel">
-                            <rect key="frame" x="37" y="117" width="169" height="24"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Final DOOM: TNT" lineBreakMode="tailTruncation" minimumFontSize="10" id="43" customClass="idLabel">
+                            <rect key="frame" x="37" y="174" width="166" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                             <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#EPISODE_II" lineBreakMode="tailTruncation" minimumFontSize="10" id="40" customClass="idLabel">
-                            <rect key="frame" x="37" y="102" width="75" height="18"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Knee-Deep in the Dead" lineBreakMode="tailTruncation" minimumFontSize="10" id="39" customClass="idLabel">
-                            <rect key="frame" x="37" y="44" width="212" height="24"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Final DOOM: Plutonia" lineBreakMode="tailTruncation" minimumFontSize="10" id="44" customClass="idLabel">
+                            <rect key="frame" x="37" y="247" width="192" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                             <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#EPISODE_I" lineBreakMode="tailTruncation" minimumFontSize="10" id="38" customClass="idLabel">
-                            <rect key="frame" x="37" y="29" width="71" height="18"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                     </subviews>
                 </scrollView>
@@ -209,7 +177,6 @@
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>
