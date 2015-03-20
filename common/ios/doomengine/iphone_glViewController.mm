@@ -64,9 +64,12 @@ static bool inTransition = false;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        // fix IOS8 that UIScreen is now Interface-Oriented
+        CGRect rect = [UIScreen mainScreen].applicationFrame;
+        CGRect temp = CGRectMake(rect.origin.x, rect.origin.y, rect.size.height, rect.size.width);
         
         // Create the OpenGL View.
-        EAGLView *glView = [[EAGLView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+        EAGLView *glView = [[EAGLView alloc] initWithFrame:temp];
         self.view = glView;
         [glView release];
         
