@@ -1,4 +1,5 @@
 build/
+*.lproj/
 *.png
 *.otf
 *.pbxuser
