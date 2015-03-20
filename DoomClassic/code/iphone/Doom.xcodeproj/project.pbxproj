@@ -54,6 +54,69 @@
 		C8DB8A5E14BB88AC0006467C /* MissionMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5614BB88AC0006467C /* MissionMenuView~ipad.xib */; };
 		C8DB8A5F14BB88AC0006467C /* OpenGLView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5714BB88AC0006467C /* OpenGLView~ipad.xib */; };
 		C8DB8A6014BB88AC0006467C /* SettingsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5814BB88AC0006467C /* SettingsMenuView~ipad.xib */; };
+		D2B96EBD1ABC268C00179F75 /* AdvancedButton_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E801ABC268C00179F75 /* AdvancedButton_Highlighted.png */; };
+		D2B96EBF1ABC268C00179F75 /* AdvancedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E821ABC268C00179F75 /* AdvancedButton.png */; };
+		D2B96EC01ABC268C00179F75 /* BackButton_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E831ABC268C00179F75 /* BackButton_Highlighted.png */; };
+		D2B96EC11ABC268C00179F75 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E841ABC268C00179F75 /* BackButton.png */; };
+		D2B96EC21ABC268C00179F75 /* Button_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E851ABC268C00179F75 /* Button_Highlighted.png */; };
+		D2B96EC31ABC268C00179F75 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E861ABC268C00179F75 /* Button.png */; };
+		D2B96EC41ABC268C00179F75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E871ABC268C00179F75 /* Default-568h@2x.png */; };
+		D2B96EC51ABC268C00179F75 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E881ABC268C00179F75 /* Default-Landscape~ipad.png */; };
+		D2B96EC61ABC268C00179F75 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E891ABC268C00179F75 /* Default-Portrait~ipad.png */; };
+		D2B96EC71ABC268C00179F75 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E8A1ABC268C00179F75 /* Default.png */; };
+		D2B96EC81ABC268C00179F75 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E8B1ABC268C00179F75 /* Default@2x.png */; };
+		D2B96EC91ABC268C00179F75 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E8C1ABC268C00179F75 /* Default~ipad.png */; };
+		D2B96ECA1ABC268C00179F75 /* DifficultyBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E8D1ABC268C00179F75 /* DifficultyBackground.png */; };
+		D2B96ECB1ABC268C00179F75 /* Divide.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E8E1ABC268C00179F75 /* Divide.png */; };
+		D2B96ECC1ABC268C00179F75 /* DOOM_57.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E8F1ABC268C00179F75 /* DOOM_57.png */; };
+		D2B96ECD1ABC268C00179F75 /* DOOM_72.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E901ABC268C00179F75 /* DOOM_72.png */; };
+		D2B96ECE1ABC268C00179F75 /* DOOM_76.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E911ABC268C00179F75 /* DOOM_76.png */; };
+		D2B96ECF1ABC268C00179F75 /* DOOM_114.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E921ABC268C00179F75 /* DOOM_114.png */; };
+		D2B96ED01ABC268C00179F75 /* DOOM_120.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E931ABC268C00179F75 /* DOOM_120.png */; };
+		D2B96ED11ABC268C00179F75 /* DOOM_144.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E941ABC268C00179F75 /* DOOM_144.png */; };
+		D2B96ED21ABC268C00179F75 /* DOOM_152.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E951ABC268C00179F75 /* DOOM_152.png */; };
+		D2B96ED31ABC268C00179F75 /* DOOM_sigil_decal.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E961ABC268C00179F75 /* DOOM_sigil_decal.png */; };
+		D2B96ED41ABC268C00179F75 /* DoomLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E971ABC268C00179F75 /* DoomLogo.png */; };
+		D2B96ED51ABC268C00179F75 /* DownArrow_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E981ABC268C00179F75 /* DownArrow_Highlighted.png */; };
+		D2B96ED61ABC268C00179F75 /* DownArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E991ABC268C00179F75 /* DownArrow.png */; };
+		D2B96ED71ABC268C00179F75 /* Easy.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E9A1ABC268C00179F75 /* Easy.png */; };
+		D2B96ED81ABC268C00179F75 /* Episode1Background_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E9B1ABC268C00179F75 /* Episode1Background_Highlighted.png */; };
+		D2B96ED91ABC268C00179F75 /* Episode1Background.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E9C1ABC268C00179F75 /* Episode1Background.png */; };
+		D2B96EDA1ABC268C00179F75 /* Episode2Background_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E9D1ABC268C00179F75 /* Episode2Background_Highlighted.png */; };
+		D2B96EDB1ABC268C00179F75 /* Episode2Background.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E9E1ABC268C00179F75 /* Episode2Background.png */; };
+		D2B96EDC1ABC268C00179F75 /* Episode3Background_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96E9F1ABC268C00179F75 /* Episode3Background_Highlighted.png */; };
+		D2B96EDD1ABC268C00179F75 /* Episode3Background.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EA01ABC268C00179F75 /* Episode3Background.png */; };
+		D2B96EDE1ABC268C00179F75 /* Episode4Background_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EA11ABC268C00179F75 /* Episode4Background_Highlighted.png */; };
+		D2B96EDF1ABC268C00179F75 /* Episode4Background.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EA21ABC268C00179F75 /* Episode4Background.png */; };
+		D2B96EE01ABC268C00179F75 /* Hard.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EA31ABC268C00179F75 /* Hard.png */; };
+		D2B96EE11ABC268C00179F75 /* LayoutDualButton_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EA41ABC268C00179F75 /* LayoutDualButton_Highlighted.png */; };
+		D2B96EE21ABC268C00179F75 /* LayoutDualButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EA51ABC268C00179F75 /* LayoutDualButton.png */; };
+		D2B96EE31ABC268C00179F75 /* LayoutSingleButton_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EA61ABC268C00179F75 /* LayoutSingleButton_Highlighted.png */; };
+		D2B96EE41ABC268C00179F75 /* LayoutSingleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EA71ABC268C00179F75 /* LayoutSingleButton.png */; };
+		D2B96EE51ABC268C00179F75 /* LayoutWheelButton_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EA81ABC268C00179F75 /* LayoutWheelButton_Highlighted.png */; };
+		D2B96EE61ABC268C00179F75 /* LayoutWheelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EA91ABC268C00179F75 /* LayoutWheelButton.png */; };
+		D2B96EE71ABC268C00179F75 /* MapOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EAA1ABC268C00179F75 /* MapOverlay.png */; };
+		D2B96EE81ABC268C00179F75 /* Medium.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EAB1ABC268C00179F75 /* Medium.png */; };
+		D2B96EE91ABC268C00179F75 /* MenuBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EAC1ABC268C00179F75 /* MenuBackground.png */; };
+		D2B96EEA1ABC268C00179F75 /* MissonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EAD1ABC268C00179F75 /* MissonBackground.png */; };
+		D2B96EEB1ABC268C00179F75 /* NextButton_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EAE1ABC268C00179F75 /* NextButton_Highlighted.png */; };
+		D2B96EEC1ABC268C00179F75 /* NextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EAF1ABC268C00179F75 /* NextButton.png */; };
+		D2B96EED1ABC268C00179F75 /* Nightmare.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EB01ABC268C00179F75 /* Nightmare.png */; };
+		D2B96EEE1ABC268C00179F75 /* ResumeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EB11ABC268C00179F75 /* ResumeButton.png */; };
+		D2B96EEF1ABC268C00179F75 /* SelectedBracket.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EB21ABC268C00179F75 /* SelectedBracket.png */; };
+		D2B96EF01ABC268C00179F75 /* SettingsButton_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EB31ABC268C00179F75 /* SettingsButton_Highlighted.png */; };
+		D2B96EF11ABC268C00179F75 /* SettingsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EB41ABC268C00179F75 /* SettingsButton.png */; };
+		D2B96EF21ABC268C00179F75 /* SliderSkull.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EB51ABC268C00179F75 /* SliderSkull.png */; };
+		D2B96EF31ABC268C00179F75 /* SliderSkull@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EB61ABC268C00179F75 /* SliderSkull@2x.png */; };
+		D2B96EF41ABC268C00179F75 /* SliderSkull~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EB71ABC268C00179F75 /* SliderSkull~ipad.png */; };
+		D2B96EF51ABC268C00179F75 /* SubMenuBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EB81ABC268C00179F75 /* SubMenuBackground.png */; };
+		D2B96EF61ABC268C00179F75 /* SubMenuButton_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EB91ABC268C00179F75 /* SubMenuButton_Highlighted.png */; };
+		D2B96EF71ABC268C00179F75 /* SubMenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EBA1ABC268C00179F75 /* SubMenuButton.png */; };
+		D2B96EF81ABC268C00179F75 /* UpArrow_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EBB1ABC268C00179F75 /* UpArrow_Highlighted.png */; };
+		D2B96EF91ABC268C00179F75 /* UpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EBC1ABC268C00179F75 /* UpArrow.png */; };
+		D2B96EFB1ABC26D700179F75 /* idGinzaNar-Md2.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EFA1ABC26D700179F75 /* idGinzaNar-Md2.otf */; };
+		D2B96EFF1ABC2AD000179F75 /* test.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2B96EFE1ABC2AD000179F75 /* test.strings */; };
+		D2B96F011ABC2BD700179F75 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2B96F001ABC2BD700179F75 /* Localizable.strings */; };
 		EDD2760511C2B19E004A9B9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD2760411C2B19E004A9B9B /* CoreGraphics.framework */; };
 		EDD2760711C2B19E004A9B9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD2760611C2B19E004A9B9B /* Foundation.framework */; };
 		EDD2760911C2B19E004A9B9B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD2760811C2B19E004A9B9B /* OpenGLES.framework */; };
@@ -138,6 +201,69 @@
 		C8DB8A5614BB88AC0006467C /* MissionMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MissionMenuView~ipad.xib"; sourceTree = "<group>"; };
 		C8DB8A5714BB88AC0006467C /* OpenGLView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "OpenGLView~ipad.xib"; sourceTree = "<group>"; };
 		C8DB8A5814BB88AC0006467C /* SettingsMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SettingsMenuView~ipad.xib"; sourceTree = "<group>"; };
+		D2B96E801ABC268C00179F75 /* AdvancedButton_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdvancedButton_Highlighted.png; sourceTree = "<group>"; };
+		D2B96E821ABC268C00179F75 /* AdvancedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdvancedButton.png; sourceTree = "<group>"; };
+		D2B96E831ABC268C00179F75 /* BackButton_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton_Highlighted.png; sourceTree = "<group>"; };
+		D2B96E841ABC268C00179F75 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		D2B96E851ABC268C00179F75 /* Button_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Highlighted.png; sourceTree = "<group>"; };
+		D2B96E861ABC268C00179F75 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		D2B96E871ABC268C00179F75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D2B96E881ABC268C00179F75 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		D2B96E891ABC268C00179F75 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		D2B96E8A1ABC268C00179F75 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D2B96E8B1ABC268C00179F75 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D2B96E8C1ABC268C00179F75 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		D2B96E8D1ABC268C00179F75 /* DifficultyBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DifficultyBackground.png; sourceTree = "<group>"; };
+		D2B96E8E1ABC268C00179F75 /* Divide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Divide.png; sourceTree = "<group>"; };
+		D2B96E8F1ABC268C00179F75 /* DOOM_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_57.png; sourceTree = "<group>"; };
+		D2B96E901ABC268C00179F75 /* DOOM_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_72.png; sourceTree = "<group>"; };
+		D2B96E911ABC268C00179F75 /* DOOM_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_76.png; sourceTree = "<group>"; };
+		D2B96E921ABC268C00179F75 /* DOOM_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_114.png; sourceTree = "<group>"; };
+		D2B96E931ABC268C00179F75 /* DOOM_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_120.png; sourceTree = "<group>"; };
+		D2B96E941ABC268C00179F75 /* DOOM_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_144.png; sourceTree = "<group>"; };
+		D2B96E951ABC268C00179F75 /* DOOM_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_152.png; sourceTree = "<group>"; };
+		D2B96E961ABC268C00179F75 /* DOOM_sigil_decal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_sigil_decal.png; sourceTree = "<group>"; };
+		D2B96E971ABC268C00179F75 /* DoomLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoomLogo.png; sourceTree = "<group>"; };
+		D2B96E981ABC268C00179F75 /* DownArrow_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownArrow_Highlighted.png; sourceTree = "<group>"; };
+		D2B96E991ABC268C00179F75 /* DownArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownArrow.png; sourceTree = "<group>"; };
+		D2B96E9A1ABC268C00179F75 /* Easy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Easy.png; sourceTree = "<group>"; };
+		D2B96E9B1ABC268C00179F75 /* Episode1Background_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Episode1Background_Highlighted.png; sourceTree = "<group>"; };
+		D2B96E9C1ABC268C00179F75 /* Episode1Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Episode1Background.png; sourceTree = "<group>"; };
+		D2B96E9D1ABC268C00179F75 /* Episode2Background_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Episode2Background_Highlighted.png; sourceTree = "<group>"; };
+		D2B96E9E1ABC268C00179F75 /* Episode2Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Episode2Background.png; sourceTree = "<group>"; };
+		D2B96E9F1ABC268C00179F75 /* Episode3Background_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Episode3Background_Highlighted.png; sourceTree = "<group>"; };
+		D2B96EA01ABC268C00179F75 /* Episode3Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Episode3Background.png; sourceTree = "<group>"; };
+		D2B96EA11ABC268C00179F75 /* Episode4Background_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Episode4Background_Highlighted.png; sourceTree = "<group>"; };
+		D2B96EA21ABC268C00179F75 /* Episode4Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Episode4Background.png; sourceTree = "<group>"; };
+		D2B96EA31ABC268C00179F75 /* Hard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hard.png; sourceTree = "<group>"; };
+		D2B96EA41ABC268C00179F75 /* LayoutDualButton_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LayoutDualButton_Highlighted.png; sourceTree = "<group>"; };
+		D2B96EA51ABC268C00179F75 /* LayoutDualButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LayoutDualButton.png; sourceTree = "<group>"; };
+		D2B96EA61ABC268C00179F75 /* LayoutSingleButton_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LayoutSingleButton_Highlighted.png; sourceTree = "<group>"; };
+		D2B96EA71ABC268C00179F75 /* LayoutSingleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LayoutSingleButton.png; sourceTree = "<group>"; };
+		D2B96EA81ABC268C00179F75 /* LayoutWheelButton_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LayoutWheelButton_Highlighted.png; sourceTree = "<group>"; };
+		D2B96EA91ABC268C00179F75 /* LayoutWheelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LayoutWheelButton.png; sourceTree = "<group>"; };
+		D2B96EAA1ABC268C00179F75 /* MapOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapOverlay.png; sourceTree = "<group>"; };
+		D2B96EAB1ABC268C00179F75 /* Medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Medium.png; sourceTree = "<group>"; };
+		D2B96EAC1ABC268C00179F75 /* MenuBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBackground.png; sourceTree = "<group>"; };
+		D2B96EAD1ABC268C00179F75 /* MissonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MissonBackground.png; sourceTree = "<group>"; };
+		D2B96EAE1ABC268C00179F75 /* NextButton_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NextButton_Highlighted.png; sourceTree = "<group>"; };
+		D2B96EAF1ABC268C00179F75 /* NextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NextButton.png; sourceTree = "<group>"; };
+		D2B96EB01ABC268C00179F75 /* Nightmare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nightmare.png; sourceTree = "<group>"; };
+		D2B96EB11ABC268C00179F75 /* ResumeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResumeButton.png; sourceTree = "<group>"; };
+		D2B96EB21ABC268C00179F75 /* SelectedBracket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectedBracket.png; sourceTree = "<group>"; };
+		D2B96EB31ABC268C00179F75 /* SettingsButton_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsButton_Highlighted.png; sourceTree = "<group>"; };
+		D2B96EB41ABC268C00179F75 /* SettingsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsButton.png; sourceTree = "<group>"; };
+		D2B96EB51ABC268C00179F75 /* SliderSkull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SliderSkull.png; sourceTree = "<group>"; };
+		D2B96EB61ABC268C00179F75 /* SliderSkull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SliderSkull@2x.png"; sourceTree = "<group>"; };
+		D2B96EB71ABC268C00179F75 /* SliderSkull~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SliderSkull~ipad.png"; sourceTree = "<group>"; };
+		D2B96EB81ABC268C00179F75 /* SubMenuBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubMenuBackground.png; sourceTree = "<group>"; };
+		D2B96EB91ABC268C00179F75 /* SubMenuButton_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubMenuButton_Highlighted.png; sourceTree = "<group>"; };
+		D2B96EBA1ABC268C00179F75 /* SubMenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubMenuButton.png; sourceTree = "<group>"; };
+		D2B96EBB1ABC268C00179F75 /* UpArrow_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpArrow_Highlighted.png; sourceTree = "<group>"; };
+		D2B96EBC1ABC268C00179F75 /* UpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpArrow.png; sourceTree = "<group>"; };
+		D2B96EFA1ABC26D700179F75 /* idGinzaNar-Md2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "idGinzaNar-Md2.otf"; sourceTree = "<group>"; };
+		D2B96EFE1ABC2AD000179F75 /* test.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = test.strings; sourceTree = "<group>"; };
+		D2B96F001ABC2BD700179F75 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		EDD2760411C2B19E004A9B9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EDD2760611C2B19E004A9B9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EDD2760811C2B19E004A9B9B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -194,6 +320,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				D2B96EFE1ABC2AD000179F75 /* test.strings */,
 				3DF31F85148C30F100C66CD7 /* doomengine.xcodeproj */,
 				29B97315FDCFA39411CA2CEA /* Source */,
 				29B97317FDCFA39411CA2CEA /* App Resources */,
@@ -222,6 +349,7 @@
 				C86CA86114B4FD230057FF54 /* Menus */,
 				C84F820613D73D28006D01AB /* Images */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				D2B96F001ABC2BD700179F75 /* Localizable.strings */,
 			);
 			name = "App Resources";
 			sourceTree = "<group>";
@@ -327,6 +455,67 @@
 		C86CA86714B502C90057FF54 /* Icons & Defaults */ = {
 			isa = PBXGroup;
 			children = (
+				D2B96EFA1ABC26D700179F75 /* idGinzaNar-Md2.otf */,
+				D2B96E801ABC268C00179F75 /* AdvancedButton_Highlighted.png */,
+				D2B96E821ABC268C00179F75 /* AdvancedButton.png */,
+				D2B96E831ABC268C00179F75 /* BackButton_Highlighted.png */,
+				D2B96E841ABC268C00179F75 /* BackButton.png */,
+				D2B96E851ABC268C00179F75 /* Button_Highlighted.png */,
+				D2B96E861ABC268C00179F75 /* Button.png */,
+				D2B96E871ABC268C00179F75 /* Default-568h@2x.png */,
+				D2B96E881ABC268C00179F75 /* Default-Landscape~ipad.png */,
+				D2B96E891ABC268C00179F75 /* Default-Portrait~ipad.png */,
+				D2B96E8A1ABC268C00179F75 /* Default.png */,
+				D2B96E8B1ABC268C00179F75 /* Default@2x.png */,
+				D2B96E8C1ABC268C00179F75 /* Default~ipad.png */,
+				D2B96E8D1ABC268C00179F75 /* DifficultyBackground.png */,
+				D2B96E8E1ABC268C00179F75 /* Divide.png */,
+				D2B96E8F1ABC268C00179F75 /* DOOM_57.png */,
+				D2B96E901ABC268C00179F75 /* DOOM_72.png */,
+				D2B96E911ABC268C00179F75 /* DOOM_76.png */,
+				D2B96E921ABC268C00179F75 /* DOOM_114.png */,
+				D2B96E931ABC268C00179F75 /* DOOM_120.png */,
+				D2B96E941ABC268C00179F75 /* DOOM_144.png */,
+				D2B96E951ABC268C00179F75 /* DOOM_152.png */,
+				D2B96E961ABC268C00179F75 /* DOOM_sigil_decal.png */,
+				D2B96E971ABC268C00179F75 /* DoomLogo.png */,
+				D2B96E981ABC268C00179F75 /* DownArrow_Highlighted.png */,
+				D2B96E991ABC268C00179F75 /* DownArrow.png */,
+				D2B96E9A1ABC268C00179F75 /* Easy.png */,
+				D2B96E9B1ABC268C00179F75 /* Episode1Background_Highlighted.png */,
+				D2B96E9C1ABC268C00179F75 /* Episode1Background.png */,
+				D2B96E9D1ABC268C00179F75 /* Episode2Background_Highlighted.png */,
+				D2B96E9E1ABC268C00179F75 /* Episode2Background.png */,
+				D2B96E9F1ABC268C00179F75 /* Episode3Background_Highlighted.png */,
+				D2B96EA01ABC268C00179F75 /* Episode3Background.png */,
+				D2B96EA11ABC268C00179F75 /* Episode4Background_Highlighted.png */,
+				D2B96EA21ABC268C00179F75 /* Episode4Background.png */,
+				D2B96EA31ABC268C00179F75 /* Hard.png */,
+				D2B96EA41ABC268C00179F75 /* LayoutDualButton_Highlighted.png */,
+				D2B96EA51ABC268C00179F75 /* LayoutDualButton.png */,
+				D2B96EA61ABC268C00179F75 /* LayoutSingleButton_Highlighted.png */,
+				D2B96EA71ABC268C00179F75 /* LayoutSingleButton.png */,
+				D2B96EA81ABC268C00179F75 /* LayoutWheelButton_Highlighted.png */,
+				D2B96EA91ABC268C00179F75 /* LayoutWheelButton.png */,
+				D2B96EAA1ABC268C00179F75 /* MapOverlay.png */,
+				D2B96EAB1ABC268C00179F75 /* Medium.png */,
+				D2B96EAC1ABC268C00179F75 /* MenuBackground.png */,
+				D2B96EAD1ABC268C00179F75 /* MissonBackground.png */,
+				D2B96EAE1ABC268C00179F75 /* NextButton_Highlighted.png */,
+				D2B96EAF1ABC268C00179F75 /* NextButton.png */,
+				D2B96EB01ABC268C00179F75 /* Nightmare.png */,
+				D2B96EB11ABC268C00179F75 /* ResumeButton.png */,
+				D2B96EB21ABC268C00179F75 /* SelectedBracket.png */,
+				D2B96EB31ABC268C00179F75 /* SettingsButton_Highlighted.png */,
+				D2B96EB41ABC268C00179F75 /* SettingsButton.png */,
+				D2B96EB51ABC268C00179F75 /* SliderSkull.png */,
+				D2B96EB61ABC268C00179F75 /* SliderSkull@2x.png */,
+				D2B96EB71ABC268C00179F75 /* SliderSkull~ipad.png */,
+				D2B96EB81ABC268C00179F75 /* SubMenuBackground.png */,
+				D2B96EB91ABC268C00179F75 /* SubMenuButton_Highlighted.png */,
+				D2B96EBA1ABC268C00179F75 /* SubMenuButton.png */,
+				D2B96EBB1ABC268C00179F75 /* UpArrow_Highlighted.png */,
+				D2B96EBC1ABC268C00179F75 /* UpArrow.png */,
 			);
 			name = "Icons & Defaults";
 			sourceTree = "<group>";
@@ -461,34 +650,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B96ED01ABC268C00179F75 /* DOOM_120.png in Resources */,
+				D2B96EDB1ABC268C00179F75 /* Episode2Background.png in Resources */,
+				D2B96ED61ABC268C00179F75 /* DownArrow.png in Resources */,
+				D2B96EE31ABC268C00179F75 /* LayoutSingleButton_Highlighted.png in Resources */,
+				D2B96EE11ABC268C00179F75 /* LayoutDualButton_Highlighted.png in Resources */,
+				D2B96ED21ABC268C00179F75 /* DOOM_152.png in Resources */,
+				D2B96EDD1ABC268C00179F75 /* Episode3Background.png in Resources */,
+				D2B96EF51ABC268C00179F75 /* SubMenuBackground.png in Resources */,
 				138FC9C917F216C300D94C5F /* base.iPack in Resources */,
 				138FC9CA17F216C300D94C5F /* doom.wad in Resources */,
+				D2B96EF11ABC268C00179F75 /* SettingsButton.png in Resources */,
+				D2B96ECA1ABC268C00179F75 /* DifficultyBackground.png in Resources */,
 				138FC9CB17F216C300D94C5F /* prboom.wad in Resources */,
+				D2B96ED71ABC268C00179F75 /* Easy.png in Resources */,
+				D2B96EF41ABC268C00179F75 /* SliderSkull~ipad.png in Resources */,
 				4364BF3F0F5CB25900F29317 /* dist.plist in Resources */,
 				132AC2E51802F15C00884E11 /* OpenGLViewi5.xib in Resources */,
+				D2B96EFB1ABC26D700179F75 /* idGinzaNar-Md2.otf in Resources */,
+				D2B96ED81ABC268C00179F75 /* Episode1Background_Highlighted.png in Resources */,
+				D2B96ECE1ABC268C00179F75 /* DOOM_76.png in Resources */,
 				132AC2DF1802F15C00884E11 /* ControlsMenuViewi5.xib in Resources */,
+				D2B96EC71ABC268C00179F75 /* Default.png in Resources */,
 				132AC2E21802F15C00884E11 /* LegalMenuViewi5.xib in Resources */,
 				132AC2E01802F15C00884E11 /* CreditsMenuViewi5.xib in Resources */,
+				D2B96F011ABC2BD700179F75 /* Localizable.strings in Resources */,
+				D2B96ED31ABC268C00179F75 /* DOOM_sigil_decal.png in Resources */,
+				D2B96ED11ABC268C00179F75 /* DOOM_144.png in Resources */,
+				D2B96EC21ABC268C00179F75 /* Button_Highlighted.png in Resources */,
+				D2B96EDE1ABC268C00179F75 /* Episode4Background_Highlighted.png in Resources */,
 				132AC2E31802F15C00884E11 /* MainMenuViewi5.xib in Resources */,
+				D2B96EF31ABC268C00179F75 /* SliderSkull@2x.png in Resources */,
 				132AC2E11802F15C00884E11 /* EpisodeMenuViewi5.xib in Resources */,
+				D2B96EF61ABC268C00179F75 /* SubMenuButton_Highlighted.png in Resources */,
+				D2B96EF21ABC268C00179F75 /* SliderSkull.png in Resources */,
+				D2B96ED91ABC268C00179F75 /* Episode1Background.png in Resources */,
+				D2B96EC11ABC268C00179F75 /* BackButton.png in Resources */,
 				C8012E5214B5122700B0E213 /* MainMenuView.xib in Resources */,
+				D2B96ECD1ABC268C00179F75 /* DOOM_72.png in Resources */,
+				D2B96ED51ABC268C00179F75 /* DownArrow_Highlighted.png in Resources */,
+				D2B96EEE1ABC268C00179F75 /* ResumeButton.png in Resources */,
+				D2B96EFF1ABC2AD000179F75 /* test.strings in Resources */,
 				C8012E6F14B6389B00B0E213 /* EpisodeMenuView.xib in Resources */,
+				D2B96EE51ABC268C00179F75 /* LayoutWheelButton_Highlighted.png in Resources */,
+				D2B96ECF1ABC268C00179F75 /* DOOM_114.png in Resources */,
+				D2B96ECB1ABC268C00179F75 /* Divide.png in Resources */,
+				D2B96EC91ABC268C00179F75 /* Default~ipad.png in Resources */,
+				D2B96EE61ABC268C00179F75 /* LayoutWheelButton.png in Resources */,
 				C8012E7414B646BD00B0E213 /* OpenGLView.xib in Resources */,
+				D2B96EED1ABC268C00179F75 /* Nightmare.png in Resources */,
+				D2B96EDC1ABC268C00179F75 /* Episode3Background_Highlighted.png in Resources */,
 				C8012E7914B649DB00B0E213 /* CreditsMenuView.xib in Resources */,
 				C8012E7E14B6704500B0E213 /* ControlsMenuView.xib in Resources */,
+				D2B96EF71ABC268C00179F75 /* SubMenuButton.png in Resources */,
 				C8012E8314B6709C00B0E213 /* SettingsMenuView.xib in Resources */,
+				D2B96EE41ABC268C00179F75 /* LayoutSingleButton.png in Resources */,
 				C8012E8814B6722B00B0E213 /* LegalMenuView.xib in Resources */,
 				C8012E8E14B6750D00B0E213 /* MissionMenuView.xib in Resources */,
 				132AC2E41802F15C00884E11 /* MissionMenuViewi5.xib in Resources */,
 				132AC2E61802F15C00884E11 /* SettingsMenuViewi5.xib in Resources */,
 				C8DB8A5914BB88AC0006467C /* ControlsMenuView~ipad.xib in Resources */,
+				D2B96EDA1ABC268C00179F75 /* Episode2Background_Highlighted.png in Resources */,
 				C8DB8A5A14BB88AC0006467C /* CreditsMenuView~ipad.xib in Resources */,
+				D2B96EC31ABC268C00179F75 /* Button.png in Resources */,
+				D2B96EEC1ABC268C00179F75 /* NextButton.png in Resources */,
+				D2B96EF91ABC268C00179F75 /* UpArrow.png in Resources */,
+				D2B96EBD1ABC268C00179F75 /* AdvancedButton_Highlighted.png in Resources */,
+				D2B96EBF1ABC268C00179F75 /* AdvancedButton.png in Resources */,
 				C8DB8A5B14BB88AC0006467C /* EpisodeMenuView~ipad.xib in Resources */,
+				D2B96EC41ABC268C00179F75 /* Default-568h@2x.png in Resources */,
+				D2B96EF81ABC268C00179F75 /* UpArrow_Highlighted.png in Resources */,
+				D2B96EC01ABC268C00179F75 /* BackButton_Highlighted.png in Resources */,
+				D2B96EC81ABC268C00179F75 /* Default@2x.png in Resources */,
 				C8DB8A5C14BB88AC0006467C /* LegalMenuView~ipad.xib in Resources */,
+				D2B96EF01ABC268C00179F75 /* SettingsButton_Highlighted.png in Resources */,
+				D2B96EE21ABC268C00179F75 /* LayoutDualButton.png in Resources */,
+				D2B96EE71ABC268C00179F75 /* MapOverlay.png in Resources */,
+				D2B96EC51ABC268C00179F75 /* Default-Landscape~ipad.png in Resources */,
+				D2B96EC61ABC268C00179F75 /* Default-Portrait~ipad.png in Resources */,
 				C8DB8A5D14BB88AC0006467C /* MainMenuView~ipad.xib in Resources */,
+				D2B96ED41ABC268C00179F75 /* DoomLogo.png in Resources */,
+				D2B96EEF1ABC268C00179F75 /* SelectedBracket.png in Resources */,
+				D2B96EE01ABC268C00179F75 /* Hard.png in Resources */,
+				D2B96EDF1ABC268C00179F75 /* Episode4Background.png in Resources */,
+				D2B96ECC1ABC268C00179F75 /* DOOM_57.png in Resources */,
 				C8DB8A5E14BB88AC0006467C /* MissionMenuView~ipad.xib in Resources */,
 				C8DB8A5F14BB88AC0006467C /* OpenGLView~ipad.xib in Resources */,
+				D2B96EEB1ABC268C00179F75 /* NextButton_Highlighted.png in Resources */,
+				D2B96EEA1ABC268C00179F75 /* MissonBackground.png in Resources */,
+				D2B96EE81ABC268C00179F75 /* Medium.png in Resources */,
 				C8DB8A6014BB88AC0006467C /* SettingsMenuView~ipad.xib in Resources */,
+				D2B96EE91ABC268C00179F75 /* MenuBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +904,7 @@
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "";
@@ -740,7 +992,7 @@
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Doom;
@@ -798,7 +1050,7 @@
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "";
@@ -855,7 +1107,7 @@
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "31C73095-0DD9-4ABA-BB25-8D23F661F10F";
