@@ -64,6 +64,9 @@ static bool inTransition = false;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        
+        // TODO add check for IOS version
+        
         // fix IOS8 that UIScreen is now Interface-Oriented
         CGRect rect = [UIScreen mainScreen].applicationFrame;
         CGRect temp = CGRectMake(rect.origin.x, rect.origin.y, rect.size.height, rect.size.width);
