@@ -1,4 +1,5 @@
 build/
+DoomClassic/resources/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
