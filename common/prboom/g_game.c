@@ -1441,6 +1441,7 @@ void G_DoWorldDone (void)
   AM_clearMarks();           //jff 4/12/98 clear any marks on the automap
     
   // automatic save game
+  //TODO get gameType here
   G_SaveGame( 0, "entersave" );
   G_DoSaveGame(true);  
 }
@@ -1743,14 +1744,16 @@ void G_DoLoadGame(void)
 
 void G_SaveGame(int slot, const char *description)
 {
+    savegameslot = slot;
   strcpy(savedescription, description);
   if (demoplayback) {
     /* cph - We're doing a user-initiated save game while a demo is
      * running so, go outside normal mechanisms
      */
-    savegameslot = slot;
     G_DoSaveGame(true);
   }
+    
+    
   // CPhipps - store info in special_event
   special_event = BT_SPECIAL | (BTS_SAVEGAME & BT_SPECIALMASK) |
     ((slot << BTS_SAVESHIFT) & BTS_SAVEMASK);
@@ -1804,7 +1807,7 @@ void G_SaveGameName(char *name, size_t size, int slot, boolean isDemoplayback)
   char name2[VERSIONSIZE];
   char *description;
   int  length, i;
-
+        
   gameaction = ga_nothing; // cph - cancel savegame at top of this function,
     // in case later problems cause a premature exit
 

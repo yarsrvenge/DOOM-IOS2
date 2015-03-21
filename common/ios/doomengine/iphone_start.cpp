@@ -129,7 +129,7 @@ void GameSetup() {
  */ 
 void StartSaveGame() {
 	GameSetup();
-	G_LoadGame( 0, true );
+	G_LoadGame( gameType, true );
 	G_DoLoadGame();
 }
 
@@ -243,7 +243,7 @@ void StartDemoGame( boolean timeDemoMode ) {
 	if ( levelHasBeenLoaded && !netgame && !demoplayback && usergame && gamestate == GS_LEVEL ) {
 		// save the current game before starting the demos
 		levelHasBeenLoaded = false;
-		G_SaveGame( 0, "quicksave" );
+		G_SaveGame( gameType, "quicksave" );
 		G_DoSaveGame(true);
 	}
     lastState = IPM_GAME;

@@ -81,6 +81,12 @@ int	lastGameProcessedTime;
 boolean	addGear;
 
 extern bool inBackgroundProcess;
+
+// 0 = Ultimate Doom
+// 1 = Doom2
+// 2 = Final Doom: TNT
+// 3 = Final Doom: Plutonia
+int gameType;
 /*
 =================================================================================
  
@@ -1376,7 +1382,7 @@ void iphoneFrame() {
 	if ( saveOnExitState == 1 ) {
 		printf( "SaveOnExitState == 1\n" );
 		if ( !netgame && !demoplayback && usergame && gamestate == GS_LEVEL ) {
-			G_SaveGame( 0, "quicksave" );
+			G_SaveGame( gameType, "quicksave" );
 			G_DoSaveGame(true);
 		}
 		saveOnExitState = 2;
@@ -1610,7 +1616,7 @@ void iphoneDrawScreen() {
 		if ( !netgame ) {	// no save game option during net play
 			static ibutton_t btnSave;
 			if ( NewTextButton( &btnSave, "SAVE", 480-64, 0, 64, 32 ) ) {
-				G_SaveGame( 0, "ManualSave" );
+				G_SaveGame( gameType, "ManualSave" );
 				G_DoSaveGame(true);
 				AM_Stop();
 			}

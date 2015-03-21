@@ -24,9 +24,10 @@ GameMenuViewController
     int                         gameSelection;
     IBOutlet idLabelButton *    nextButton;
     IBOutlet idLabel *          nextLabel;
-    
+    BOOL loadSaveGame;
 }
 
+- (void) setLoadSaveGame: (BOOL) loadGame;
 - (IBAction) BackToMain;
 - (IBAction) NextToMissions;
 

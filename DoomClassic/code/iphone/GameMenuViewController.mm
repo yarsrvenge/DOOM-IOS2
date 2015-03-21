@@ -89,6 +89,11 @@
     Sound_StartLocalSound( "iphone/controller_down_01_SILENCE.wav" );
 }
 
+- (void)setLoadSaveGame:(BOOL)loadGame
+{
+    loadSaveGame = loadGame;
+}
+
 /*
  ========================
  Doom_GameMenuViewController::NextToMissions
@@ -96,40 +101,61 @@
  */
 - (IBAction) NextToMissions {
     
-    if(gameSelection == 0)
-    {
-        Doom_EpisodeMenuViewController *vc = nil;
-        if ( IS_IPHONE_5 ) {
-            vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuViewi5" bundle:nil];
-        } else {
-            vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuView" bundle:nil];
-        }
-        [self.navigationController pushViewController:vc animated:NO];
-        
-        [vc release];
-    }
-    else
-    {
-        Doom_MissionMenuViewController *vc = nil;
-        if ( IS_IPHONE_5 ) {
-            vc = [[Doom_MissionMenuViewController alloc] initWithNibName:@"MissionMenuViewi5" bundle:nil];
-        } else {
-            vc = [[Doom_MissionMenuViewController alloc] initWithNibName:@"MissionMenuView" bundle:nil];
-        }
-        [self.navigationController pushViewController:vc animated:NO];
-        
-        [vc setGame:gameSelection];
-        [vc setEpisode:0];
-        [vc release];
-    }
-    
     char full_iwad[1024];
     if(gameSelection == 0)
         I_FindFile( "doom.wad", ".wad", full_iwad );
     else if(gameSelection == 1)
         I_FindFile( "doom2.wad", ".wad", full_iwad );
     
+    // if there is a running game, but we now switched to another one reset levelHasBeenLoaded
+    if(gameType != gameSelection)
+        levelHasBeenLoaded = false;
+    
+    gameType = gameSelection;
+    
     iphoneDoomStartup( full_iwad, NULL );
+    
+    if(loadSaveGame)
+    {
+        [ gAppDelegate ShowGLView ];
+        
+        ResumeGame();
+        
+        Sound_StartLocalSound( "iphone/baborted_01.wav" );
+        
+        return;
+    }
+    else
+    {
+        if(gameSelection == 0)
+        {
+            Doom_EpisodeMenuViewController *vc = nil;
+            if ( IS_IPHONE_5 ) {
+                vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuViewi5" bundle:nil];
+            } else {
+                vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuView" bundle:nil];
+            }
+            [self.navigationController pushViewController:vc animated:NO];
+            
+            [vc release];
+        }
+        else
+        {
+            Doom_MissionMenuViewController *vc = nil;
+            if ( IS_IPHONE_5 ) {
+                vc = [[Doom_MissionMenuViewController alloc] initWithNibName:@"MissionMenuViewi5" bundle:nil];
+            } else {
+                vc = [[Doom_MissionMenuViewController alloc] initWithNibName:@"MissionMenuView" bundle:nil];
+            }
+            [self.navigationController pushViewController:vc animated:NO];
+            
+            [vc setGame:gameSelection];
+            [vc setEpisode:0];
+            [vc release];
+        }
+        
+        
+    }
     
     Sound_StartLocalSound( "iphone/controller_down_01_SILENCE.wav" );
 }

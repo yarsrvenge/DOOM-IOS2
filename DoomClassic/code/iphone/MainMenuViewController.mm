@@ -192,12 +192,22 @@
  */
 - (IBAction) ResumeGamePressed {
     
-    [ gAppDelegate ShowGLView ];
     
-    ResumeGame();
+    // Switch to episode view menu.
+    Doom_GameMenuViewController *vc = nil;
+    
+    if ( IS_IPHONE_5 ) {
+        vc = [[Doom_GameMenuViewController alloc] initWithNibName:@"GameMenuViewi5" bundle:nil];
+    } else {
+        vc = [[Doom_GameMenuViewController alloc] initWithNibName:@"GameMenuView" bundle:nil];
+    }
+    [vc setLoadSaveGame:TRUE];
+    
+    [self.navigationController pushViewController:vc animated:NO];
+    [vc release];
     
     Sound_StartLocalSound( "iphone/baborted_01.wav" );
- 
+    
 }
 
 /*

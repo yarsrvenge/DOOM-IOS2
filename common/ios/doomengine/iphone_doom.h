@@ -290,6 +290,9 @@ extern int		gameID;
 extern int		localGameID;
 extern int		packetSequence;
 
+extern int		gameType;
+
+    
 // Only one game can be set up at a time on a given wireless segment, although
 // several independent games can be played.
 // If a valid setupPacket has arrived in the last second, that will be the
