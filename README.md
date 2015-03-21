@@ -1,6 +1,11 @@
 This is a fork of the original id software repository.
 
 Currently the following changes have been made:
+FEATURES:
+- support for other Doom Games. Currently DOOM II, Final Doom: TNT Evilution and Final Doom: Plutionia
+- 1 savegame per doom game, so it's possible to switch between different DOOM games and continue later
+
+FIXES:
 - merged changes from johnnyw-fork to fix build errors due to now deprecated api used (this also added bluetooth gamecontroller support, though i did not test it)
 - changes made to make it build with latest XCode Version 6.2 and IOS Version 8.2 (deployment target updated to 8.2)
 - fixed touch-area were out of place error for in-game controls with IOS 8 due to UIScreen is now Orientation-aware
@@ -22,7 +27,9 @@ Extract missing resources from original app-store app
 11. Select all png-files, one odf-file and the *.lproj folders
 12. Copy these files/folders to the repository-folder: /DoomClassic/code/iphone
 
-
+Add WAD files
+=============
+copy DOOM.WAD, DOOM2.WAD, TNT.WAD or PLUTONIA.WAD to DoomClassic/base folder (WAD file names are case sensitive, so make sure to make the file names Uppercase!!!)
 
 
 
