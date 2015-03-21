@@ -204,7 +204,7 @@ void HudEditFrame() {
 	// draw the status bar
 	extern patchnum_t stbarbg;
 	if ( statusBar->value ) {
-		// force doom to rebind, since we have changed the active GL_TEXTURE_2D
+        // force doom to rebind, since we have changed the active GL_TEXTURE_2D
 		last_gltexture = NULL;
 		gld_DrawNumPatch(0, ST_Y, stbarbg.lumpnum, CR_DEFAULT, VPT_STRETCH);
 	}

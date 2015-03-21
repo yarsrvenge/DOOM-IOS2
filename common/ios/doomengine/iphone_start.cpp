@@ -116,7 +116,19 @@ void GameSetup() {
 	memset( playeringame, 0, sizeof( playeringame ) );
 	consoleplayer = 0;
 	displayplayer = 0;
-	playeringame[consoleplayer] = 1;	
+	playeringame[consoleplayer] = 1;
+    
+    if ( statusBar->value ) {
+        R_SetViewSize( 10 );
+        hud_displayed = 0;
+        hud_active = 0;
+        hud_distributed = 0;
+    } else {
+        R_SetViewSize( 11 );
+        hud_displayed = 1;
+        hud_active = 2;
+        hud_distributed = 1;
+    }
 }
 
 /*

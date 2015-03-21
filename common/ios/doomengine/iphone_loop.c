@@ -1590,8 +1590,14 @@ void iphoneDrawScreen() {
 		
 		if ( statusBar->value ) {
 			R_SetViewSize( 10 );
+            hud_displayed = 0;
+            hud_active = 0;
+            hud_distributed = 0;
 		} else {
-			R_SetViewSize( 11 );
+            R_SetViewSize( 11 );
+            hud_displayed = 1;
+            hud_active = 2;
+            hud_distributed = 1;
 		}
 	}
 
