@@ -54,9 +54,10 @@
 		C8DB8A5E14BB88AC0006467C /* MissionMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5614BB88AC0006467C /* MissionMenuView~ipad.xib */; };
 		C8DB8A5F14BB88AC0006467C /* OpenGLView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5714BB88AC0006467C /* OpenGLView~ipad.xib */; };
 		C8DB8A6014BB88AC0006467C /* SettingsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5814BB88AC0006467C /* SettingsMenuView~ipad.xib */; };
+		D217F8741ABD3BEC00AA4A36 /* GameMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D217F8731ABD3BEC00AA4A36 /* GameMenuView~ipad.xib */; };
+		D217F8761ABD414900AA4A36 /* DOOM2.WAD in Resources */ = {isa = PBXBuildFile; fileRef = D217F8751ABD414900AA4A36 /* DOOM2.WAD */; };
 		D250C9991ABCAB8900355330 /* GameMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */; };
 		D250C99B1ABCAD6600355330 /* GameMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */; };
-		D250C99E1ABCC6FB00355330 /* DOOM2.WAD in Resources */ = {isa = PBXBuildFile; fileRef = D250C99D1ABCC6FB00355330 /* DOOM2.WAD */; };
 		D2A788131ABC331500947D31 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2A788051ABC331500947D31 /* Localizable.strings */; };
 		D2A788141ABC331500947D31 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2A788081ABC331500947D31 /* Localizable.strings */; };
 		D2A788151ABC331500947D31 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2A7880B1ABC331500947D31 /* Localizable.strings */; };
@@ -207,10 +208,11 @@
 		C8DB8A5614BB88AC0006467C /* MissionMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MissionMenuView~ipad.xib"; sourceTree = "<group>"; };
 		C8DB8A5714BB88AC0006467C /* OpenGLView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "OpenGLView~ipad.xib"; sourceTree = "<group>"; };
 		C8DB8A5814BB88AC0006467C /* SettingsMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SettingsMenuView~ipad.xib"; sourceTree = "<group>"; };
+		D217F8731ABD3BEC00AA4A36 /* GameMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "GameMenuView~ipad.xib"; sourceTree = "<group>"; };
+		D217F8751ABD414900AA4A36 /* DOOM2.WAD */ = {isa = PBXFileReference; lastKnownFileType = file; name = DOOM2.WAD; path = ../../base/DOOM2.WAD; sourceTree = "<group>"; };
 		D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameMenuViewi5.xib; sourceTree = "<group>"; };
 		D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameMenuViewController.mm; sourceTree = "<group>"; };
 		D250C99C1ABCAD9C00355330 /* GameMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenuViewController.h; sourceTree = "<group>"; };
-		D250C99D1ABCC6FB00355330 /* DOOM2.WAD */ = {isa = PBXFileReference; lastKnownFileType = file; path = DOOM2.WAD; sourceTree = "<group>"; };
 		D2A788061ABC331500947D31 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Localizable.strings; sourceTree = "<group>"; };
 		D2A788091ABC331500947D31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		D2A7880C1ABC331500947D31 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
@@ -355,7 +357,7 @@
 		29B97317FDCFA39411CA2CEA /* App Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D250C99D1ABCC6FB00355330 /* DOOM2.WAD */,
+				D217F8751ABD414900AA4A36 /* DOOM2.WAD */,
 				D2A788041ABC331500947D31 /* de.lproj */,
 				D2A788071ABC331500947D31 /* en.lproj */,
 				D2A7880A1ABC331500947D31 /* es.lproj */,
@@ -416,6 +418,7 @@
 		C8012E4C14B510C600B0E213 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				D217F8731ABD3BEC00AA4A36 /* GameMenuView~ipad.xib */,
 				C8DB8A5114BB88AC0006467C /* ControlsMenuView~ipad.xib */,
 				C8DB8A5214BB88AC0006467C /* CreditsMenuView~ipad.xib */,
 				C8DB8A5314BB88AC0006467C /* EpisodeMenuView~ipad.xib */,
@@ -753,6 +756,7 @@
 				D2B96EC11ABC268C00179F75 /* BackButton.png in Resources */,
 				C8012E5214B5122700B0E213 /* MainMenuView.xib in Resources */,
 				D2B96ECD1ABC268C00179F75 /* DOOM_72.png in Resources */,
+				D217F8741ABD3BEC00AA4A36 /* GameMenuView~ipad.xib in Resources */,
 				D2B96ED51ABC268C00179F75 /* DownArrow_Highlighted.png in Resources */,
 				D2B96EEE1ABC268C00179F75 /* ResumeButton.png in Resources */,
 				C8012E6F14B6389B00B0E213 /* EpisodeMenuView.xib in Resources */,
@@ -795,8 +799,8 @@
 				D2B96EC61ABC268C00179F75 /* Default-Portrait~ipad.png in Resources */,
 				C8DB8A5D14BB88AC0006467C /* MainMenuView~ipad.xib in Resources */,
 				D2B96ED41ABC268C00179F75 /* DoomLogo.png in Resources */,
-				D250C99E1ABCC6FB00355330 /* DOOM2.WAD in Resources */,
 				D2B96EEF1ABC268C00179F75 /* SelectedBracket.png in Resources */,
+				D217F8761ABD414900AA4A36 /* DOOM2.WAD in Resources */,
 				D2B96EE01ABC268C00179F75 /* Hard.png in Resources */,
 				D2B96EDF1ABC268C00179F75 /* Episode4Background.png in Resources */,
 				D2B96ECC1ABC268C00179F75 /* DOOM_57.png in Resources */,

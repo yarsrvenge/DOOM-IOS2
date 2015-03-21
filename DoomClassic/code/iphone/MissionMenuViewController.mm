@@ -275,10 +275,18 @@
     episodeSelected = episode;
     mapSelected = map;
     
-    int mapTag = episode * 10 + ( map - 1 );
-    //selectedMap = (idLabelButton *)[ self.view viewWithTag: mapTag ];
     
-    //[selectedMap setEnabled: NO];
+    int mapTag = 0;
+    
+    if(gameSelected == 0)
+        mapTag = episode * 10 + ( map - 1 );
+    else if(gameSelected == 1)
+        mapTag = 100 +( map - 1);
+    
+    selectedMap = (idLabelButton *)[ self.view viewWithTag: mapTag ];
+    
+    if(selectedMap != nil)
+        [selectedMap setEnabled: NO];
     
     Sound_StartLocalSound( "iphone/controller_down_01_SILENCE.wav" );
 }
