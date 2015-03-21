@@ -88,6 +88,22 @@
                                             CGRectGetMaxY(lastElement4.frame)
                                             )];
     
+    [mapScroller5 setContentSize:CGSizeMake(
+                                            mapScroller5.bounds.size.width,
+                                            CGRectGetMaxY(lastElement5.frame)
+                                            )];
+    
+    [mapScroller6 setContentSize:CGSizeMake(
+                                            mapScroller6.bounds.size.width,
+                                            CGRectGetMaxY(lastElement6.frame)
+                                            )];
+    
+    [mapScroller7 setContentSize:CGSizeMake(
+                                            mapScroller7.bounds.size.width,
+                                            CGRectGetMaxY(lastElement6.frame)
+                                            )];
+
+    
     [ playButton setEnabled: NO ];
     [ playLabel setEnabled: NO ];
     
@@ -107,12 +123,22 @@
     mapScroller2.alpha = 0.0f;
     mapScroller3.alpha = 0.0f;
     mapScroller4.alpha = 0.0f;
-    
-    
+    mapScroller5.alpha = 0.0f;
+    mapScroller6.alpha = 0.0f;
+    mapScroller7.alpha = 0.0f;
+
+
     switch( episodeSelected ) {
             
         case 0:
-            selectedScroller = mapScroller1;
+            if(gameSelected == 0)
+                selectedScroller = mapScroller1;
+            else if(gameSelected == 1)
+                selectedScroller = mapScroller5;
+            else if (gameSelected ==2)
+                selectedScroller = mapScroller6;
+            else
+                selectedScroller = mapScroller7;
             break;
         case 1:
             selectedScroller = mapScroller2;
@@ -149,6 +175,16 @@
 - (void) setEpisode: (int) episode {
     
     episodeSelected = episode;
+}
+
+/*
+ ========================
+ Doom_MissionMenuViewController::setGame
+ ========================
+ */
+- (void) setGame: (int) game {
+    
+    gameSelected = game;
 }
 
 /*
@@ -210,7 +246,12 @@
     CGFloat xOffset = selectedScroller.contentOffset.x;
     CGFloat yOffset = selectedScroller.contentOffset.y;
     
-    if (selectedScroller.contentOffset.y < 300 )
+    int yscrollStop = 300;
+    
+    if(gameSelected > 0)
+        yscrollStop = 1150;
+    
+    if (selectedScroller.contentOffset.y < yscrollStop )
     {
         [selectedScroller setContentOffset:CGPointMake(xOffset, yOffset + 50 ) animated:YES];
     }
@@ -229,7 +270,7 @@
     
     localStartmap.map = mapSelected;
     localStartmap.episode = episodeSelected;
-    localStartmap.dataset = 0;
+    localStartmap.dataset = gameSelected;
     localStartmap.skill = skillLevel;
     
     StartSinglePlayerGame( localStartmap );
@@ -257,10 +298,22 @@
     episodeSelected = episode;
     mapSelected = map;
     
-    int mapTag = episode * 10 + ( map - 1 );
+    
+    int mapTag = 0;
+    
+    if(gameSelected == 0)
+        mapTag = episode * 10 + ( map - 1 );
+    else if(gameSelected == 1)
+        mapTag = 100 +( map - 1);
+    else if(gameSelected == 2)
+        mapTag = 200 +( map - 1);
+    else
+        mapTag = 300 +( map - 1);
+    
     selectedMap = (idLabelButton *)[ self.view viewWithTag: mapTag ];
     
-    [selectedMap setEnabled: NO];
+    if(selectedMap != nil)
+        [selectedMap setEnabled: NO];
     
     Sound_StartLocalSound( "iphone/controller_down_01_SILENCE.wav" );
 }
@@ -462,6 +515,134 @@
 }
 -(IBAction)     E4M9{
     [ self playMap: 0: 4: 9 ];
+}
+
+- (IBAction)MAP01 {
+    [self playMap:gameSelected :0 :1];
+}
+
+- (IBAction)MAP02 {
+    [self playMap:gameSelected :0 :2];
+}
+
+- (IBAction)MAP03 {
+    [self playMap:gameSelected :0 :3];
+}
+
+- (IBAction)MAP04 {
+    [self playMap:gameSelected :0 :4];
+}
+
+- (IBAction)MAP05 {
+    [self playMap:gameSelected :0 :5];
+}
+
+- (IBAction)MAP06 {
+    [self playMap:gameSelected :0 :6];
+}
+
+- (IBAction)MAP07 {
+    [self playMap:gameSelected :0 :7];
+}
+
+- (IBAction)MAP08 {
+    [self playMap:gameSelected :0 :8];
+}
+
+- (IBAction)MAP09 {
+    [self playMap:gameSelected :0 :9];
+}
+
+- (IBAction)MAP10 {
+    [self playMap:gameSelected :0 :10];
+}
+
+- (IBAction)MAP11 {
+    [self playMap:gameSelected :0 :11];
+}
+
+- (IBAction)MAP12 {
+    [self playMap:gameSelected :0 :12];
+}
+
+- (IBAction)MAP13 {
+    [self playMap:gameSelected :0 :13];
+}
+
+- (IBAction)MAP14 {
+    [self playMap:gameSelected :0 :14];
+}
+
+- (IBAction)MAP15 {
+    [self playMap:gameSelected :0 :15];
+}
+
+- (IBAction)MAP16 {
+    [self playMap:gameSelected :0 :16];
+}
+
+- (IBAction)MAP17 {
+    [self playMap:gameSelected :0 :17];
+}
+
+- (IBAction)MAP18 {
+    [self playMap:gameSelected :0 :18];
+}
+
+- (IBAction)MAP19 {
+    [self playMap:gameSelected :0 :19];
+}
+
+- (IBAction)MAP20 {
+    [self playMap:gameSelected :0 :20];
+}
+
+- (IBAction)MAP21 {
+    [self playMap:gameSelected :0 :21];
+}
+
+- (IBAction)MAP22 {
+    [self playMap:gameSelected :0 :22];
+}
+
+- (IBAction)MAP23 {
+    [self playMap:gameSelected :0 :23];
+}
+
+- (IBAction)MAP24 {
+    [self playMap:gameSelected :0 :24];
+}
+
+- (IBAction)MAP25 {
+    [self playMap:gameSelected :0 :25];
+}
+
+- (IBAction)MAP26 {
+    [self playMap:gameSelected :0 :26];
+}
+
+- (IBAction)MAP27 {
+    [self playMap:gameSelected :0 :27];
+}
+
+- (IBAction)MAP28 {
+    [self playMap:gameSelected :0 :28];
+}
+
+- (IBAction)MAP29 {
+    [self playMap:gameSelected :0 :29];
+}
+
+- (IBAction)MAP30 {
+    [self playMap:gameSelected :0 :30];
+}
+
+- (IBAction)MAP31 {
+    [self playMap:gameSelected :0 :31];
+}
+
+- (IBAction)MAP32 {
+    [self playMap:gameSelected :0 :32];
 }
 
 

@@ -33,11 +33,18 @@
     IBOutlet UIScrollView * mapScroller2;
     IBOutlet UIScrollView * mapScroller3;
     IBOutlet UIScrollView * mapScroller4;
+    IBOutlet UIScrollView * mapScroller5;
+    IBOutlet UIScrollView * mapScroller6;
+    IBOutlet UIScrollView * mapScroller7;
+
     
     IBOutlet UIButton *     lastElement1;
     IBOutlet UIButton *     lastElement2;
     IBOutlet UIButton *     lastElement3;
     IBOutlet UIButton *     lastElement4;
+    IBOutlet UIButton *     lastElement5;
+    IBOutlet UIButton *     lastElement6;
+    IBOutlet UIButton *     lastElement7;
     
     
     IBOutlet UIImageView *   easySelection;
@@ -56,6 +63,7 @@
     IBOutlet idLabel * playLabel;
     
     idLabelButton    * selectedMap;
+    int gameSelected;
     int episodeSelected;
     int mapSelected;
 }
@@ -66,6 +74,7 @@
 				:(int)map;
 
 - (void) setEpisode: (int) episode;
+- (void) setGame: (int) game;
 
 -(IBAction)     BackPressed;
 -(IBAction)     Play;
@@ -120,5 +129,39 @@
 -(IBAction)     E4M7;
 -(IBAction)     E4M8;
 -(IBAction)     E4M9;
+
+- (IBAction)MAP01;
+- (IBAction)MAP02;
+- (IBAction)MAP03;
+- (IBAction)MAP04;
+- (IBAction)MAP05;
+- (IBAction)MAP06;
+- (IBAction)MAP07;
+- (IBAction)MAP08;
+- (IBAction)MAP09;
+- (IBAction)MAP10;
+- (IBAction)MAP11;
+- (IBAction)MAP12;
+- (IBAction)MAP13;
+- (IBAction)MAP14;
+- (IBAction)MAP15;
+- (IBAction)MAP16;
+- (IBAction)MAP17;
+- (IBAction)MAP18;
+- (IBAction)MAP19;
+- (IBAction)MAP20;
+- (IBAction)MAP21;
+- (IBAction)MAP22;
+- (IBAction)MAP23;
+- (IBAction)MAP24;
+- (IBAction)MAP25;
+- (IBAction)MAP26;
+- (IBAction)MAP27;
+- (IBAction)MAP28;
+- (IBAction)MAP29;
+- (IBAction)MAP30;
+- (IBAction)MAP31;
+- (IBAction)MAP32;
+
 
 @end

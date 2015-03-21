@@ -26,6 +26,7 @@
 #import "SettingsMenuViewController.h"
 #import "ControlsMenuViewController.h"
 #import "LegalMenuViewController.h"
+#import "GameMenuViewController.h"
 
 /*
  ================================================================================================
@@ -46,10 +47,12 @@
 - (void)awakeFromNib {
     isHidden = YES;
     
+    /*
     char full_iwad[1024]; 
     I_FindFile( "doom.wad", ".wad", full_iwad );
 	
 	iphoneDoomStartup( full_iwad, NULL );
+     */
 }
 
 /*
@@ -189,12 +192,22 @@
  */
 - (IBAction) ResumeGamePressed {
     
-    [ gAppDelegate ShowGLView ];
     
-    ResumeGame();
+    // Switch to episode view menu.
+    Doom_GameMenuViewController *vc = nil;
+    
+    if ( IS_IPHONE_5 ) {
+        vc = [[Doom_GameMenuViewController alloc] initWithNibName:@"GameMenuViewi5" bundle:nil];
+    } else {
+        vc = [[Doom_GameMenuViewController alloc] initWithNibName:@"GameMenuView" bundle:nil];
+    }
+    [vc setLoadSaveGame:TRUE];
+    
+    [self.navigationController pushViewController:vc animated:NO];
+    [vc release];
     
     Sound_StartLocalSound( "iphone/baborted_01.wav" );
- 
+    
 }
 
 /*
@@ -205,14 +218,13 @@
 - (IBAction) NewGamePressed {
     
     // Switch to episode view menu.
-    Doom_EpisodeMenuViewController *vc = nil;
+    Doom_GameMenuViewController *vc = nil;
 	
 	if ( IS_IPHONE_5 ) {
-		vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuViewi5" bundle:nil];
+		vc = [[Doom_GameMenuViewController alloc] initWithNibName:@"GameMenuViewi5" bundle:nil];
 	} else {
-		vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuView" bundle:nil];
+		vc = [[Doom_GameMenuViewController alloc] initWithNibName:@"GameMenuView" bundle:nil];
 	}
-	
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
