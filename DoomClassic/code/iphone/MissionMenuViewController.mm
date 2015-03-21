@@ -93,6 +93,17 @@
                                             CGRectGetMaxY(lastElement5.frame)
                                             )];
     
+    [mapScroller6 setContentSize:CGSizeMake(
+                                            mapScroller6.bounds.size.width,
+                                            CGRectGetMaxY(lastElement6.frame)
+                                            )];
+    
+    [mapScroller7 setContentSize:CGSizeMake(
+                                            mapScroller7.bounds.size.width,
+                                            CGRectGetMaxY(lastElement6.frame)
+                                            )];
+
+    
     [ playButton setEnabled: NO ];
     [ playLabel setEnabled: NO ];
     
@@ -113,14 +124,21 @@
     mapScroller3.alpha = 0.0f;
     mapScroller4.alpha = 0.0f;
     mapScroller5.alpha = 0.0f;
+    mapScroller6.alpha = 0.0f;
+    mapScroller7.alpha = 0.0f;
+
 
     switch( episodeSelected ) {
             
         case 0:
             if(gameSelected == 0)
                 selectedScroller = mapScroller1;
-            else
+            else if(gameSelected == 1)
                 selectedScroller = mapScroller5;
+            else if (gameSelected ==2)
+                selectedScroller = mapScroller6;
+            else
+                selectedScroller = mapScroller7;
             break;
         case 1:
             selectedScroller = mapScroller2;
@@ -287,6 +305,10 @@
         mapTag = episode * 10 + ( map - 1 );
     else if(gameSelected == 1)
         mapTag = 100 +( map - 1);
+    else if(gameSelected == 2)
+        mapTag = 200 +( map - 1);
+    else
+        mapTag = 300 +( map - 1);
     
     selectedMap = (idLabelButton *)[ self.view viewWithTag: mapTag ];
     

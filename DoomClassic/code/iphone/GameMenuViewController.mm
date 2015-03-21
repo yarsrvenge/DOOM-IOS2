@@ -103,9 +103,13 @@
     
     char full_iwad[1024];
     if(gameSelection == 0)
-        I_FindFile( "doom.wad", ".wad", full_iwad );
+        I_FindFile( "DOOM.WAD", ".wad", full_iwad );
     else if(gameSelection == 1)
-        I_FindFile( "doom2.wad", ".wad", full_iwad );
+        I_FindFile( "DOOM2.WAD", ".wad", full_iwad );
+    else if(gameSelection == 2)
+        I_FindFile( "TNT.WAD", ".wad", full_iwad );
+    else
+        I_FindFile( "PLUTONIA.WAD", ".wad", full_iwad );
     
     // if there is a running game, but we now switched to another one reset levelHasBeenLoaded
     if(gameType != gameSelection)

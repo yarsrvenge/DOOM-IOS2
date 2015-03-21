@@ -34,12 +34,17 @@
     IBOutlet UIScrollView * mapScroller3;
     IBOutlet UIScrollView * mapScroller4;
     IBOutlet UIScrollView * mapScroller5;
+    IBOutlet UIScrollView * mapScroller6;
+    IBOutlet UIScrollView * mapScroller7;
+
     
     IBOutlet UIButton *     lastElement1;
     IBOutlet UIButton *     lastElement2;
     IBOutlet UIButton *     lastElement3;
     IBOutlet UIButton *     lastElement4;
     IBOutlet UIButton *     lastElement5;
+    IBOutlet UIButton *     lastElement6;
+    IBOutlet UIButton *     lastElement7;
     
     
     IBOutlet UIImageView *   easySelection;
