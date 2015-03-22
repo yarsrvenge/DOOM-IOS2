@@ -23,3 +23,6 @@
 @interface MainNavController : UINavigationController
 
 @end
+/*
+NSString* GetNibNameForDevice(NSString * nibName);
+*/

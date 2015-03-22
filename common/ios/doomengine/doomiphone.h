@@ -31,8 +31,11 @@
 
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-// TODO check IS_IPHONE_5 check
 #define IS_IPHONE_5 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.width == 568.0f)
+#define IS_IPHONE_6 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.width == 667.0f)
+#define IS_IPHONE_6_PLUS (IS_IPHONE && [[UIScreen mainScreen] bounds].size.width == 736.0f)
+
+
 
 #include <string.h>
 #include <stdarg.h>

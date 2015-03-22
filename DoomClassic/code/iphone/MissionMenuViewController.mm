@@ -250,7 +250,7 @@
     
     if(gameSelected > 0 && IS_IPAD)
         yscrollStop = 1150;
-    else if(gameSelected > 0 && (IS_IPHONE || IS_IPHONE_5))
+    else if(gameSelected > 0 && (IS_IPHONE))
         yscrollStop = 1250;
     
     if (selectedScroller.contentOffset.y < yscrollStop )

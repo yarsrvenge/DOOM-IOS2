@@ -49,6 +49,8 @@
 	</array>
 	<key>UIInterfaceOrientation</key>
 	<string>UIInterfaceOrientationLandscapeLeft</string>
+	<key>UILaunchStoryboardName</key>
+	<string>MainMenuView</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiredDeviceCapabilities</key>

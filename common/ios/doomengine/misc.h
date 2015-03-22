@@ -72,3 +72,6 @@ void	Cmd_ExecuteString( const char *text );
 // execute each line of the config file
 void	Cmd_ExecuteFile( const char *fullPathName );
 
+const char *GetNibNameForDevice(const char *nibName);
+
+

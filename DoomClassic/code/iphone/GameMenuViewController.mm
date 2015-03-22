@@ -11,6 +11,7 @@
 #include "iphone_delegate.h"
 #import "MissionMenuViewController.h"
 #import "EpisodeMenuViewController.h"
+#import "MainNavController.h"
 /*
  ================================================================================================
  GameMenuViewController
@@ -133,24 +134,16 @@
     {
         if(gameSelection == 0)
         {
-            Doom_EpisodeMenuViewController *vc = nil;
-            if ( IS_IPHONE_5 ) {
-                vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuViewi5" bundle:nil];
-            } else {
-                vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuView" bundle:nil];
-            }
+            Doom_EpisodeMenuViewController *vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"EpisodeMenuView") bundle:nil];
+            
             [self.navigationController pushViewController:vc animated:NO];
             
             [vc release];
         }
         else
         {
-            Doom_MissionMenuViewController *vc = nil;
-            if ( IS_IPHONE_5 ) {
-                vc = [[Doom_MissionMenuViewController alloc] initWithNibName:@"MissionMenuViewi5" bundle:nil];
-            } else {
-                vc = [[Doom_MissionMenuViewController alloc] initWithNibName:@"MissionMenuView" bundle:nil];
-            }
+            Doom_MissionMenuViewController *vc = [[Doom_MissionMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"MissionMenuView") bundle:nil];
+            
             [self.navigationController pushViewController:vc animated:NO];
             
             [vc setGame:gameSelection];

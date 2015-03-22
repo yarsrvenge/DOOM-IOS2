@@ -27,6 +27,7 @@
 #import "ControlsMenuViewController.h"
 #import "LegalMenuViewController.h"
 #import "GameMenuViewController.h"
+#import "MainNavController.h"
 
 /*
  ================================================================================================
@@ -194,13 +195,8 @@
     
     
     // Switch to episode view menu.
-    Doom_GameMenuViewController *vc = nil;
+    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"GameMenuView") bundle:nil];
     
-    if ( IS_IPHONE_5 ) {
-        vc = [[Doom_GameMenuViewController alloc] initWithNibName:@"GameMenuViewi5" bundle:nil];
-    } else {
-        vc = [[Doom_GameMenuViewController alloc] initWithNibName:@"GameMenuView" bundle:nil];
-    }
     [vc setLoadSaveGame:TRUE];
     
     [self.navigationController pushViewController:vc animated:NO];
@@ -218,13 +214,7 @@
 - (IBAction) NewGamePressed {
     
     // Switch to episode view menu.
-    Doom_GameMenuViewController *vc = nil;
-	
-	if ( IS_IPHONE_5 ) {
-		vc = [[Doom_GameMenuViewController alloc] initWithNibName:@"GameMenuViewi5" bundle:nil];
-	} else {
-		vc = [[Doom_GameMenuViewController alloc] initWithNibName:@"GameMenuView" bundle:nil];
-	}
+    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"GameMenuView") bundle:nil];
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -280,13 +270,7 @@
  */
 - (IBAction) CreditsPressed {
     
-    Doom_CreditsMenuViewController *vc = nil;
-	
-	if ( IS_IPHONE_5 ) {
-		vc = [[Doom_CreditsMenuViewController alloc] initWithNibName:@"CreditsMenuViewi5" bundle:nil];
-	} else {
-		vc = [[Doom_CreditsMenuViewController alloc] initWithNibName:@"CreditsMenuView" bundle:nil];
-	}
+    Doom_CreditsMenuViewController *vc = [[Doom_CreditsMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"CreditsMenuView") bundle:nil];
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -313,14 +297,7 @@
  */
 - (IBAction) LegalPressed {
     
-    Doom_LegalMenuViewController *vc = nil;
-	
-	if ( IS_IPHONE_5 ) {
-		vc = [[Doom_LegalMenuViewController alloc] initWithNibName:@"LegalMenuViewi5" bundle:nil];
-	} else {
-		vc = [[Doom_LegalMenuViewController alloc] initWithNibName:@"LegalMenuView" bundle:nil];
-	}
-	
+    Doom_LegalMenuViewController *vc = [[Doom_LegalMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"LegalMenuView") bundle:nil];
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -361,13 +338,7 @@
  */
 - (IBAction) ControlsOptionsPressed {
     
-    Doom_ControlsMenuViewController *vc = nil;
-	
-	if ( IS_IPHONE_5 ) {
-		vc = [[Doom_ControlsMenuViewController alloc] initWithNibName:@"ControlsMenuViewi5" bundle:nil];
-	} else {
-		vc = [[Doom_ControlsMenuViewController alloc] initWithNibName:@"ControlsMenuView" bundle:nil];
-	}
+    Doom_ControlsMenuViewController *vc = [[Doom_ControlsMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"ControlsMenuView") bundle:nil];
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -384,13 +355,7 @@
 - (IBAction) SettingsOptionsPressed {
     
 
-	Doom_SettingsMenuViewController *vc = nil;
-	
-	if ( IS_IPHONE_5 ) {
-		vc = [[Doom_SettingsMenuViewController alloc] initWithNibName:@"SettingsMenuViewi5" bundle:nil];
-	} else {
-		vc = [[Doom_SettingsMenuViewController alloc] initWithNibName:@"SettingsMenuView" bundle:nil];
-	}
+	Doom_SettingsMenuViewController *vc = [[Doom_SettingsMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"SettingsMenuViewi5") bundle:nil];
 	
      [self.navigationController pushViewController:vc animated:NO];
      [vc release];
