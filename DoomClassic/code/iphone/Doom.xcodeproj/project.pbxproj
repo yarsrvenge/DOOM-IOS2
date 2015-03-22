@@ -55,6 +55,7 @@
 		C8DB8A5F14BB88AC0006467C /* OpenGLView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5714BB88AC0006467C /* OpenGLView~ipad.xib */; };
 		C8DB8A6014BB88AC0006467C /* SettingsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5814BB88AC0006467C /* SettingsMenuView~ipad.xib */; };
 		D217F8741ABD3BEC00AA4A36 /* GameMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D217F8731ABD3BEC00AA4A36 /* GameMenuView~ipad.xib */; };
+		D217F8821ABE953C00AA4A36 /* GameMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D217F8811ABE953C00AA4A36 /* GameMenuView.xib */; };
 		D250C9991ABCAB8900355330 /* GameMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */; };
 		D250C99B1ABCAD6600355330 /* GameMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */; };
 		D250C9A91ABD893D00355330 /* DOOM2.WAD in Resources */ = {isa = PBXBuildFile; fileRef = D250C9A81ABD893D00355330 /* DOOM2.WAD */; };
@@ -211,6 +212,7 @@
 		C8DB8A5714BB88AC0006467C /* OpenGLView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "OpenGLView~ipad.xib"; sourceTree = "<group>"; };
 		C8DB8A5814BB88AC0006467C /* SettingsMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SettingsMenuView~ipad.xib"; sourceTree = "<group>"; };
 		D217F8731ABD3BEC00AA4A36 /* GameMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "GameMenuView~ipad.xib"; sourceTree = "<group>"; };
+		D217F8811ABE953C00AA4A36 /* GameMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameMenuView.xib; sourceTree = "<group>"; };
 		D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameMenuViewi5.xib; sourceTree = "<group>"; };
 		D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameMenuViewController.mm; sourceTree = "<group>"; };
 		D250C99C1ABCAD9C00355330 /* GameMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenuViewController.h; sourceTree = "<group>"; };
@@ -409,6 +411,7 @@
 		C8012E4B14B510BA00B0E213 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				D217F8811ABE953C00AA4A36 /* GameMenuView.xib */,
 				C8012E8C14B6750B00B0E213 /* MissionMenuView.xib */,
 				C8012E8614B6722A00B0E213 /* LegalMenuView.xib */,
 				C8012E8114B6709C00B0E213 /* SettingsMenuView.xib */,
@@ -803,6 +806,7 @@
 				D2B96EF01ABC268C00179F75 /* SettingsButton_Highlighted.png in Resources */,
 				D2B96EE21ABC268C00179F75 /* LayoutDualButton.png in Resources */,
 				D2B96EE71ABC268C00179F75 /* MapOverlay.png in Resources */,
+				D217F8821ABE953C00AA4A36 /* GameMenuView.xib in Resources */,
 				D2B96EC51ABC268C00179F75 /* Default-Landscape~ipad.png in Resources */,
 				D2B96EC61ABC268C00179F75 /* Default-Portrait~ipad.png in Resources */,
 				C8DB8A5D14BB88AC0006467C /* MainMenuView~ipad.xib in Resources */,
