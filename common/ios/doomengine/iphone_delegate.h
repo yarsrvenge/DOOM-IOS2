@@ -21,6 +21,7 @@
 #import <UIKit/UIKit.h>
 #import <UIKit/UIAccelerometer.h>
 #import "iphone_glViewController.h"
+#import <Foundation/Foundation.h>
 
 @class EAGLView;
 
@@ -45,6 +46,8 @@ extern iphoneApp * gAppDelegate;
 - (void) ShowGLView;
 - (void) HideGLView;
 - (void) PopGLView;
+
+- (NSString*) GetNibNameForDevice:(NSString*) nibName;
 
 @end
 

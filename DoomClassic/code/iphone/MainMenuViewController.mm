@@ -27,7 +27,6 @@
 #import "ControlsMenuViewController.h"
 #import "LegalMenuViewController.h"
 #import "GameMenuViewController.h"
-#import "MainNavController.h"
 
 /*
  ================================================================================================
@@ -195,7 +194,7 @@
     
     
     // Switch to episode view menu.
-    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"GameMenuView") bundle:nil];
+    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"GameMenuView"] bundle:nil];
     
     [vc setLoadSaveGame:TRUE];
     
@@ -214,7 +213,7 @@
 - (IBAction) NewGamePressed {
     
     // Switch to episode view menu.
-    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"GameMenuView") bundle:nil];
+    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"GameMenuView"] bundle:nil];
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -270,7 +269,7 @@
  */
 - (IBAction) CreditsPressed {
     
-    Doom_CreditsMenuViewController *vc = [[Doom_CreditsMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"CreditsMenuView") bundle:nil];
+    Doom_CreditsMenuViewController *vc = [[Doom_CreditsMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"CreditsMenuView"] bundle:nil];
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -297,7 +296,7 @@
  */
 - (IBAction) LegalPressed {
     
-    Doom_LegalMenuViewController *vc = [[Doom_LegalMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"LegalMenuView") bundle:nil];
+    Doom_LegalMenuViewController *vc = [[Doom_LegalMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"LegalMenuView"] bundle:nil];
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -338,7 +337,7 @@
  */
 - (IBAction) ControlsOptionsPressed {
     
-    Doom_ControlsMenuViewController *vc = [[Doom_ControlsMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"ControlsMenuView") bundle:nil];
+    Doom_ControlsMenuViewController *vc = [[Doom_ControlsMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"ControlsMenuView"] bundle:nil];
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -355,7 +354,7 @@
 - (IBAction) SettingsOptionsPressed {
     
 
-	Doom_SettingsMenuViewController *vc = [[Doom_SettingsMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"SettingsMenuViewi5") bundle:nil];
+    Doom_SettingsMenuViewController *vc = [[Doom_SettingsMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"SettingsMenuViewi5"] bundle:nil];
 	
      [self.navigationController pushViewController:vc animated:NO];
      [vc release];

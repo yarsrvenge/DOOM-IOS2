@@ -49,23 +49,3 @@
 }
 
 @end
-/*
-NSString* GetNibNameForDevice(NSString *nibName)
-{
-    NSString *extension = @"";
-    
-    if ( IS_IPHONE_5 ) {
-        extension = @"i5";
-    }
-    else if(IS_IPHONE_6)
-    {
-        extension = @"i6";
-    }
-    else if(IS_IPHONE_6_PLUS)
-    {
-        extension = @"i6"; //@"i6plus";
-    }
-    
-    return [NSString stringWithFormat:@"%@%@", nibName, extension];
-}
-*/

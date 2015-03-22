@@ -89,22 +89,3 @@ int HashString( const char *string ) {
 	return hash;
 }
 
-const char *GetNibNameForDevice(const char *nibName)
-{
-    char *extension = "";
-    if(IS_IPHONE_5){
-        extension = "i5";
-    }
-    else if(IS_IPHONE_6) {
-        extension = "i6";
-    }
-    
-    static char	string[ 1024 ];
-    
-    (void)vsnprintf( string, sizeof( string ), nibName, extension);
-
-    string[ sizeof( string ) - 1 ] = '\0';
-    
-    return string;
-}
-

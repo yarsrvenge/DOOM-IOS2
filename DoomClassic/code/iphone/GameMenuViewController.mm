@@ -11,7 +11,6 @@
 #include "iphone_delegate.h"
 #import "MissionMenuViewController.h"
 #import "EpisodeMenuViewController.h"
-#import "MainNavController.h"
 /*
  ================================================================================================
  GameMenuViewController
@@ -134,7 +133,7 @@
     {
         if(gameSelection == 0)
         {
-            Doom_EpisodeMenuViewController *vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"EpisodeMenuView") bundle:nil];
+            Doom_EpisodeMenuViewController *vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"EpisodeMenuView"] bundle:nil];
             
             [self.navigationController pushViewController:vc animated:NO];
             
@@ -142,7 +141,7 @@
         }
         else
         {
-            Doom_MissionMenuViewController *vc = [[Doom_MissionMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"MissionMenuView") bundle:nil];
+            Doom_MissionMenuViewController *vc = [[Doom_MissionMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"MissionMenuView"] bundle:nil];
             
             [self.navigationController pushViewController:vc animated:NO];
             

@@ -21,7 +21,6 @@
 #import "MainMenuViewController.h"
 #import "MainNavController.h"
 #include "doomiphone.h"
-#include "iphone_common.h"
 
 @implementation DoomApp
 
@@ -31,14 +30,14 @@
 	
     NSLog(@"width: %f height: %f", [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
 
-    Doom_MainMenuViewController *rootController = [[Doom_MainMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"MainMenuView") bundle:nil];
+    Doom_MainMenuViewController *rootController = [[Doom_MainMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"MainMenuView"] bundle:nil];
 	
     // Create a Navigation Controller for Pushing/Popping Views.
     navigationController = [[MainNavController alloc] initWithRootViewController:rootController];
     [navigationController setNavigationBarHidden:YES];
     [rootController release];
     
-    openGLViewController = [ [ iphone_glViewController alloc] initWithNibName:GetNibNameForDevice(@"OpenGLView") bundle:nil ];
+    openGLViewController = [ [ iphone_glViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"OpenGLView"] bundle:nil ];
     [ openGLViewController StopDisplay];
 }
 

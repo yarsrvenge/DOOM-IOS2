@@ -22,7 +22,6 @@
 #include "doomiphone.h"
 #include "iphone_delegate.h"
 #import "MissionMenuViewController.h"
-#import "MainNavController.h"
 /*
  ================================================================================================
  EpisodeMenuViewController
@@ -108,7 +107,7 @@
  */
 - (IBAction) NextToMissions {
     
-    Doom_MissionMenuViewController *vc = [[Doom_MissionMenuViewController alloc] initWithNibName:GetNibNameForDevice(@"MissionMenuViewi5") bundle:nil];
+    Doom_MissionMenuViewController *vc = [[Doom_MissionMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"MissionMenuViewi5"] bundle:nil];
 		
     [self.navigationController pushViewController:vc animated:NO];
     [vc setEpisode:episodeSelection ];
