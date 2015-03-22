@@ -1526,7 +1526,8 @@ void G_LoadGame(int slot, boolean command)
   } else {
     // Do the old thing, immediate load
     gameaction = ga_loadgame;
-    forced_loadgame = false;
+    #warning FIXME checksum:  was false, but issues when loading savegames (checksum seems to be different)
+    forced_loadgame = true;
     savegameslot = slot;
     demoplayback = false;
     // Don't stay in netgame state if loading single player save
@@ -1643,6 +1644,7 @@ void G_DoLoadGame(void)
   {  // killough 3/16/98: check lump name checksum (independent of order)
     uint_64_t checksum = 0;
 
+    #warning FIXME checksum:
     checksum = G_Signature();
 
     if (memcmp(&checksum, save_p, sizeof checksum)) {
@@ -1834,6 +1836,7 @@ void G_SaveGameName(char *name, size_t size, int slot, boolean isDemoplayback)
   save_p += VERSIONSIZE;
 
   { /* killough 3/16/98, 12/98: store lump name checksum */
+    #warning FIXME checksum:
     uint_64_t checksum = G_Signature();
     memcpy(save_p, &checksum, sizeof checksum);
     save_p += sizeof checksum;
