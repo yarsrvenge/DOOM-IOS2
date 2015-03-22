@@ -221,16 +221,16 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 {
     NSString *extension = @"";
     
-    if ( IS_IPHONE_5 ) {
+    if ( IS_IPHONE_5 || (![nibName isEqualToString:@"OpenGLView"] && (IS_IPHONE_6 || IS_IPHONE_6_PLUS))) {
         extension = @"i5";
     }
-    else if(IS_IPHONE_6)
+    else if(IS_IPHONE_6 && [nibName isEqualToString:@"OpenGLView"])
     {
         extension = @"i6";
     }
-    else if(IS_IPHONE_6_PLUS)
+    else if(IS_IPHONE_6_PLUS && [nibName isEqualToString:@"OpenGLView"])
     {
-        extension = @"i6"; //@"i6plus";
+        extension = @"i6plus";
     }
     
     return [NSString stringWithFormat:@"%@%@", nibName, extension];
