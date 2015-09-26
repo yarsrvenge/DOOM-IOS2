@@ -107,7 +107,7 @@
  */
 - (IBAction) NextToMissions {
     
-    Doom_MissionMenuViewController *vc = [[Doom_MissionMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"MissionMenuViewi5"] bundle:nil];
+    Doom_MissionMenuViewController *vc = [[Doom_MissionMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"MissionMenuView"] bundle:nil];
 		
     [self.navigationController pushViewController:vc animated:NO];
     [vc setEpisode:episodeSelection ];

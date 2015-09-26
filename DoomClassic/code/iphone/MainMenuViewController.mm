@@ -354,7 +354,7 @@
 - (IBAction) SettingsOptionsPressed {
     
 
-    Doom_SettingsMenuViewController *vc = [[Doom_SettingsMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"SettingsMenuViewi5"] bundle:nil];
+    Doom_SettingsMenuViewController *vc = [[Doom_SettingsMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"SettingsMenuView"] bundle:nil];
 	
      [self.navigationController pushViewController:vc animated:NO];
      [vc release];
