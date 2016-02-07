@@ -587,6 +587,20 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
 			return;
 		}
 	}
+    
+    // force touch stuff
+    bool fireWeapon = false;
+    if(huds.turnStick.touch != nil && huds.turnStick.touch->forceTouch)
+    {
+        fireWeapon = true;
+    }
+    
+    if(huds.sideStick.touch != nil && huds.sideStick.touch->forceTouch)
+    {
+        //fireWeapon = true;
+        //weaponCycle  = true;
+        cmd->buttons |= BT_USE;
+    }
 	
 	//------------------------
 	// gameplay controls
@@ -626,9 +640,14 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
 		int y = huds.fire.y - ( huds.fire.drawHeight >> 1 );
 		int w = huds.fire.drawWidth << 1;
 		int h = huds.fire.drawHeight << 1;
-		if ( AnyTouchInBounds( x, y, w, h ) ) {
-			cmd->buttons |= BT_ATTACK;
-			huds.fire.buttonFlags |= BF_DRAW_ACTIVE;	// draw with color
+        // if fire button is pressed or turnstick is force-pressed
+		if (AnyTouchInBounds( x, y, w, h ) || fireWeapon)
+        {
+            if(huds.fire.touch || fireWeapon)
+            {
+                cmd->buttons |= BT_ATTACK;
+                huds.fire.buttonFlags |= BF_DRAW_ACTIVE;	// draw with color
+            }
 		} else {
 			huds.fire.buttonFlags &= ~BF_DRAW_ACTIVE;
 		}

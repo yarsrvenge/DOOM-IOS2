@@ -435,6 +435,7 @@ void ResumeGame();
 
 typedef struct touch_s {
 	boolean	down;
+    boolean forceTouch;
 	int		x, y;
 //	int		prevX, prevY;	// will be set to x, y on first touch, copied after each game frame
 	int		stateCount;		// set to 1 on first event that state changes, incremented each game frame (-1 is a special tapped-and-released code)

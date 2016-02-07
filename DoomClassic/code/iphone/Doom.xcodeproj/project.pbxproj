@@ -22,7 +22,6 @@
 		138FC9CB17F216C300D94C5F /* prboom.wad in Resources */ = {isa = PBXBuildFile; fileRef = 138FC9C817F2165D00D94C5F /* prboom.wad */; };
 		1391CE151882E5A30049671C /* libidmobilelib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1391CE141882E5A30049671C /* libidmobilelib.a */; };
 		1391CE171882E5F40049671C /* libprboom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1391CE161882E5F40049671C /* libprboom.a */; };
-		13E3CC5F17F236840075D40A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E3CC5E17F236840075D40A /* GameKit.framework */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		3DF31FA3148C336400C66CD7 /* libdoomengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF31F8A148C30F100C66CD7 /* libdoomengine.a */; };
 		4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */; };
@@ -57,6 +56,7 @@
 		D217F8741ABD3BEC00AA4A36 /* GameMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D217F8731ABD3BEC00AA4A36 /* GameMenuView~ipad.xib */; };
 		D217F8821ABE953C00AA4A36 /* GameMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D217F8811ABE953C00AA4A36 /* GameMenuView.xib */; };
 		D217F8A31ABEA6B300AA4A36 /* OpenGLViewi6.xib in Resources */ = {isa = PBXBuildFile; fileRef = D217F89C1ABEA6B300AA4A36 /* OpenGLViewi6.xib */; };
+		D225DC771C67ACB1003164B2 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D225DC761C67ACB1003164B2 /* GameKit.framework */; };
 		D250C9991ABCAB8900355330 /* GameMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */; };
 		D250C99B1ABCAD6600355330 /* GameMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */; };
 		D250C9A91ABD893D00355330 /* DOOM2.WAD in Resources */ = {isa = PBXBuildFile; fileRef = D250C9A81ABD893D00355330 /* DOOM2.WAD */; };
@@ -170,7 +170,6 @@
 		138FC9C817F2165D00D94C5F /* prboom.wad */ = {isa = PBXFileReference; lastKnownFileType = file; name = prboom.wad; path = ../../base/prboom.wad; sourceTree = "<group>"; };
 		1391CE141882E5A30049671C /* libidmobilelib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libidmobilelib.a; path = "../../../../DerivedData/Build/Products/Debug-iphoneos/libidmobilelib.a"; sourceTree = "<group>"; };
 		1391CE161882E5F40049671C /* libprboom.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprboom.a; path = "../../../../DerivedData/Build/Products/Debug-iphoneos/libprboom.a"; sourceTree = "<group>"; };
-		13E3CC5E17F236840075D40A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Doom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3DF31F85148C30F100C66CD7 /* doomengine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = doomengine.xcodeproj; path = ../../../common/ios/doomengine.xcodeproj; sourceTree = "<group>"; };
@@ -216,6 +215,7 @@
 		D217F8731ABD3BEC00AA4A36 /* GameMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "GameMenuView~ipad.xib"; sourceTree = "<group>"; };
 		D217F8811ABE953C00AA4A36 /* GameMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameMenuView.xib; sourceTree = "<group>"; };
 		D217F89C1ABEA6B300AA4A36 /* OpenGLViewi6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenGLViewi6.xib; sourceTree = "<group>"; };
+		D225DC761C67ACB1003164B2 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameMenuViewi5.xib; sourceTree = "<group>"; };
 		D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameMenuViewController.mm; sourceTree = "<group>"; };
 		D250C99C1ABCAD9C00355330 /* GameMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenuViewController.h; sourceTree = "<group>"; };
@@ -303,7 +303,7 @@
 				C8AEB0DD1A7AD73500A5ED1B /* GameController.framework in Frameworks */,
 				1391CE171882E5F40049671C /* libprboom.a in Frameworks */,
 				1391CE151882E5A30049671C /* libidmobilelib.a in Frameworks */,
-				13E3CC5F17F236840075D40A /* GameKit.framework in Frameworks */,
+				D225DC771C67ACB1003164B2 /* GameKit.framework in Frameworks */,
 				3DF31FA3148C336400C66CD7 /* libdoomengine.a in Frameworks */,
 				43E8D4E00F51B48B003F09B2 /* OpenAL.framework in Frameworks */,
 				4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */,
@@ -389,10 +389,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D225DC761C67ACB1003164B2 /* GameKit.framework */,
 				C8AEB0DC1A7AD73500A5ED1B /* GameController.framework */,
 				1391CE161882E5F40049671C /* libprboom.a */,
 				1391CE141882E5A30049671C /* libidmobilelib.a */,
-				13E3CC5E17F236840075D40A /* GameKit.framework */,
 				4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */,
 				EDD2760411C2B19E004A9B9B /* CoreGraphics.framework */,
 				EDD2760611C2B19E004A9B9B /* Foundation.framework */,
@@ -965,7 +965,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Work/DerivedData/Build/Products/Debug-iphoneos",
@@ -999,7 +999,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Work/DerivedData/Build/Products/Debug-iphoneos",
@@ -1088,7 +1088,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Work/DerivedData/Build/Products/Debug-iphoneos",
@@ -1291,7 +1291,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Work/DerivedData/Build/Products/Debug-iphoneos",

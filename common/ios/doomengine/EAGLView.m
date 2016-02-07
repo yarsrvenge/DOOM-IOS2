@@ -144,7 +144,7 @@ CAEAGLLayer *eaglLayer;
     }
     return self;
 }
-
+ 
 - (void) handleTouches:(UIEvent*)event {
 	int touchCount = 0;
 	static int previousTouchCount;
@@ -163,6 +163,19 @@ CAEAGLLayer *eaglLayer;
         // Scale Touches with the screen resolution.
         touchLocation.x *= screenResolutionScale;
         touchLocation.y *= screenResolutionScale;
+        bool isForceTouch;
+        
+        CGFloat maximumPossibleForce = myTouch.maximumPossibleForce;
+        if(myTouch.force > 0)
+        {
+            CGFloat force = myTouch.force;
+            CGFloat normalizedForce = force/maximumPossibleForce;
+            isForceTouch = normalizedForce > 0.75;
+            if(isForceTouch)
+            {
+                printf("ForceTouch %f maxForce: %f normalized %f\n", force, maximumPossibleForce, normalizedForce);
+            }
+        }
         
 		const int x = touchLocation.x;
 		const int y = touchLocation.y;
@@ -199,6 +212,7 @@ CAEAGLLayer *eaglLayer;
 //					printf( "Tap release touch on a reuse\n" );
 				} else {
 					sysTouches[minIndex].down = false;
+                    sysTouches[minIndex].forceTouch = false;
 					sysTouches[minIndex].stateCount = 1;
 //					printf( "Release touch on a reuse\n" );
 				}
@@ -211,11 +225,12 @@ CAEAGLLayer *eaglLayer;
 //					printf( "Drag touch on a reuse\n" );
 				}
 				sysTouches[minIndex].down = true;
+                sysTouches[minIndex].forceTouch = isForceTouch;
 			}
 			touchThisSequence[minIndex] = true;
 		} else {
 			if ( myTouch.phase != UITouchPhaseBegan ) {
-				printf( "Non-local touch wasn't a begin\n" );
+                printf( "Non-local touch wasn't a begin\n");
 			} else {
 				// allocate a new one
 				// grab the next rover spot
@@ -239,6 +254,7 @@ CAEAGLLayer *eaglLayer;
 				t2->x = x;
 				t2->y = y;
 				t2->down = true;
+                t2->forceTouch = isForceTouch;
 				t2->controlOwner = NULL;
 				t2->stateCount = 1;
 				
@@ -254,6 +270,7 @@ CAEAGLLayer *eaglLayer;
 		if ( sysTouches[i].down && !touchThisSequence[i] ) {
 			printf( "clearing touch %i\n", i );
 			sysTouches[i].down = false;
+            sysTouches[i].forceTouch = false;
 			sysTouches[i].stateCount = 0;
 			touchCount--;
 		}
