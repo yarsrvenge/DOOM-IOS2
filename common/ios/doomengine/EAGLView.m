@@ -144,7 +144,7 @@ CAEAGLLayer *eaglLayer;
     }
     return self;
 }
- 
+
 - (void) handleTouches:(UIEvent*)event {
 	int touchCount = 0;
 	static int previousTouchCount;
