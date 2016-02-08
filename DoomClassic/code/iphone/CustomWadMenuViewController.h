@@ -42,6 +42,7 @@
     int episodeSelected;
     int mapSelected;
     NSString *selectPwad;
+    BOOL loadSaveGame;
 }
 
 - (int)  getSkill;

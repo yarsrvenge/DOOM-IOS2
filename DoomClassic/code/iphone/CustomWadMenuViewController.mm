@@ -103,7 +103,7 @@
         [button addTarget:self
                    action:@selector(MAP01:)
          forControlEvents:UIControlEventTouchUpInside];
-        [button setTitle:[value uppercaseString] forState:UIControlStateNormal];
+        [button setTitle:value forState:UIControlStateNormal];
         [button.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:18.0]];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor yellowColor] forState:UIControlStateFocused];
@@ -240,10 +240,17 @@
     
     [self.navigationController pushViewController:vc animated:NO];
     [vc SetPwad: [selectPwad copy]];
+    [vc setLoadSaveGame:loadSaveGame];
     [vc release];
     
     Sound_StartLocalSound( "iphone/baborted_01.wav" );
 }
+
+- (void)setLoadSaveGame:(BOOL)loadGame
+{
+    loadSaveGame = loadGame;
+}
+
 
 /*
  ========================
