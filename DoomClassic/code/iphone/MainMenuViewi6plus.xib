@@ -36,11 +36,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SubMenuBackground.png" id="466">
-                            <rect key="frame" x="0.0" y="-16" width="480" height="301"/>
+                            <rect key="frame" x="0.0" y="-16" width="640" height="414"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="469" userLabel="More Games Button" customClass="Banner_SubItem">
-                            <rect key="frame" x="117" y="49" width="104" height="93"/>
+                            <rect key="frame" x="189" y="49" width="104" height="93"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                             <state key="normal" image="SubMenuButton.png">
@@ -56,7 +56,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="467" userLabel="Demo Button" customClass="Banner_SubItem">
-                            <rect key="frame" x="262" y="49" width="104" height="93"/>
+                            <rect key="frame" x="334" y="49" width="104" height="93"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                             <state key="normal" image="SubMenuButton.png">
@@ -72,14 +72,14 @@
                             </connections>
                         </button>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="#MORE_GAMES" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="465" customClass="idLabel">
-                            <rect key="frame" x="110" y="113" width="125" height="23"/>
+                            <rect key="frame" x="182" y="113" width="125" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.87843137979999997" green="0.3843137324" blue="0.1137254909" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" text="#DEMO" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="468" customClass="idLabel">
-                            <rect key="frame" x="249" y="113" width="136" height="23"/>
+                            <rect key="frame" x="321" y="113" width="136" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.87843137979999997" green="0.3843137324" blue="0.1137254909" alpha="1" colorSpace="calibratedRGB"/>
@@ -93,11 +93,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SubMenuBackground.png" id="464">
-                            <rect key="frame" x="0.0" y="-16" width="480" height="301"/>
+                            <rect key="frame" x="0.0" y="-16" width="640" height="414"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="463" userLabel="Legal Button" customClass="Banner_SubItem">
-                            <rect key="frame" x="44" y="49" width="104" height="93"/>
+                            <rect key="frame" x="127" y="49" width="104" height="93"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                             <state key="normal" image="SubMenuButton.png">
@@ -113,7 +113,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="462" userLabel="Credits Button" customClass="Banner_SubItem">
-                            <rect key="frame" x="326" y="49" width="104" height="93"/>
+                            <rect key="frame" x="409" y="49" width="104" height="93"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                             <state key="normal" image="SubMenuButton.png">
@@ -129,7 +129,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="461" userLabel="Support Button" customClass="Banner_SubItem">
-                            <rect key="frame" x="188" y="49" width="104" height="93"/>
+                            <rect key="frame" x="271" y="49" width="104" height="93"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                             <state key="normal" image="SubMenuButton.png">
@@ -145,21 +145,21 @@
                             </connections>
                         </button>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="#LEGAL" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="460" customClass="idLabel">
-                            <rect key="frame" x="41" y="113" width="110" height="23"/>
+                            <rect key="frame" x="124" y="113" width="110" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.87843137979999997" green="0.3843137324" blue="0.1137254909" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="#CREDITS" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="458" customClass="idLabel">
-                            <rect key="frame" x="323" y="113" width="110" height="23"/>
+                            <rect key="frame" x="406" y="113" width="110" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.87843137979999997" green="0.3843137324" blue="0.1137254909" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" text="#SUPPORT" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="459" customClass="idLabel">
-                            <rect key="frame" x="172" y="113" width="136" height="23"/>
+                            <rect key="frame" x="255" y="113" width="136" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.87843137979999997" green="0.3843137324" blue="0.1137254909" alpha="1" colorSpace="calibratedRGB"/>
@@ -173,11 +173,11 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SubMenuBackground.png" id="457">
-                            <rect key="frame" x="5" y="5" width="480" height="301"/>
+                            <rect key="frame" x="5" y="5" width="640" height="414"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="456" userLabel="New Game Button" customClass="Banner_SubItem">
-                            <rect key="frame" x="120" y="69" width="104" height="93"/>
+                            <rect key="frame" x="170" y="69" width="104" height="93"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                             <state key="normal" image="SubMenuButton.png">
@@ -193,7 +193,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="454" userLabel="Resume Game Button" customClass="Banner_SubItem">
-                            <rect key="frame" x="265" y="69" width="104" height="93"/>
+                            <rect key="frame" x="315" y="69" width="104" height="93"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                             <state key="normal" image="SubMenuButton.png">
@@ -209,7 +209,7 @@
                             </connections>
                         </button>
                         <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="452" userLabel="Multiplayer Button" customClass="Banner_SubItem">
-                            <rect key="frame" x="316" y="69" width="104" height="93"/>
+                            <rect key="frame" x="366" y="69" width="104" height="93"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                             <state key="normal" image="SubMenuButton.png">
@@ -225,21 +225,21 @@
                             </connections>
                         </button>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="#NEW_GAME" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="455" customClass="idLabel">
-                            <rect key="frame" x="117" y="133" width="110" height="23"/>
+                            <rect key="frame" x="167" y="133" width="110" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.87843137979999997" green="0.3843137324" blue="0.1137254909" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                         <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="#MULTIPLAYER" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="451" customClass="idLabel">
-                            <rect key="frame" x="313" y="133" width="110" height="23"/>
+                            <rect key="frame" x="363" y="133" width="110" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                             <color key="textColor" red="0.87843137979999997" green="0.3843137324" blue="0.1137254909" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" text="#RESUME_GAME" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="453" customClass="idLabel">
-                            <rect key="frame" x="249" y="133" width="136" height="23"/>
+                            <rect key="frame" x="299" y="133" width="136" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.87843137979999997" green="0.3843137324" blue="0.1137254909" alpha="1" colorSpace="calibratedRGB"/>
@@ -253,11 +253,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SubMenuBackground.png" id="446">
-                            <rect key="frame" x="0.0" y="-16" width="480" height="301"/>
+                            <rect key="frame" x="0.0" y="-16" width="640" height="414"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="450" userLabel="Controls Button" customClass="Banner_SubItem">
-                            <rect key="frame" x="117" y="49" width="104" height="93"/>
+                            <rect key="frame" x="187" y="49" width="104" height="93"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                             <state key="normal" image="SubMenuButton.png">
@@ -273,7 +273,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="447" userLabel="SettingsButton" customClass="Banner_SubItem">
-                            <rect key="frame" x="262" y="49" width="104" height="93"/>
+                            <rect key="frame" x="332" y="49" width="104" height="93"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                             <state key="normal" image="SubMenuButton.png">
@@ -289,14 +289,14 @@
                             </connections>
                         </button>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="#CONTROLS" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="448" customClass="idLabel">
-                            <rect key="frame" x="114" y="113" width="110" height="23"/>
+                            <rect key="frame" x="184" y="113" width="110" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.87843137979999997" green="0.3843137324" blue="0.1137254909" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" text="#OPTIONS" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="449" customClass="idLabel">
-                            <rect key="frame" x="249" y="113" width="136" height="23"/>
+                            <rect key="frame" x="319" y="113" width="136" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.87843137979999997" green="0.3843137324" blue="0.1137254909" alpha="1" colorSpace="calibratedRGB"/>
