@@ -77,8 +77,16 @@
     NSString* inboxPath = [documentsDirectory stringByAppendingPathComponent:@"Inbox"];
     NSArray *dirFiles = [filemgr contentsOfDirectoryAtPath:inboxPath error:nil];
     
+    dirFiles = [NSArray arrayWithObjects: @"Test.wad", @"Test2.wad", @"Test3.wad", @"Test4.wad" , @"Test5.wad", nil];
+    if(dirFiles.count == 0)
+    {
+        [self Play];
+        return;
+    }
+    
+    
     UIButton *button;
-    int y = 7;
+    int y = 15;
     for (id dir in dirFiles) {
         // do something with object
         
@@ -96,9 +104,13 @@
                    action:@selector(MAP01:)
          forControlEvents:UIControlEventTouchUpInside];
         [button setTitle:[value uppercaseString] forState:UIControlStateNormal];
-        button.titleLabel.textColor = [UIColor redColor];
         [button.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:18.0]];
-        button.frame = CGRectMake(7, y, 270, 22.0);
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor yellowColor] forState:UIControlStateFocused];
+        
+
+
+        button.frame = CGRectMake(15, y, 270, 22.0);
         [mapScroller5 addSubview:button];
         y += 45;
     }

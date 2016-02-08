@@ -60,6 +60,7 @@
 		D225DC821C688913003164B2 /* CustomWadMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = D225DC811C688913003164B2 /* CustomWadMenuViewi5.xib */; };
 		D225DC841C688A9F003164B2 /* CustomWadMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D225DC831C688A9F003164B2 /* CustomWadMenuViewController.mm */; };
 		D225DC891C68C631003164B2 /* MainMenuViewi6plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = D225DC881C68C631003164B2 /* MainMenuViewi6plus.xib */; };
+		D225DC901C68C920003164B2 /* CustomWadMenuViewi6plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = D225DC8F1C68C920003164B2 /* CustomWadMenuViewi6plus.xib */; };
 		D250C9991ABCAB8900355330 /* GameMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */; };
 		D250C99B1ABCAD6600355330 /* GameMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */; };
 		D250C9A91ABD893D00355330 /* DOOM2.WAD in Resources */ = {isa = PBXBuildFile; fileRef = D250C9A81ABD893D00355330 /* DOOM2.WAD */; };
@@ -223,6 +224,7 @@
 		D225DC831C688A9F003164B2 /* CustomWadMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomWadMenuViewController.mm; sourceTree = "<group>"; };
 		D225DC851C688AB3003164B2 /* CustomWadMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWadMenuViewController.h; sourceTree = "<group>"; };
 		D225DC881C68C631003164B2 /* MainMenuViewi6plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewi6plus.xib; sourceTree = "<group>"; };
+		D225DC8F1C68C920003164B2 /* CustomWadMenuViewi6plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomWadMenuViewi6plus.xib; sourceTree = "<group>"; };
 		D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameMenuViewi5.xib; sourceTree = "<group>"; };
 		D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameMenuViewController.mm; sourceTree = "<group>"; };
 		D250C99C1ABCAD9C00355330 /* GameMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenuViewController.h; sourceTree = "<group>"; };
@@ -662,6 +664,7 @@
 		D2C143711ABED0520060F2FF /* iphone5.5inch */ = {
 			isa = PBXGroup;
 			children = (
+				D225DC8F1C68C920003164B2 /* CustomWadMenuViewi6plus.xib */,
 				D225DC881C68C631003164B2 /* MainMenuViewi6plus.xib */,
 				D2C143721ABED0B30060F2FF /* OpenGLViewi6plus.xib */,
 			);
@@ -824,6 +827,7 @@
 				132AC2E41802F15C00884E11 /* MissionMenuViewi5.xib in Resources */,
 				132AC2E61802F15C00884E11 /* SettingsMenuViewi5.xib in Resources */,
 				C8DB8A5914BB88AC0006467C /* ControlsMenuView~ipad.xib in Resources */,
+				D225DC901C68C920003164B2 /* CustomWadMenuViewi6plus.xib in Resources */,
 				D250C9991ABCAB8900355330 /* GameMenuViewi5.xib in Resources */,
 				D2B96EDA1ABC268C00179F75 /* Episode2Background_Highlighted.png in Resources */,
 				C8DB8A5A14BB88AC0006467C /* CreditsMenuView~ipad.xib in Resources */,
