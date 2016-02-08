@@ -21,6 +21,8 @@
 #import "CustomWadMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
+#import "GameMenuViewController.h"
+
 
 /*
  ================================================================================================
@@ -68,6 +70,7 @@
 {
     [super viewDidLoad];
 
+
     NSFileManager *filemgr = [NSFileManager defaultManager];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -78,28 +81,32 @@
     int y = 7;
     for (id dir in dirFiles) {
         // do something with object
+        
         NSString *value = (NSString *)dir;
-    
+        
+        /*
+        NSArray *components = [NSArray arrayWithObjects:inboxPath, value, nil];
+        
+        NSString *path = [NSString pathWithComponents:components];
+        [filemgr removeItemAtPath:path error:NULL];
+    */
+        
         button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button addTarget:self
-                   action:@selector(aMethod:)
+                   action:@selector(MAP01:)
          forControlEvents:UIControlEventTouchUpInside];
         [button setTitle:[value uppercaseString] forState:UIControlStateNormal];
+        button.titleLabel.textColor = [UIColor redColor];
+        [button.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:18.0]];
         button.frame = CGRectMake(7, y, 270, 22.0);
         [mapScroller5 addSubview:button];
         y += 45;
     }
-
-    
     
     [mapScroller5 setContentSize:CGSizeMake(
                                             mapScroller5.bounds.size.width,
                                             CGRectGetMaxY(button.frame)
                                             )];
-
-    
-    [ playButton setEnabled: NO ];
-    [ playLabel setEnabled: NO ];
     
     selectedMap = nil;
     mapSelected = -1;
@@ -215,17 +222,15 @@
  */
 -(IBAction)     Play {
 
-    int skillLevel = [self getSkill];
-    mapStart_t localStartmap;
     
-    localStartmap.map = mapSelected;
-    localStartmap.episode = episodeSelected;
-    localStartmap.dataset = gameSelected;
-    localStartmap.skill = skillLevel;
+    // Switch to episode view menu.
+    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"GameMenuView"] bundle:nil];
     
-    StartSinglePlayerGame( localStartmap );
+    [self.navigationController pushViewController:vc animated:NO];
+    [vc SetPwad: [selectPwad copy]];
+    [vc release];
     
-    [ gAppDelegate ShowGLView ];
+    Sound_StartLocalSound( "iphone/baborted_01.wav" );
 }
 
 /*
@@ -275,8 +280,17 @@
  */
 
 
-- (IBAction)MAP01 {
-    [self playMap:gameSelected :0 :1];
+- (IBAction)MAP01:(UIControl *)sender  {
+    UIButton *resultButton = (UIButton *)sender;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString* inboxPath = [documentsDirectory stringByAppendingPathComponent:@"Inbox"];
+    NSArray *components = [NSArray arrayWithObjects:inboxPath, [[resultButton titleLabel] text], nil];
+    NSString *path = [NSString pathWithComponents:components];
+    
+    selectPwad = [path copy];
+    
+    NSLog(@"%@", selectPwad);
 }
 
 - (IBAction)MAP02 {

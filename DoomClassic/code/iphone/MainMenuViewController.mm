@@ -27,6 +27,7 @@
 #import "ControlsMenuViewController.h"
 #import "LegalMenuViewController.h"
 #import "GameMenuViewController.h"
+#import "CustomWadMenuViewController.h"
 
 /*
  ================================================================================================
@@ -213,7 +214,7 @@
 - (IBAction) NewGamePressed {
     
     // Switch to episode view menu.
-    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"GameMenuView"] bundle:nil];
+    Doom_CustomWadMenuViewController *vc = [[Doom_CustomWadMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"CustomWadMenuView"] bundle:nil];
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -221,11 +222,11 @@
     Sound_StartLocalSound( "iphone/baborted_01.wav" );
     
 }
-
+/*
 - (IBAction) CustomWadPressed {
     
     // Switch to episode view menu.
-    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"GameMenuView"] bundle:nil];
+    Doom_CustomWadMenuViewController *vc = [[Doom_CustomWadMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"GameMenuView"] bundle:nil];
     
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -233,7 +234,7 @@
     Sound_StartLocalSound( "iphone/baborted_01.wav" );
     
 }
-
+*/
 /*
  ========================
  MainMenuViewController::MultiplayerPressed

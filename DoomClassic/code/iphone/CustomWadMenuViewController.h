@@ -31,9 +31,6 @@
     
 
     IBOutlet UIScrollView * mapScroller5;
-
-    IBOutlet UIButton *     lastElement5;
-
     
     UIScrollView * selectedScroller;
     
@@ -44,6 +41,7 @@
     int gameSelected;
     int episodeSelected;
     int mapSelected;
+    NSString *selectPwad;
 }
 
 - (int)  getSkill;
@@ -60,39 +58,6 @@
 -(IBAction)     UpMission;
 -(IBAction)     DownMission;
 
-
-- (IBAction)MAP01;
-- (IBAction)MAP02;
-- (IBAction)MAP03;
-- (IBAction)MAP04;
-- (IBAction)MAP05;
-- (IBAction)MAP06;
-- (IBAction)MAP07;
-- (IBAction)MAP08;
-- (IBAction)MAP09;
-- (IBAction)MAP10;
-- (IBAction)MAP11;
-- (IBAction)MAP12;
-- (IBAction)MAP13;
-- (IBAction)MAP14;
-- (IBAction)MAP15;
-- (IBAction)MAP16;
-- (IBAction)MAP17;
-- (IBAction)MAP18;
-- (IBAction)MAP19;
-- (IBAction)MAP20;
-- (IBAction)MAP21;
-- (IBAction)MAP22;
-- (IBAction)MAP23;
-- (IBAction)MAP24;
-- (IBAction)MAP25;
-- (IBAction)MAP26;
-- (IBAction)MAP27;
-- (IBAction)MAP28;
-- (IBAction)MAP29;
-- (IBAction)MAP30;
-- (IBAction)MAP31;
-- (IBAction)MAP32;
 
 
 @end

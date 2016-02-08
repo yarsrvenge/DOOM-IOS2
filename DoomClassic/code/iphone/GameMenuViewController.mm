@@ -117,7 +117,16 @@
     
     gameType = gameSelection;
     
-    iphoneDoomStartup( full_iwad, NULL );
+    if(pwad != nil)
+    {
+        //char* full_pwad = (char*)malloc(strlen(pwad) + 1);
+        //strcpy(full_pwad, pwad);
+        iphoneDoomStartup( full_iwad, [[pwad copy] UTF8String]);
+    }
+    else
+    {
+        iphoneDoomStartup( full_iwad, NULL);
+    }
     
     if(loadSaveGame)
     {
@@ -155,6 +164,11 @@
     
     Sound_StartLocalSound( "iphone/controller_down_01_SILENCE.wav" );
 }
+
+- (void) SetPwad:(NSString *)customWad {
+    pwad = customWad;
+}
+
 
 /*
  ========================

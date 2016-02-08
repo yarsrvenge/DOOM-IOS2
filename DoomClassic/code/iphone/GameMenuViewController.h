@@ -25,8 +25,11 @@ GameMenuViewController
     IBOutlet idLabelButton *    nextButton;
     IBOutlet idLabel *          nextLabel;
     BOOL loadSaveGame;
+    
+    NSString *pwad;
 }
 
+- (void) SetPwad:(NSString *)customWad;
 - (void) setLoadSaveGame: (BOOL) loadGame;
 - (IBAction) BackToMain;
 - (IBAction) NextToMissions;
