@@ -89,7 +89,7 @@
         
         NSString *path = [NSString pathWithComponents:components];
         [filemgr removeItemAtPath:path error:NULL];
-    */
+         */
         
         button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button addTarget:self
