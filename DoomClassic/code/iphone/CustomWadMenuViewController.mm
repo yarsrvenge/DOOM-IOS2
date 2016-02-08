@@ -77,7 +77,7 @@
     NSString* inboxPath = [documentsDirectory stringByAppendingPathComponent:@"Inbox"];
     NSArray *dirFiles = [filemgr contentsOfDirectoryAtPath:inboxPath error:nil];
     
-    dirFiles = [NSArray arrayWithObjects: @"Test.wad", @"Test2.wad", @"Test3.wad", @"Test4.wad" , @"Test5.wad", nil];
+    //dirFiles = [NSArray arrayWithObjects: @"Test.wad", @"Test2.wad", @"Test3.wad", @"Test4.wad" , @"Test5.wad", nil];
     if(dirFiles.count == 0)
     {
         [self Play];
