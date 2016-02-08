@@ -21,6 +21,7 @@
 #import "MainMenuViewController.h"
 #import "MainNavController.h"
 #include "doomiphone.h"
+#import "MissionMenuViewController.h"
 
 @implementation DoomApp
 
@@ -39,6 +40,10 @@
     
     openGLViewController = [ [ iphone_glViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"OpenGLView"] bundle:nil ];
     [ openGLViewController StopDisplay];
+}
+
+- (void) Test {
+    
 }
 
 

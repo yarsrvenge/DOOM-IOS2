@@ -222,6 +222,18 @@
     
 }
 
+- (IBAction) CustomWadPressed {
+    
+    // Switch to episode view menu.
+    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"GameMenuView"] bundle:nil];
+    
+    [self.navigationController pushViewController:vc animated:NO];
+    [vc release];
+    
+    Sound_StartLocalSound( "iphone/baborted_01.wav" );
+    
+}
+
 /*
  ========================
  MainMenuViewController::MultiplayerPressed

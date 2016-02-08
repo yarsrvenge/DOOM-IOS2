@@ -57,6 +57,8 @@
 		D217F8821ABE953C00AA4A36 /* GameMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D217F8811ABE953C00AA4A36 /* GameMenuView.xib */; };
 		D217F8A31ABEA6B300AA4A36 /* OpenGLViewi6.xib in Resources */ = {isa = PBXBuildFile; fileRef = D217F89C1ABEA6B300AA4A36 /* OpenGLViewi6.xib */; };
 		D225DC771C67ACB1003164B2 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D225DC761C67ACB1003164B2 /* GameKit.framework */; };
+		D225DC821C688913003164B2 /* CustomWadMenui5.xib in Resources */ = {isa = PBXBuildFile; fileRef = D225DC811C688913003164B2 /* CustomWadMenui5.xib */; };
+		D225DC841C688A9F003164B2 /* CustomWadMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D225DC831C688A9F003164B2 /* CustomWadMenuViewController.mm */; };
 		D250C9991ABCAB8900355330 /* GameMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */; };
 		D250C99B1ABCAD6600355330 /* GameMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */; };
 		D250C9A91ABD893D00355330 /* DOOM2.WAD in Resources */ = {isa = PBXBuildFile; fileRef = D250C9A81ABD893D00355330 /* DOOM2.WAD */; };
@@ -216,6 +218,9 @@
 		D217F8811ABE953C00AA4A36 /* GameMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameMenuView.xib; sourceTree = "<group>"; };
 		D217F89C1ABEA6B300AA4A36 /* OpenGLViewi6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenGLViewi6.xib; sourceTree = "<group>"; };
 		D225DC761C67ACB1003164B2 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		D225DC811C688913003164B2 /* CustomWadMenui5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomWadMenui5.xib; sourceTree = "<group>"; };
+		D225DC831C688A9F003164B2 /* CustomWadMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomWadMenuViewController.mm; sourceTree = "<group>"; };
+		D225DC851C688AB3003164B2 /* CustomWadMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWadMenuViewController.h; sourceTree = "<group>"; };
 		D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameMenuViewi5.xib; sourceTree = "<group>"; };
 		D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameMenuViewController.mm; sourceTree = "<group>"; };
 		D250C99C1ABCAD9C00355330 /* GameMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenuViewController.h; sourceTree = "<group>"; };
@@ -321,6 +326,7 @@
 		132AC2D61802F12200884E11 /* iPhone4Inch */ = {
 			isa = PBXGroup;
 			children = (
+				D225DC811C688913003164B2 /* CustomWadMenui5.xib */,
 				D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */,
 				132AC2D71802F15C00884E11 /* ControlsMenuViewi5.xib */,
 				132AC2D81802F15C00884E11 /* CreditsMenuViewi5.xib */,
@@ -569,6 +575,8 @@
 		C8DB88F614BB5F840006467C /* Play menus */ = {
 			isa = PBXGroup;
 			children = (
+				D225DC851C688AB3003164B2 /* CustomWadMenuViewController.h */,
+				D225DC831C688A9F003164B2 /* CustomWadMenuViewController.mm */,
 				C8012E6B14B6389B00B0E213 /* EpisodeMenuViewController.h */,
 				C8012E6C14B6389B00B0E213 /* EpisodeMenuViewController.mm */,
 				C8012E8A14B6750900B0E213 /* MissionMenuViewController.h */,
@@ -842,6 +850,7 @@
 				D2B96ECC1ABC268C00179F75 /* DOOM_57.png in Resources */,
 				C8DB8A5E14BB88AC0006467C /* MissionMenuView~ipad.xib in Resources */,
 				C8DB8A5F14BB88AC0006467C /* OpenGLView~ipad.xib in Resources */,
+				D225DC821C688913003164B2 /* CustomWadMenui5.xib in Resources */,
 				D2B96EEB1ABC268C00179F75 /* NextButton_Highlighted.png in Resources */,
 				D2B96EEA1ABC268C00179F75 /* MissonBackground.png in Resources */,
 				D2B96EE81ABC268C00179F75 /* Medium.png in Resources */,
@@ -879,6 +888,7 @@
 				C8012E5114B5122700B0E213 /* MainMenuViewController.mm in Sources */,
 				C8012E6E14B6389B00B0E213 /* EpisodeMenuViewController.mm in Sources */,
 				C8012E7814B649DB00B0E213 /* CreditsMenuViewController.mm in Sources */,
+				D225DC841C688A9F003164B2 /* CustomWadMenuViewController.mm in Sources */,
 				D250C99B1ABCAD6600355330 /* GameMenuViewController.mm in Sources */,
 				133F3E7017F21C8700A12635 /* MainNavController.m in Sources */,
 				138FC9BB17F0813400D94C5F /* doom_wads.cpp in Sources */,

@@ -28,6 +28,7 @@
 
 
 
+
 @implementation iphoneApp
 
 @synthesize window;
@@ -236,9 +237,38 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
     return [NSString stringWithFormat:@"%@%@", nibName, extension];
 }
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    NSFileManager *filemgr = [NSFileManager defaultManager];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString* inboxPath = [documentsDirectory stringByAppendingPathComponent:@"Inbox"];
+    NSArray *dirFiles = [filemgr contentsOfDirectoryAtPath:inboxPath error:nil];
+    [dirFiles count];
+    NSString *value = (NSString *)[dirFiles firstObject];
+    iphoneDoomStartup("DOOM2.WAD", [[value uppercaseString] UTF8String]);
+    
+    mapStart_t localStartmap;
+    
+    localStartmap.map = 1;
+    localStartmap.episode = 0;
+    localStartmap.dataset = 1;
+    localStartmap.skill = 1;
+    
+    StartSinglePlayerGame( localStartmap );
+    
+    [ gAppDelegate ShowGLView ];
+
+    
+    // TODO handle wad file
+    return true;
+}
+
 @end
 
 void ShowGLView( void ) {
 	[ gAppDelegate ShowGLView ];
 }
+
+
 

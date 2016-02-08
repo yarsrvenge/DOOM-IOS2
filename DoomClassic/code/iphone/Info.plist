@@ -6,6 +6,19 @@
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
 	<string>DOOM</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeIconFiles</key>
+			<array/>
+			<key>CFBundleTypeName</key>
+			<string>WAD</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.baumhoto.wad</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
@@ -73,5 +86,27 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+				<string>public.archive</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Doom Data Files</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.baumhoto.wad</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>wad</string>
+					<string>WAD</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
