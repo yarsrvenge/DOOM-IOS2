@@ -74,7 +74,7 @@
     NSFileManager *filemgr = [NSFileManager defaultManager];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString* inboxPath = [documentsDirectory stringByAppendingPathComponent:@"Inbox"];
+    inboxPath = [[documentsDirectory stringByAppendingPathComponent:@"Inbox"] copy];
     NSArray *dirFiles = [filemgr contentsOfDirectoryAtPath:inboxPath error:nil];
     
     //dirFiles = [NSArray arrayWithObjects: @"Test.wad", @"Test2.wad", @"Test3.wad", @"Test4.wad" , @"Test5.wad", nil];
@@ -83,7 +83,6 @@
         [self Play];
         return;
     }
-    
     
     UIButton *button;
     int y = 15;
@@ -106,7 +105,8 @@
         [button setTitle:value forState:UIControlStateNormal];
         [button.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:18.0]];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor yellowColor] forState:UIControlStateFocused];
+        [button setTitleColor:[UIColor yellowColor] forState:UIControlStateHighlighted];
+        [button setTitleColor:[UIColor yellowColor] forState:UIControlStateSelected];
 
         button.frame = CGRectMake(15, y, 270, 22.0);
         [mapScroller5 addSubview:button];
@@ -231,13 +231,14 @@
  ========================
  */
 -(IBAction)     Play {
-
-    
     // Switch to episode view menu.
     Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"GameMenuView"] bundle:nil];
     
+    NSArray *components = [NSArray arrayWithObjects:inboxPath, selectPwad, nil];
+    NSString *path = [NSString pathWithComponents:components];
+    
     [self.navigationController pushViewController:vc animated:NO];
-    [vc SetPwad: [selectPwad copy]];
+    [vc SetPwad: [path copy]];
     [vc setLoadSaveGame:loadSaveGame];
     [vc release];
     
@@ -298,16 +299,15 @@
 
 
 - (IBAction)MAP01:(UIControl *)sender  {
+    if(activeButton != nil)
+    {
+        activeButton.selected = false;
+    }
+    
     UIButton *resultButton = (UIButton *)sender;
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString* inboxPath = [documentsDirectory stringByAppendingPathComponent:@"Inbox"];
-    NSArray *components = [NSArray arrayWithObjects:inboxPath, [[resultButton titleLabel] text], nil];
-    NSString *path = [NSString pathWithComponents:components];
-    
-    selectPwad = [path copy];
-    
-    NSLog(@"%@", selectPwad);
+    activeButton = resultButton;
+    [activeButton setSelected:TRUE];
+    selectPwad = [[[activeButton titleLabel] text] copy];
 }
 
 @end

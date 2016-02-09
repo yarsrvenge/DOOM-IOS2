@@ -41,8 +41,10 @@
     int gameSelected;
     int episodeSelected;
     int mapSelected;
+    UIButton *activeButton;
     NSString *selectPwad;
     BOOL loadSaveGame;
+    NSString *inboxPath;
 }
 
 - (int)  getSkill;
