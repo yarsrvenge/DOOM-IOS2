@@ -2,6 +2,10 @@ This is a fork of the original id software repository.
 
 Currently the following changes have been made:
 FEATURES:
+- new: ForceTouch support on 6s models
+  - supported in dual stick configuration: 
+     - force touch left stick: use (most useful when disabling auto use in options)
+     - force touch right stick: shoot
 - support for other Doom Games. Currently DOOM II, Final Doom: TNT Evilution and Final Doom: Plutionia
 - 1 savegame per doom game, so it's possible to switch between different DOOM games and continue later
 
