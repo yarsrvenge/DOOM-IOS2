@@ -32,6 +32,9 @@
     NSLog(@"width: %f height: %f", [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
 
     Doom_MainMenuViewController *rootController = [[Doom_MainMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"MainMenuView"] bundle:nil];
+    
+    forceTouchSupported = [[[UIScreen mainScreen] traitCollection] forceTouchCapability] == UIForceTouchCapabilityAvailable;
+    
 	
     // Create a Navigation Controller for Pushing/Popping Views.
     navigationController = [[MainNavController alloc] initWithRootViewController:rootController];

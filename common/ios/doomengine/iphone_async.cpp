@@ -635,7 +635,7 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
 	}
 	
 	// the fire button doesn't grab touches
-	{
+    {
 		int x = huds.fire.x - ( huds.fire.drawWidth >> 1 );
 		int y = huds.fire.y - ( huds.fire.drawHeight >> 1 );
 		int w = huds.fire.drawWidth << 1;
@@ -648,8 +648,8 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
                 cmd->buttons |= BT_ATTACK;
                 huds.fire.buttonFlags |= BF_DRAW_ACTIVE;	// draw with color
             }
-		} else {
-			huds.fire.buttonFlags &= ~BF_DRAW_ACTIVE;
+		}   else if(huds.fire.buttonFlags != 1) {
+                huds.fire.buttonFlags &= ~BF_DRAW_ACTIVE;
 		}
 	}
 	int	forwardmove;

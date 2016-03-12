@@ -417,7 +417,11 @@ void iphoneStartup() {
 		}
 		fclose( f );
 	}
-
+    
+    if(forceTouchSupported)
+        huds.fire.buttonFlags = BF_IGNORE;
+    else
+        huds.fire.buttonFlags = BF_SMALL_CLICK;
 	
 	Com_Printf( "startup time: %i msec\n", SysIphoneMilliseconds() - start );
 

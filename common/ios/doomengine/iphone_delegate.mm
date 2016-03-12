@@ -35,6 +35,8 @@
 
 iphoneApp * gAppDelegate = NULL;
 bool inBackgroundProcess = false;
+boolean  forceTouchSupported  = false;
+
 
 touch_t		sysTouches[MAX_TOUCHES];
 touch_t		gameTouches[MAX_TOUCHES];
@@ -75,7 +77,7 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 	iphoneStartup();
     
     UIView * view = navigationController.view;
-	
+    
     [window addSubview: view];
 	[window setRootViewController:navigationController];
     [window setBackgroundColor: [UIColor blackColor] ];
