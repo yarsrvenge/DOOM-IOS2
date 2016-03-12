@@ -61,11 +61,15 @@
 		D225DC841C688A9F003164B2 /* CustomWadMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D225DC831C688A9F003164B2 /* CustomWadMenuViewController.mm */; };
 		D225DC891C68C631003164B2 /* MainMenuViewi6plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = D225DC881C68C631003164B2 /* MainMenuViewi6plus.xib */; };
 		D225DC901C68C920003164B2 /* CustomWadMenuViewi6plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = D225DC8F1C68C920003164B2 /* CustomWadMenuViewi6plus.xib */; };
+		D24E01021C94499E006C1383 /* SettingsMenuViewi6plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24E01011C94499E006C1383 /* SettingsMenuViewi6plus.xib */; };
+		D24E01051C944C9D006C1383 /* CreditsMenuViewi6plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24E01031C944C9D006C1383 /* CreditsMenuViewi6plus.xib */; };
+		D24E01061C944C9D006C1383 /* LegalMenuViewi6plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24E01041C944C9D006C1383 /* LegalMenuViewi6plus.xib */; };
 		D250C9991ABCAB8900355330 /* GameMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */; };
 		D250C99B1ABCAD6600355330 /* GameMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */; };
 		D250C9A91ABD893D00355330 /* DOOM2.WAD in Resources */ = {isa = PBXBuildFile; fileRef = D250C9A81ABD893D00355330 /* DOOM2.WAD */; };
 		D250C9AC1ABD896700355330 /* PLUTONIA.WAD in Resources */ = {isa = PBXBuildFile; fileRef = D250C9AA1ABD896700355330 /* PLUTONIA.WAD */; };
 		D250C9AD1ABD896700355330 /* TNT.WAD in Resources */ = {isa = PBXBuildFile; fileRef = D250C9AB1ABD896700355330 /* TNT.WAD */; };
+		D27F87BF1C932DAB00B01E6C /* ControlsMenuViewi6plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27F87BE1C932DAB00B01E6C /* ControlsMenuViewi6plus.xib */; };
 		D2A788131ABC331500947D31 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2A788051ABC331500947D31 /* Localizable.strings */; };
 		D2A788141ABC331500947D31 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2A788081ABC331500947D31 /* Localizable.strings */; };
 		D2A788151ABC331500947D31 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2A7880B1ABC331500947D31 /* Localizable.strings */; };
@@ -229,12 +233,16 @@
 		D225DC851C688AB3003164B2 /* CustomWadMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWadMenuViewController.h; sourceTree = "<group>"; };
 		D225DC881C68C631003164B2 /* MainMenuViewi6plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewi6plus.xib; sourceTree = "<group>"; };
 		D225DC8F1C68C920003164B2 /* CustomWadMenuViewi6plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomWadMenuViewi6plus.xib; sourceTree = "<group>"; };
+		D24E01011C94499E006C1383 /* SettingsMenuViewi6plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsMenuViewi6plus.xib; sourceTree = "<group>"; };
+		D24E01031C944C9D006C1383 /* CreditsMenuViewi6plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsMenuViewi6plus.xib; sourceTree = "<group>"; };
+		D24E01041C944C9D006C1383 /* LegalMenuViewi6plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LegalMenuViewi6plus.xib; sourceTree = "<group>"; };
 		D250C9981ABCAB8900355330 /* GameMenuViewi5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameMenuViewi5.xib; sourceTree = "<group>"; };
 		D250C99A1ABCAD6600355330 /* GameMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameMenuViewController.mm; sourceTree = "<group>"; };
 		D250C99C1ABCAD9C00355330 /* GameMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenuViewController.h; sourceTree = "<group>"; };
 		D250C9A81ABD893D00355330 /* DOOM2.WAD */ = {isa = PBXFileReference; lastKnownFileType = file; name = DOOM2.WAD; path = ../../base/DOOM2.WAD; sourceTree = "<group>"; };
 		D250C9AA1ABD896700355330 /* PLUTONIA.WAD */ = {isa = PBXFileReference; lastKnownFileType = file; name = PLUTONIA.WAD; path = ../../base/PLUTONIA.WAD; sourceTree = "<group>"; };
 		D250C9AB1ABD896700355330 /* TNT.WAD */ = {isa = PBXFileReference; lastKnownFileType = file; name = TNT.WAD; path = ../../base/TNT.WAD; sourceTree = "<group>"; };
+		D27F87BE1C932DAB00B01E6C /* ControlsMenuViewi6plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ControlsMenuViewi6plus.xib; sourceTree = "<group>"; };
 		D2A788061ABC331500947D31 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Localizable.strings; sourceTree = "<group>"; };
 		D2A788091ABC331500947D31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		D2A7880C1ABC331500947D31 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
@@ -672,6 +680,10 @@
 		D2C143711ABED0520060F2FF /* iphone5.5inch */ = {
 			isa = PBXGroup;
 			children = (
+				D24E01031C944C9D006C1383 /* CreditsMenuViewi6plus.xib */,
+				D24E01041C944C9D006C1383 /* LegalMenuViewi6plus.xib */,
+				D24E01011C94499E006C1383 /* SettingsMenuViewi6plus.xib */,
+				D27F87BE1C932DAB00B01E6C /* ControlsMenuViewi6plus.xib */,
 				D2FD7FC11C68D52400EF8F80 /* MissionMenuBiewi6plus.xib */,
 				D2FD7FBF1C68D31200EF8F80 /* MissionMenuViewi6plus.xib */,
 				D2FD7FBD1C68D29300EF8F80 /* EpisodeMenuViewi6plus.xib */,
@@ -782,6 +794,7 @@
 				D250C9AD1ABD896700355330 /* TNT.WAD in Resources */,
 				D225DC891C68C631003164B2 /* MainMenuViewi6plus.xib in Resources */,
 				D2B96ED21ABC268C00179F75 /* DOOM_152.png in Resources */,
+				D24E01051C944C9D006C1383 /* CreditsMenuViewi6plus.xib in Resources */,
 				D2B96EDD1ABC268C00179F75 /* Episode3Background.png in Resources */,
 				D2B96EF51ABC268C00179F75 /* SubMenuBackground.png in Resources */,
 				138FC9C917F216C300D94C5F /* base.iPack in Resources */,
@@ -819,6 +832,7 @@
 				D2B96ED91ABC268C00179F75 /* Episode1Background.png in Resources */,
 				D2B96EC11ABC268C00179F75 /* BackButton.png in Resources */,
 				C8012E5214B5122700B0E213 /* MainMenuView.xib in Resources */,
+				D27F87BF1C932DAB00B01E6C /* ControlsMenuViewi6plus.xib in Resources */,
 				D2B96ECD1ABC268C00179F75 /* DOOM_72.png in Resources */,
 				D217F8741ABD3BEC00AA4A36 /* GameMenuView~ipad.xib in Resources */,
 				D2B96ED51ABC268C00179F75 /* DownArrow_Highlighted.png in Resources */,
@@ -850,6 +864,7 @@
 				D2B96EEC1ABC268C00179F75 /* NextButton.png in Resources */,
 				D2B96EF91ABC268C00179F75 /* UpArrow.png in Resources */,
 				D2B96EBD1ABC268C00179F75 /* AdvancedButton_Highlighted.png in Resources */,
+				D24E01021C94499E006C1383 /* SettingsMenuViewi6plus.xib in Resources */,
 				D2B96EBF1ABC268C00179F75 /* AdvancedButton.png in Resources */,
 				D2FD7FBE1C68D29300EF8F80 /* EpisodeMenuViewi6plus.xib in Resources */,
 				C8DB8A5B14BB88AC0006467C /* EpisodeMenuView~ipad.xib in Resources */,
@@ -866,6 +881,7 @@
 				D2B96EC61ABC268C00179F75 /* Default-Portrait~ipad.png in Resources */,
 				C8DB8A5D14BB88AC0006467C /* MainMenuView~ipad.xib in Resources */,
 				D2B96ED41ABC268C00179F75 /* DoomLogo.png in Resources */,
+				D24E01061C944C9D006C1383 /* LegalMenuViewi6plus.xib in Resources */,
 				D2B96EEF1ABC268C00179F75 /* SelectedBracket.png in Resources */,
 				D250C9A91ABD893D00355330 /* DOOM2.WAD in Resources */,
 				D2B96EE01ABC268C00179F75 /* Hard.png in Resources */,
