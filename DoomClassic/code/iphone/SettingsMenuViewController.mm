@@ -180,7 +180,6 @@ extern bool mus_on;
  ========================
  */
 - (IBAction) MusicChanged {
-    if ( !SysIPhoneOtherAudioIsPlaying() ) {
         Cvar_SetValue( music->name, !music->value );
         if ( music->value ) {
 			mus_on = true;
@@ -191,8 +190,6 @@ extern bool mus_on;
 			mus_pause_opt = 1;
 			S_PauseSound();
         }
-    }
-    
 }
 
 /*
