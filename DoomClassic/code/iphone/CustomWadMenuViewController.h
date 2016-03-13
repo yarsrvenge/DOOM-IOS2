@@ -37,6 +37,8 @@
     IBOutlet idLabelButton * playButton;
     IBOutlet idLabel * playLabel;
     
+    IBOutlet idLabelButton * deleteButton;
+    
     idLabelButton    * selectedMap;
     int gameSelected;
     int episodeSelected;
@@ -45,6 +47,7 @@
     NSString *selectPwad;
     BOOL loadSaveGame;
     NSString *inboxPath;
+    BOOL initialized;
 }
 
 - (int)  getSkill;
@@ -60,6 +63,8 @@
 
 -(IBAction)     UpMission;
 -(IBAction)     DownMission;
+
+-(IBAction)     DeletePressed;
 
 
 

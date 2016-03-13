@@ -69,8 +69,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self populateList];
+}
 
-
+- (void)populateList
+{
+    NSArray *viewsToRemove = [mapScroller5 subviews];
+    for (UIView *v in viewsToRemove) [v removeFromSuperview];
+    
     NSFileManager *filemgr = [NSFileManager defaultManager];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -78,7 +84,8 @@
     NSArray *dirFiles = [filemgr contentsOfDirectoryAtPath:inboxPath error:nil];
     
     //dirFiles = [NSArray arrayWithObjects: @"Test.wad", @"Test2.wad", @"Test3.wad", @"Test4.wad" , @"Test5.wad", nil];
-    if(dirFiles.count == 0)
+    
+    if(!initialized && dirFiles.count == 0)
     {
         [self Play];
         return;
@@ -92,10 +99,10 @@
         NSString *value = (NSString *)dir;
         
         /*
-        NSArray *components = [NSArray arrayWithObjects:inboxPath, value, nil];
-        
-        NSString *path = [NSString pathWithComponents:components];
-        [filemgr removeItemAtPath:path error:NULL];
+         NSArray *components = [NSArray arrayWithObjects:inboxPath, value, nil];
+         
+         NSString *path = [NSString pathWithComponents:components];
+         [filemgr removeItemAtPath:path error:NULL];
          */
         
         button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -107,7 +114,7 @@
         [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor yellowColor] forState:UIControlStateHighlighted];
         [button setTitleColor:[UIColor yellowColor] forState:UIControlStateSelected];
-
+        
         button.frame = CGRectMake(15, y, 270, 22.0);
         [mapScroller5 addSubview:button];
         y += 45;
@@ -123,11 +130,12 @@
     
     
     mapScroller5.alpha = 0.0f;
-
+    
     selectedScroller = mapScroller5;
     
     
     selectedScroller.alpha = 1.0f;
+    initialized = true;
 }
 
 /*
@@ -309,5 +317,26 @@
     [activeButton setSelected:TRUE];
     selectPwad = [[[activeButton titleLabel] text] copy];
 }
+
+-(IBAction)     DeletePressed {
+    
+    NSArray *components = [NSArray arrayWithObjects:inboxPath, selectPwad, nil];
+    NSString *path = [NSString pathWithComponents:components];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    BOOL success = [fileManager removeItemAtPath:path error:&error];
+    
+    if (success) {
+        NSLog(@"Deleted file -:%@ ", path);
+        selectPwad = nil;
+        activeButton.selected = false;
+        [self populateList];
+    }
+    else
+    {
+        NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
+    }
+}
+
 
 @end
