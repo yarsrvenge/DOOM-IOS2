@@ -170,11 +170,13 @@ CAEAGLLayer *eaglLayer;
         {
             CGFloat force = myTouch.force;
             CGFloat normalizedForce = force/maximumPossibleForce;
-            isForceTouch = normalizedForce > 0.75;
+            isForceTouch = normalizedForce > 0.80;
+            /*
             if(isForceTouch)
             {
                 printf("ForceTouch %f maxForce: %f normalized %f\n", force, maximumPossibleForce, normalizedForce);
             }
+            */
         }
         
 		const int x = touchLocation.x;
