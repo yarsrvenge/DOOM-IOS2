@@ -105,6 +105,7 @@ static CGRect  LerpRect( CGRect a, CGRect b, CGFloat t ) {
     
     // Allocate our Items Array
     carouselItems = [[ NSMutableArray alloc ] init ];
+    [super awakeFromNib];
 }
 
 /*

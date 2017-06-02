@@ -31,6 +31,7 @@
 #include <AudioToolbox/AudioServices.h>
 
 
+
 typedef struct  {
 	unsigned			sourceName;		// OpenAL sourceName
 	pkWav_t				*sfx;			// NULL if unused
@@ -275,7 +276,7 @@ void I_StopSound(int handle) {}
 // Returns 0 if no longer playing, 1 if playing.
 boolean I_SoundIsPlaying(int handle) { 
 
-	channel_t *ch = handle;
+    channel_t *ch = (channel_t *)handle;
 	if ( !ch ) {
 		return false;
 	}
