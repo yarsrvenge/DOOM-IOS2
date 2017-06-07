@@ -32,6 +32,8 @@
 
 
 
+
+
 typedef struct  {
 	unsigned			sourceName;		// OpenAL sourceName
 	pkWav_t				*sfx;			// NULL if unused
@@ -91,7 +93,8 @@ int SysIPhoneOtherAudioIsPlaying() {
 
 void interruptionListener( void *inUserData, UInt32 inInterruption)
 {
-	printf("Session interrupted! --- %s ---\n", inInterruption == kAudioSessionBeginInterruption ? "Begin Interruption" : "End Interruption");
+#if !TARGET_OS_TV
+    printf("Session interrupted! --- %s ---\n", inInterruption == kAudioSessionBeginInterruption ? "Begin Interruption" : "End Interruption");
 	
 	if ( inInterruption == kAudioSessionBeginInterruption ) {
 		printf("Audio interrupted.\n" );
@@ -113,6 +116,7 @@ void interruptionListener( void *inUserData, UInt32 inInterruption)
 		}
 		iphoneResumeMusic();
 	}
+#endif
 }
 
 void Sound_Init( void ) {
@@ -122,7 +126,7 @@ void Sound_Init( void ) {
 	s_sfxVolume		= Cvar_Get( "s_sfxVolume", "1.0", 0 );
 	
 	Cmd_AddCommand( "play", Sound_Play_f );
-	
+#if !TARGET_OS_TV
 	// make sure background ipod music mixes with our sound effects
 	Com_Printf( "...Initializing AudioSession\n" );
 	OSStatus status = 0;
@@ -143,7 +147,7 @@ void Sound_Init( void ) {
 	}
 	
 	status = AudioSessionSetActive(true);                                       // else "couldn't set audio session active\n"	
-	
+#endif
 	Com_Printf( "...Initializing OpenAL subsystem\n" );
 	
 	// get the OpenAL device
@@ -276,7 +280,7 @@ void I_StopSound(int handle) {}
 // Returns 0 if no longer playing, 1 if playing.
 boolean I_SoundIsPlaying(int handle) { 
 
-    channel_t *ch = (channel_t *)handle;
+    channel_t *ch = (channel_t *)(size_t)handle;
 	if ( !ch ) {
 		return false;
 	}

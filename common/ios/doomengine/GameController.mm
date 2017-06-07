@@ -108,7 +108,7 @@ bool iphoneControllerIsAvailable() {
     if(!initialized) {
         NSArray *controllers = [GCController controllers];
         if(controllers.count > 0) {
-            controller = controllers[0]; // Just use the first one
+            controller = controllers[1]; // Just use the first one
             
             // If we have neither gamepad nor extended gamepad support, just make controller nil
             if(![controller gamepad] && ![controller extendedGamepad]) {
@@ -150,6 +150,8 @@ void iphoneControllerInput(ticcmd_t* cmd) {
         if(gamepad.rightShoulder.pressed) {
             cmd->buttons |= BT_ATTACK;
         }
+
+        
         
         if(gamepad.buttonA.pressed) {
             cmd->buttons |= BT_USE;

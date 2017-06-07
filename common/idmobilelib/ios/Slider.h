@@ -17,6 +17,7 @@
  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  
  */
+#if !TARGET_OS_TV
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -31,3 +32,4 @@
 						 :( UIImage* )thumbImage;
 
 @end
+#endif

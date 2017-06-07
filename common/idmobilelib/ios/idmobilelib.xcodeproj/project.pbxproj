@@ -17,6 +17,40 @@
 		3D8088741492CA59002D6CC3 /* objectivec_utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8088731492CA59002D6CC3 /* objectivec_utilities.h */; };
 		3D8088761492CBCB002D6CC3 /* objectivec_utilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D8088751492CBCB002D6CC3 /* objectivec_utilities.mm */; };
 		3DCB047B1498279D00E986AF /* LocalizationObjectiveC.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DCB04781498279D00E986AF /* LocalizationObjectiveC.h */; };
+		C56382F21EE5FCE000C84D94 /* GameCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D80886C14928AED002D6CC3 /* GameCenter.mm */; };
+		C56382F31EE5FCE000C84D94 /* objectivec_utilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D8088751492CBCB002D6CC3 /* objectivec_utilities.mm */; };
+		C56382F41EE5FCE000C84D94 /* Localization.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8A6294714969F07002EF3F5 /* Localization.mm */; };
+		C56382F51EE5FCE000C84D94 /* View.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8A629601497F318002EF3F5 /* View.mm */; };
+		C56382F61EE5FCE000C84D94 /* RenderContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8A6296A14980C6E002EF3F5 /* RenderContext.mm */; };
+		C56382F71EE5FCE000C84D94 /* AnimatedImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E5414B61D4900B0E213 /* AnimatedImage.mm */; };
+		C56382F81EE5FCE000C84D94 /* Carousel.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E5614B61D4900B0E213 /* Carousel.mm */; };
+		C56382F91EE5FCE000C84D94 /* Label.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E5814B61D4900B0E213 /* Label.mm */; };
+		C56382FA1EE5FCE000C84D94 /* LabelButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E5A14B61D4900B0E213 /* LabelButton.mm */; };
+		C56382FC1EE5FCE000C84D94 /* Switch.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E5E14B61D4900B0E213 /* Switch.mm */; };
+		C56382FD1EE5FCE000C84D94 /* InAppStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8011C8C14C0EB7A007AC5C5 /* InAppStore.mm */; };
+		C56382FE1EE5FCE000C84D94 /* ios_interface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D558114D2201E00A0F1FF /* ios_interface.mm */; };
+		C56383001EE5FCE000C84D94 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AEB0D91A7AD28E00A5ED1B /* GameController.framework */; };
+		C56383011EE5FCE000C84D94 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8011C9314C0EC70007AC5C5 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C56383021EE5FCE000C84D94 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A629661497F510002EF3F5 /* QuartzCore.framework */; };
+		C56383031EE5FCE000C84D94 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A629641497F508002EF3F5 /* OpenGLES.framework */; };
+		C56383041EE5FCE000C84D94 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D80886E14928C16002D6CC3 /* GameKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C56383051EE5FCE000C84D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D80884A14928766002D6CC3 /* Foundation.framework */; };
+		C56383071EE5FCE000C84D94 /* GameCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D80885D149287EB002D6CC3 /* GameCenter.h */; };
+		C56383081EE5FCE000C84D94 /* sys_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8088711492B362002D6CC3 /* sys_defines.h */; };
+		C56383091EE5FCE000C84D94 /* objectivec_utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8088731492CA59002D6CC3 /* objectivec_utilities.h */; };
+		C563830A1EE5FCE000C84D94 /* Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A6294414969EEE002EF3F5 /* Localization.h */; };
+		C563830B1EE5FCE000C84D94 /* View.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A629621497F329002EF3F5 /* View.h */; };
+		C563830C1EE5FCE000C84D94 /* RenderContext.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A6296814980C5B002EF3F5 /* RenderContext.h */; };
+		C563830D1EE5FCE000C84D94 /* LocalizationObjectiveC.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DCB04781498279D00E986AF /* LocalizationObjectiveC.h */; };
+		C563830E1EE5FCE000C84D94 /* AnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = C8012E5314B61D4900B0E213 /* AnimatedImage.h */; };
+		C563830F1EE5FCE000C84D94 /* Carousel.h in Headers */ = {isa = PBXBuildFile; fileRef = C8012E5514B61D4900B0E213 /* Carousel.h */; };
+		C56383101EE5FCE000C84D94 /* Label.h in Headers */ = {isa = PBXBuildFile; fileRef = C8012E5714B61D4900B0E213 /* Label.h */; };
+		C56383111EE5FCE000C84D94 /* LabelButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C8012E5914B61D4900B0E213 /* LabelButton.h */; };
+		C56383131EE5FCE000C84D94 /* Switch.h in Headers */ = {isa = PBXBuildFile; fileRef = C8012E5D14B61D4900B0E213 /* Switch.h */; };
+		C56383141EE5FCE000C84D94 /* InAppStore.h in Headers */ = {isa = PBXBuildFile; fileRef = C8011C8B14C0EB7A007AC5C5 /* InAppStore.h */; };
+		C56383151EE5FCE000C84D94 /* ios_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7D557E14D21FEC00A0F1FF /* ios_interface.h */; };
+		C5F8B6761EE61D9F0055059E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F8B6751EE61D9F0055059E /* UIKit.framework */; };
+		C5F8B6831EE62ACA0055059E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F8B6821EE62ACA0055059E /* UIKit.framework */; };
 		C8011C8D14C0EB7A007AC5C5 /* InAppStore.h in Headers */ = {isa = PBXBuildFile; fileRef = C8011C8B14C0EB7A007AC5C5 /* InAppStore.h */; };
 		C8011C8E14C0EB7A007AC5C5 /* InAppStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8011C8C14C0EB7A007AC5C5 /* InAppStore.mm */; };
 		C8011C9414C0EC70007AC5C5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8011C9314C0EC70007AC5C5 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -55,6 +89,9 @@
 		3D8088731492CA59002D6CC3 /* objectivec_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objectivec_utilities.h; sourceTree = "<group>"; };
 		3D8088751492CBCB002D6CC3 /* objectivec_utilities.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = objectivec_utilities.mm; sourceTree = "<group>"; };
 		3DCB04781498279D00E986AF /* LocalizationObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationObjectiveC.h; sourceTree = "<group>"; };
+		C56383191EE5FCE000C84D94 /* libidmobilelib tv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libidmobilelib tv.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F8B6751EE61D9F0055059E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C5F8B6821EE62ACA0055059E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C8011C8B14C0EB7A007AC5C5 /* InAppStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppStore.h; sourceTree = "<group>"; };
 		C8011C8C14C0EB7A007AC5C5 /* InAppStore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InAppStore.mm; sourceTree = "<group>"; };
 		C8011C9314C0EC70007AC5C5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -86,12 +123,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F8B6761EE61D9F0055059E /* UIKit.framework in Frameworks */,
 				C8AEB0DB1A7AD6D600A5ED1B /* GameController.framework in Frameworks */,
 				C8011C9414C0EC70007AC5C5 /* StoreKit.framework in Frameworks */,
 				C8A629671497F510002EF3F5 /* QuartzCore.framework in Frameworks */,
 				C8A629651497F509002EF3F5 /* OpenGLES.framework in Frameworks */,
 				3D80886F14928C16002D6CC3 /* GameKit.framework in Frameworks */,
 				3D80884B14928766002D6CC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56382FF1EE5FCE000C84D94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F8B6831EE62ACA0055059E /* UIKit.framework in Frameworks */,
+				C56383001EE5FCE000C84D94 /* GameController.framework in Frameworks */,
+				C56383021EE5FCE000C84D94 /* QuartzCore.framework in Frameworks */,
+				C56383031EE5FCE000C84D94 /* OpenGLES.framework in Frameworks */,
+				C56383051EE5FCE000C84D94 /* Foundation.framework in Frameworks */,
+				C56383011EE5FCE000C84D94 /* StoreKit.framework in Frameworks */,
+				C56383041EE5FCE000C84D94 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				3D80884714928766002D6CC3 /* libidmobilelib.a */,
+				C56383191EE5FCE000C84D94 /* libidmobilelib tv.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +171,8 @@
 		3D80884914928766002D6CC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5F8B6821EE62ACA0055059E /* UIKit.framework */,
+				C5F8B6751EE61D9F0055059E /* UIKit.framework */,
 				C8AEB0D91A7AD28E00A5ED1B /* GameController.framework */,
 				C8011C9314C0EC70007AC5C5 /* StoreKit.framework */,
 				C8A629661497F510002EF3F5 /* QuartzCore.framework */,
@@ -212,6 +267,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C56383061EE5FCE000C84D94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56383071EE5FCE000C84D94 /* GameCenter.h in Headers */,
+				C56383081EE5FCE000C84D94 /* sys_defines.h in Headers */,
+				C56383091EE5FCE000C84D94 /* objectivec_utilities.h in Headers */,
+				C563830A1EE5FCE000C84D94 /* Localization.h in Headers */,
+				C563830B1EE5FCE000C84D94 /* View.h in Headers */,
+				C563830C1EE5FCE000C84D94 /* RenderContext.h in Headers */,
+				C563830D1EE5FCE000C84D94 /* LocalizationObjectiveC.h in Headers */,
+				C563830E1EE5FCE000C84D94 /* AnimatedImage.h in Headers */,
+				C563830F1EE5FCE000C84D94 /* Carousel.h in Headers */,
+				C56383101EE5FCE000C84D94 /* Label.h in Headers */,
+				C56383111EE5FCE000C84D94 /* LabelButton.h in Headers */,
+				C56383131EE5FCE000C84D94 /* Switch.h in Headers */,
+				C56383141EE5FCE000C84D94 /* InAppStore.h in Headers */,
+				C56383151EE5FCE000C84D94 /* ios_interface.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +306,23 @@
 			name = idmobilelib;
 			productName = idmobilelib;
 			productReference = 3D80884714928766002D6CC3 /* libidmobilelib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C56382F01EE5FCE000C84D94 /* idmobilelib tv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56383161EE5FCE000C84D94 /* Build configuration list for PBXNativeTarget "idmobilelib tv" */;
+			buildPhases = (
+				C56382F11EE5FCE000C84D94 /* Sources */,
+				C56382FF1EE5FCE000C84D94 /* Frameworks */,
+				C56383061EE5FCE000C84D94 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "idmobilelib tv";
+			productName = idmobilelib;
+			productReference = C56383191EE5FCE000C84D94 /* libidmobilelib tv.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -253,6 +346,7 @@
 			projectRoot = "";
 			targets = (
 				3D80884614928766002D6CC3 /* idmobilelib */,
+				C56382F01EE5FCE000C84D94 /* idmobilelib tv */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +369,25 @@
 				C8012E6A14B61D4900B0E213 /* Switch.mm in Sources */,
 				C8011C8E14C0EB7A007AC5C5 /* InAppStore.mm in Sources */,
 				3D7D558214D2201E00A0F1FF /* ios_interface.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56382F11EE5FCE000C84D94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56382F21EE5FCE000C84D94 /* GameCenter.mm in Sources */,
+				C56382F31EE5FCE000C84D94 /* objectivec_utilities.mm in Sources */,
+				C56382F41EE5FCE000C84D94 /* Localization.mm in Sources */,
+				C56382F51EE5FCE000C84D94 /* View.mm in Sources */,
+				C56382F61EE5FCE000C84D94 /* RenderContext.mm in Sources */,
+				C56382F71EE5FCE000C84D94 /* AnimatedImage.mm in Sources */,
+				C56382F81EE5FCE000C84D94 /* Carousel.mm in Sources */,
+				C56382F91EE5FCE000C84D94 /* Label.mm in Sources */,
+				C56382FA1EE5FCE000C84D94 /* LabelButton.mm in Sources */,
+				C56382FC1EE5FCE000C84D94 /* Switch.mm in Sources */,
+				C56382FD1EE5FCE000C84D94 /* InAppStore.mm in Sources */,
+				C56382FE1EE5FCE000C84D94 /* ios_interface.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +438,7 @@
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = ../;
 				WARNING_CFLAGS = (
@@ -374,6 +487,7 @@
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = ../;
 				VALIDATE_PRODUCT = YES;
@@ -390,11 +504,13 @@
 			buildSettings = {
 				DSTROOT = /tmp/idmobilelib.dst;
 				GCC_VERSION = "";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos";
 				USE_HEADERMAP = NO;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -403,11 +519,47 @@
 			buildSettings = {
 				DSTROOT = /tmp/idmobilelib.dst;
 				GCC_VERSION = "";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos";
 				USE_HEADERMAP = NO;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		C56383171EE5FCE000C84D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/idmobilelib.dst;
+				GCC_VERSION = "";
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		C56383181EE5FCE000C84D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/idmobilelib.dst;
+				GCC_VERSION = "";
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
@@ -428,6 +580,15 @@
 			buildConfigurations = (
 				3D80885514928766002D6CC3 /* Debug */,
 				3D80885614928766002D6CC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C56383161EE5FCE000C84D94 /* Build configuration list for PBXNativeTarget "idmobilelib tv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56383171EE5FCE000C84D94 /* Debug */,
+				C56383181EE5FCE000C84D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

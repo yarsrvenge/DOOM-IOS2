@@ -213,7 +213,8 @@
 - (IBAction) NewGamePressed {
     
     // Switch to episode view menu.
-    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"GameMenuView"] bundle:nil];
+
+    Doom_GameMenuViewController *vc = [[Doom_GameMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"GameMenuView"] bundle:nil];    
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];

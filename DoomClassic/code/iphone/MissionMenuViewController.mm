@@ -337,6 +337,9 @@
     nightmareSelectionLabel.hidden = YES;
     
     Sound_StartLocalSound( "iphone/controller_down_01_SILENCE.wav" );
+#if TARGET_OS_TV
+    [self Play];
+#endif
 }
 
 /*
@@ -409,6 +412,10 @@
  */
 -(IBAction)     E1M1 {
     [ self playMap: 0: 1: 1 ];
+    Sound_StartLocalSound( "iphone/controller_down_01_SILENCE.wav" );
+#if TARGET_OS_TV
+    [self EasyPressed];
+#endif
 }
 -(IBAction)     E1M2{
     [ self playMap: 0: 1: 2 ];

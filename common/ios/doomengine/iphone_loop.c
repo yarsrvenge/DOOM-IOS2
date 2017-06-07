@@ -1502,7 +1502,8 @@ void iphoneFrame() {
 			// this probably doesn't need to be tic-synced, but it doesn't hurt
 			if (players[displayplayer].mo) {
 				// move positional sounds and free up channels that have completed
-				S_UpdateSounds(players[displayplayer].mo);
+				//GUS temporarily removed
+                //S_UpdateSounds(players[displayplayer].mo);
 			}			
 		}
 	}

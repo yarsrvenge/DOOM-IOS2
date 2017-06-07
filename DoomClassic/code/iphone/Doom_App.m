@@ -36,7 +36,7 @@
     navigationController = [[MainNavController alloc] initWithRootViewController:rootController];
     [navigationController setNavigationBarHidden:YES];
     [rootController release];
-    
+ 
     openGLViewController = [ [ iphone_glViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"OpenGLView"] bundle:nil ];
     [ openGLViewController StopDisplay];
 }

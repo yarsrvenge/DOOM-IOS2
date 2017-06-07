@@ -170,6 +170,9 @@
     [ doom2Button setEnabled: YES ];
     [ finalDoomTntButton setEnabled: YES ];
     [ finalDoomPlutoniaButton setEnabled: YES ];
+    #if TARGET_OS_TV
+    [self NextToMissions];
+    #endif
 }
 
 /*

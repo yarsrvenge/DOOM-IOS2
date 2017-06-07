@@ -21,8 +21,11 @@
 #include "ios_interface.h"
 #import "objectivec_utilities.h"
 #import "LocalizationObjectiveC.h"
+#import <UIKit/UIKit.h>
 
+#if !TARGET_OS_TV
 #import <UIKit/UIAlertView.h>
+#endif
 
 /*
  =======================
@@ -33,10 +36,16 @@ void ShowSystemAlert( const std::string & title, const std::string & message ) {
 	NSString * nsTitle = idLocalization_GetNSString( StdStringToNSString( title ) );
 	NSString * nsMessage = idLocalization_GetNSString( StdStringToNSString( message ) );
 	NSString * nsCancelButton = idLocalization_GetNSString( @"#OK" );
-	
+#if TARGET_OS_TV
+    (void)nsCancelButton;
+    UIAlertController* alertController = [UIAlertController alertControllerWithTitle:nsTitle message:nsMessage preferredStyle:UIAlertControllerStyleAlert];
+    [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+    [alertController release];
+#else
 	UIAlertView * alert = [[UIAlertView alloc] initWithTitle:nsTitle message:nsMessage delegate:nil cancelButtonTitle:nsCancelButton otherButtonTitles:nil];
 
 	[alert show];
 	[alert release];
+#endif
 }
 

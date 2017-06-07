@@ -21,10 +21,10 @@
 #ifndef IPHONE_DOOM_H
 #define IPHONE_DOOM_H
  
-#include "prboom/doomtype.h"
-#include "prboom/doomdef.h"
-#include "prboom/doomstat.h"
-#include "prboom/d_ticcmd.h"
+#include "../../prboom/doomtype.h"
+#include "../../prboom/doomdef.h"
+#include "../../prboom/doomstat.h"
+#include "../../prboom/d_ticcmd.h"
 
 #include "ipak.h"
 #include "cvar.h"

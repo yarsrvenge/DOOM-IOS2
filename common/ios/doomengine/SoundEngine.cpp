@@ -642,9 +642,13 @@ void BackgroundTrackMgr::QueueCallback( void * inUserData, AudioQueueRef inAQ, A
 		while (nPackets == 0) {
 			// if loadAtOnce, get all packets in the file, otherwise ~.5 seconds of data
 			nPackets = THIS->GetNumPacketsToRead(CurFileInfo);					
-			result = AudioFileReadPackets(CurFileInfo->mAFID, false, &numBytes, THIS->mPacketDescs, THIS->mCurrentPacket, &nPackets, 
-										  inCompleteAQBuffer->mAudioData);
-			AssertNoError("Error reading file data", end);
+
+    result = AudioFileReadPacketData(CurFileInfo->mAFID, false, &numBytes, THIS->mPacketDescs, THIS->mCurrentPacket, &nPackets,
+                                  inCompleteAQBuffer->mAudioData);
+            AssertNoError("Error reading file data", end);
+            
+            
+            
 			
 			inCompleteAQBuffer->mAudioDataByteSize = numBytes;	
 			
@@ -1465,7 +1469,9 @@ class OpenALObject
 extern "C"
 void interruptionCallback(void* arg, UInt32 interruptionState)
 {
-	(void)arg;
+#if !TARGET_OS_TV
+
+    (void)arg;
 	
     printf("Excuse this interruption...\n");
     switch(interruptionState)
@@ -1482,6 +1488,7 @@ void interruptionCallback(void* arg, UInt32 interruptionState)
 //        gInterrupted = false;
 //        break;
     }
+#endif
 }
 
 
@@ -1505,7 +1512,7 @@ OSStatus  SoundEngine_Initialize(Float32 inMixerOutputRate)
 #ifndef WIN32
     if(gInterrupted)
         return noErr;
-
+#if !TARGET_OS_TV
 	if( !isInitialized ) 
 	{
  		AudioSessionInitialize( NULL, NULL, interruptionCallback, NULL );
@@ -1513,7 +1520,9 @@ OSStatus  SoundEngine_Initialize(Float32 inMixerOutputRate)
 //		AudioSessionSetProperty( kAudioSessionProperty_AudioCategory, sizeof( sessionCategory ), &sessionCategory );
  		isInitialized = true;
  	}
-	
+#else
+    (void)isInitialized;
+#endif
 	if (sOpenALObject)
 		delete sOpenALObject;
 

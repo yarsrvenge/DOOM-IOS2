@@ -130,6 +130,9 @@
     [ epi2Button setEnabled: YES ];
     [ epi3Button setEnabled: YES ];
     [ epi4Button setEnabled: YES ];
+#if TARGET_OS_TV
+    [self NextToMissions];
+#endif
 }
 
 /*

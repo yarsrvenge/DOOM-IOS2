@@ -47,6 +47,54 @@
 		3DE69620148C28810049CAA4 /* iphone_render.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6961F148C28810049CAA4 /* iphone_render.c */; };
 		3DF31FB0148C3A3600C66CD7 /* hud.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DF31FAF148C3A3600C66CD7 /* hud.c */; };
 		3DF31FB4148C3B5100C66CD7 /* iphone_sound.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DF31FB3148C3B5100C66CD7 /* iphone_sound.c */; };
+		C563831E1EE5FD4D00C84D94 /* cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE694501489B0850049CAA4 /* cmd.c */; };
+		C563831F1EE5FD4D00C84D94 /* cvar.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE694511489B0850049CAA4 /* cvar.c */; };
+		C56383201EE5FD4D00C84D94 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE694561489B0850049CAA4 /* EAGLView.m */; };
+		C56383211EE5FD4D00C84D94 /* gles_glue.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE694571489B0850049CAA4 /* gles_glue.c */; };
+		C56383221EE5FD4D00C84D94 /* ipak.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE694591489B0850049CAA4 /* ipak.c */; };
+		C56383231EE5FD4D00C84D94 /* GameController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8AEB0D41A7ABCEC00A5ED1B /* GameController.mm */; };
+		C56383241EE5FD4D00C84D94 /* iphone_email.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6945D1489B0850049CAA4 /* iphone_email.m */; };
+		C56383251EE5FD4D00C84D94 /* iphone_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6945E1489B0850049CAA4 /* iphone_main.c */; };
+		C56383261EE5FD4D00C84D94 /* iphone_mapSelect.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6945F1489B0850049CAA4 /* iphone_mapSelect.c */; };
+		C56383271EE5FD4D00C84D94 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE694661489B0850049CAA4 /* misc.c */; };
+		C56383281EE5FD4D00C84D94 /* prboomInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE694681489B0850049CAA4 /* prboomInterface.c */; };
+		C56383291EE5FD4D00C84D94 /* SoundEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DE694691489B0850049CAA4 /* SoundEngine.cpp */; };
+		C563832A1EE5FD4D00C84D94 /* iphone_render.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6961F148C28810049CAA4 /* iphone_render.c */; };
+		C563832B1EE5FD4D00C84D94 /* hud.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DF31FAF148C3A3600C66CD7 /* hud.c */; };
+		C563832C1EE5FD4D00C84D94 /* iphone_sound.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DF31FB3148C3B5100C66CD7 /* iphone_sound.c */; };
+		C563832D1EE5FD4D00C84D94 /* SDL_Mixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA6FD0148DA2C800C834C7 /* SDL_Mixer.m */; };
+		C563832E1EE5FD4D00C84D94 /* EASGlue.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D2EC245148EBA8300273241 /* EASGlue.c */; };
+		C563832F1EE5FD4D00C84D94 /* iphone_common.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D8088991492E2E7002D6CC3 /* iphone_common.mm */; };
+		C56383301EE5FD4D00C84D94 /* BackgroundMusic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C82EE117149958A0003B9C74 /* BackgroundMusic.cpp */; };
+		C56383311EE5FD4D00C84D94 /* iphone_delegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C86CA85314B4F3C40057FF54 /* iphone_delegate.mm */; };
+		C56383321EE5FD4D00C84D94 /* DoomGameCenterMatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BB94914B79BFE00A9A7FB /* DoomGameCenterMatch.cpp */; };
+		C56383331EE5FD4D00C84D94 /* iphone_async.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D460D2814BCA5430078262C /* iphone_async.cpp */; };
+		C56383341EE5FD4D00C84D94 /* iphone_glViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D460D4E14BCFBD40078262C /* iphone_glViewController.mm */; };
+		C56383351EE5FD4D00C84D94 /* iphone_sys.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8DB8ACF14BDFBE80006467C /* iphone_sys.mm */; };
+		C56383361EE5FD4D00C84D94 /* iphone_loop.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B137614BFB57E00C8D221 /* iphone_loop.c */; };
+		C56383371EE5FD4D00C84D94 /* iphone_start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D555C14D1C53900A0F1FF /* iphone_start.cpp */; };
+		C56383391EE5FD4D00C84D94 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AEB0D71A7ABFB700A5ED1B /* GameController.framework */; };
+		C563833F1EE5FD4D00C84D94 /* arialGlyphRects.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE6944E1489B0850049CAA4 /* arialGlyphRects.h */; };
+		C56383401EE5FD4D00C84D94 /* cvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE694521489B0850049CAA4 /* cvar.h */; };
+		C56383411EE5FD4D00C84D94 /* doomiphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE694541489B0850049CAA4 /* doomiphone.h */; };
+		C56383421EE5FD4D00C84D94 /* EAGLView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE694551489B0850049CAA4 /* EAGLView.h */; };
+		C56383431EE5FD4D00C84D94 /* gles_glue.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE694581489B0850049CAA4 /* gles_glue.h */; };
+		C56383441EE5FD4D00C84D94 /* ipak.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE6945A1489B0850049CAA4 /* ipak.h */; };
+		C56383451EE5FD4D00C84D94 /* iphone_doom.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE6945B1489B0850049CAA4 /* iphone_doom.h */; };
+		C56383461EE5FD4D00C84D94 /* iphone_email.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE6945C1489B0850049CAA4 /* iphone_email.h */; };
+		C56383471EE5FD4D00C84D94 /* misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE694671489B0850049CAA4 /* misc.h */; };
+		C56383481EE5FD4D00C84D94 /* SoundEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE6946A1489B0850049CAA4 /* SoundEngine.h */; };
+		C56383491EE5FD4D00C84D94 /* SDL_Mixer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDA6FCD148D765100C834C7 /* SDL_Mixer.h */; };
+		C563834A1EE5FD4D00C84D94 /* EASGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D2EC244148EBA8300273241 /* EASGlue.h */; };
+		C563834B1EE5FD4D00C84D94 /* iphone_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D80889B1492E378002D6CC3 /* iphone_common.h */; };
+		C563834C1EE5FD4D00C84D94 /* iphone_delegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C86CA85214B4F3C40057FF54 /* iphone_delegate.h */; };
+		C563834D1EE5FD4D00C84D94 /* iphone_glViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C86CA85414B4F3C40057FF54 /* iphone_glViewController.h */; };
+		C563834E1EE5FD4D00C84D94 /* DoomGameCenterMatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5BB94814B79BFE00A9A7FB /* DoomGameCenterMatch.h */; };
+		C56384871EE5FEA500C84D94 /* libEmbeddedAudioSynthesis tv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C56384761EE5FD9B00C84D94 /* libEmbeddedAudioSynthesis tv.a */; };
+		C56384881EE5FEAD00C84D94 /* libprboom tv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C56384791EE5FD9B00C84D94 /* libprboom tv.a */; };
+		C56384891EE5FEB200C84D94 /* libtess tv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C563847C1EE5FD9B00C84D94 /* libtess tv.a */; };
+		C563848A1EE603F100C84D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE6943C1489AFDE0049CAA4 /* Foundation.framework */; };
+		C5FB66B41EE898240009FB62 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FB66B31EE898240009FB62 /* AVFoundation.framework */; };
 		C82EE118149958A0003B9C74 /* BackgroundMusic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C82EE117149958A0003B9C74 /* BackgroundMusic.cpp */; };
 		C86CA85814B4F3C40057FF54 /* iphone_delegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C86CA85214B4F3C40057FF54 /* iphone_delegate.h */; };
 		C86CA85914B4F3C40057FF54 /* iphone_delegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C86CA85314B4F3C40057FF54 /* iphone_delegate.mm */; };
@@ -91,6 +139,48 @@
 			proxyType = 2;
 			remoteGlobalIDString = 3DC1C85514B63E1B00680D02;
 			remoteInfo = prboom;
+		};
+		C56383541EE5FD4E00C84D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1391CE0E1882E50A0049671C /* idmobilelib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C56383191EE5FCE000C84D94;
+			remoteInfo = "idmobilelib tv";
+		};
+		C56384751EE5FD9B00C84D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC1C5E614B624ED00680D02 /* EmbeddedAudioSynthesis.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C56384531EE5FD6A00C84D94;
+			remoteInfo = "EmbeddedAudioSynthesis tv";
+		};
+		C56384781EE5FD9B00C84D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC1C86514B63E1B00680D02 /* prboom.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C56383F61EE5FD6100C84D94;
+			remoteInfo = "prboom tv";
+		};
+		C563847B1EE5FD9B00C84D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D155FD114B51127000D33AA /* tess.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C56384731EE5FD7400C84D94;
+			remoteInfo = "tess tv";
+		};
+		C563847D1EE5FD9F00C84D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D155FD114B51127000D33AA /* tess.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C56384541EE5FD7400C84D94;
+			remoteInfo = "tess tv";
+		};
+		C5A2CF211EE6F2DF006CC1ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC1C5E614B624ED00680D02 /* EmbeddedAudioSynthesis.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C56383F71EE5FD6A00C84D94;
+			remoteInfo = "EmbeddedAudioSynthesis tv";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -137,6 +227,8 @@
 		3DE6961F148C28810049CAA4 /* iphone_render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iphone_render.c; sourceTree = "<group>"; };
 		3DF31FAF148C3A3600C66CD7 /* hud.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hud.c; sourceTree = "<group>"; };
 		3DF31FB3148C3B5100C66CD7 /* iphone_sound.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iphone_sound.c; sourceTree = "<group>"; };
+		C56383521EE5FD4D00C84D94 /* libdoomengine tv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libdoomengine tv.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FB66B31EE898240009FB62 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		C82EE117149958A0003B9C74 /* BackgroundMusic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackgroundMusic.cpp; sourceTree = "<group>"; };
 		C86CA85214B4F3C40057FF54 /* iphone_delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphone_delegate.h; sourceTree = "<group>"; };
 		C86CA85314B4F3C40057FF54 /* iphone_delegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iphone_delegate.mm; sourceTree = "<group>"; };
@@ -160,6 +252,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C56383381EE5FD4D00C84D94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5FB66B41EE898240009FB62 /* AVFoundation.framework in Frameworks */,
+				C56384891EE5FEB200C84D94 /* libtess tv.a in Frameworks */,
+				C563848A1EE603F100C84D94 /* Foundation.framework in Frameworks */,
+				C56384881EE5FEAD00C84D94 /* libprboom tv.a in Frameworks */,
+				C56384871EE5FEA500C84D94 /* libEmbeddedAudioSynthesis tv.a in Frameworks */,
+				C56383391EE5FD4D00C84D94 /* GameController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -167,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				1391CE131882E50B0049671C /* libidmobilelib.a */,
+				C56383551EE5FD4E00C84D94 /* libidmobilelib tv.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				3D155FD614B51128000D33AA /* libtess.a */,
+				C563847C1EE5FD9B00C84D94 /* libtess tv.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				3DC1C5EB14B624EE00680D02 /* libEmbeddedAudioSynthesis.a */,
+				C56384761EE5FD9B00C84D94 /* libEmbeddedAudioSynthesis tv.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				3DC1C86A14B63E1C00680D02 /* libprboom.a */,
+				C56384791EE5FD9B00C84D94 /* libprboom tv.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				3DE694391489AFDE0049CAA4 /* libdoomengine.a */,
+				C56383521EE5FD4D00C84D94 /* libdoomengine tv.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +358,7 @@
 		3DE6943B1489AFDE0049CAA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5FB66B31EE898240009FB62 /* AVFoundation.framework */,
 				C8AEB0D71A7ABFB700A5ED1B /* GameController.framework */,
 				3DE6943C1489AFDE0049CAA4 /* Foundation.framework */,
 			);
@@ -326,6 +437,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C563833E1EE5FD4D00C84D94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C563833F1EE5FD4D00C84D94 /* arialGlyphRects.h in Headers */,
+				C56383401EE5FD4D00C84D94 /* cvar.h in Headers */,
+				C56383411EE5FD4D00C84D94 /* doomiphone.h in Headers */,
+				C56383421EE5FD4D00C84D94 /* EAGLView.h in Headers */,
+				C56383431EE5FD4D00C84D94 /* gles_glue.h in Headers */,
+				C56383441EE5FD4D00C84D94 /* ipak.h in Headers */,
+				C56383451EE5FD4D00C84D94 /* iphone_doom.h in Headers */,
+				C56383461EE5FD4D00C84D94 /* iphone_email.h in Headers */,
+				C56383471EE5FD4D00C84D94 /* misc.h in Headers */,
+				C56383481EE5FD4D00C84D94 /* SoundEngine.h in Headers */,
+				C56383491EE5FD4D00C84D94 /* SDL_Mixer.h in Headers */,
+				C563834A1EE5FD4D00C84D94 /* EASGlue.h in Headers */,
+				C563834B1EE5FD4D00C84D94 /* iphone_common.h in Headers */,
+				C563834C1EE5FD4D00C84D94 /* iphone_delegate.h in Headers */,
+				C563834D1EE5FD4D00C84D94 /* iphone_glViewController.h in Headers */,
+				C563834E1EE5FD4D00C84D94 /* DoomGameCenterMatch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -345,6 +479,25 @@
 			name = doomengine;
 			productName = doomengine;
 			productReference = 3DE694391489AFDE0049CAA4 /* libdoomengine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C563831A1EE5FD4D00C84D94 /* doomengine tv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C563834F1EE5FD4D00C84D94 /* Build configuration list for PBXNativeTarget "doomengine tv" */;
+			buildPhases = (
+				C563831D1EE5FD4D00C84D94 /* Sources */,
+				C56383381EE5FD4D00C84D94 /* Frameworks */,
+				C563833E1EE5FD4D00C84D94 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5A2CF221EE6F2DF006CC1ED /* PBXTargetDependency */,
+				C563847E1EE5FD9F00C84D94 /* PBXTargetDependency */,
+			);
+			name = "doomengine tv";
+			productName = doomengine;
+			productReference = C56383521EE5FD4D00C84D94 /* libdoomengine tv.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -386,6 +539,7 @@
 			projectRoot = "";
 			targets = (
 				3DE694381489AFDE0049CAA4 /* doomengine */,
+				C563831A1EE5FD4D00C84D94 /* doomengine tv */,
 			);
 		};
 /* End PBXProject section */
@@ -417,6 +571,34 @@
 			fileType = archive.ar;
 			path = libprboom.a;
 			remoteRef = 3DC1C86914B63E1C00680D02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C56383551EE5FD4E00C84D94 /* libidmobilelib tv.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libidmobilelib tv.a";
+			remoteRef = C56383541EE5FD4E00C84D94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C56384761EE5FD9B00C84D94 /* libEmbeddedAudioSynthesis tv.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libEmbeddedAudioSynthesis tv.a";
+			remoteRef = C56384751EE5FD9B00C84D94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C56384791EE5FD9B00C84D94 /* libprboom tv.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libprboom tv.a";
+			remoteRef = C56384781EE5FD9B00C84D94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C563847C1EE5FD9B00C84D94 /* libtess tv.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libtess tv.a";
+			remoteRef = C563847B1EE5FD9B00C84D94 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -455,6 +637,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C563831D1EE5FD4D00C84D94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C563831E1EE5FD4D00C84D94 /* cmd.c in Sources */,
+				C563831F1EE5FD4D00C84D94 /* cvar.c in Sources */,
+				C56383201EE5FD4D00C84D94 /* EAGLView.m in Sources */,
+				C56383211EE5FD4D00C84D94 /* gles_glue.c in Sources */,
+				C56383221EE5FD4D00C84D94 /* ipak.c in Sources */,
+				C56383231EE5FD4D00C84D94 /* GameController.mm in Sources */,
+				C56383241EE5FD4D00C84D94 /* iphone_email.m in Sources */,
+				C56383251EE5FD4D00C84D94 /* iphone_main.c in Sources */,
+				C56383261EE5FD4D00C84D94 /* iphone_mapSelect.c in Sources */,
+				C56383271EE5FD4D00C84D94 /* misc.c in Sources */,
+				C56383281EE5FD4D00C84D94 /* prboomInterface.c in Sources */,
+				C56383291EE5FD4D00C84D94 /* SoundEngine.cpp in Sources */,
+				C563832A1EE5FD4D00C84D94 /* iphone_render.c in Sources */,
+				C563832B1EE5FD4D00C84D94 /* hud.c in Sources */,
+				C563832C1EE5FD4D00C84D94 /* iphone_sound.c in Sources */,
+				C563832D1EE5FD4D00C84D94 /* SDL_Mixer.m in Sources */,
+				C563832E1EE5FD4D00C84D94 /* EASGlue.c in Sources */,
+				C563832F1EE5FD4D00C84D94 /* iphone_common.mm in Sources */,
+				C56383301EE5FD4D00C84D94 /* BackgroundMusic.cpp in Sources */,
+				C56383311EE5FD4D00C84D94 /* iphone_delegate.mm in Sources */,
+				C56383321EE5FD4D00C84D94 /* DoomGameCenterMatch.cpp in Sources */,
+				C56383331EE5FD4D00C84D94 /* iphone_async.cpp in Sources */,
+				C56383341EE5FD4D00C84D94 /* iphone_glViewController.mm in Sources */,
+				C56383351EE5FD4D00C84D94 /* iphone_sys.mm in Sources */,
+				C56383361EE5FD4D00C84D94 /* iphone_loop.c in Sources */,
+				C56383371EE5FD4D00C84D94 /* iphone_start.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -462,6 +677,16 @@
 			isa = PBXTargetDependency;
 			name = tess;
 			targetProxy = 3D15600A14B511BB000D33AA /* PBXContainerItemProxy */;
+		};
+		C563847E1EE5FD9F00C84D94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "tess tv";
+			targetProxy = C563847D1EE5FD9F00C84D94 /* PBXContainerItemProxy */;
+		};
+		C5A2CF221EE6F2DF006CC1ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "EmbeddedAudioSynthesis tv";
+			targetProxy = C5A2CF211EE6F2DF006CC1ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -517,8 +742,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos";
 				USER_HEADER_SEARCH_PATHS = "../embeddedaudiosynthesis/arm-wt-22k/host_src ../ ../../../idTechM/idTechM/shared/idmobilelib ../prboom";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
@@ -570,9 +796,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos";
 				USER_HEADER_SEARCH_PATHS = "../embeddedaudiosynthesis/arm-wt-22k/host_src ../ ../../../idTechM/idTechM/shared/idmobilelib ../prboom";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s x86_64";
 			};
 			name = Release;
 		};
@@ -614,6 +841,52 @@
 			};
 			name = Release;
 		};
+		C56383501EE5FD4D00C84D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/doomengine.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../embeddedaudiosynthesis/arm-wt-22k/lib\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				USER_HEADER_SEARCH_PATHS = "../embeddedaudiosynthesis/arm-wt-22k/host_src ../ ../idmobilelib ../prboom";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		C56383511EE5FD4D00C84D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/doomengine.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../embeddedaudiosynthesis/arm-wt-22k/lib\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				USER_HEADER_SEARCH_PATHS = "../embeddedaudiosynthesis/arm-wt-22k/host_src ../ ../idmobilelib ../prboom";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -631,6 +904,15 @@
 			buildConfigurations = (
 				3DE694471489AFDE0049CAA4 /* Debug */,
 				3DE694481489AFDE0049CAA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C563834F1EE5FD4D00C84D94 /* Build configuration list for PBXNativeTarget "doomengine tv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56383501EE5FD4D00C84D94 /* Debug */,
+				C56383511EE5FD4D00C84D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

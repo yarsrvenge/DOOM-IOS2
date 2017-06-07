@@ -39,7 +39,9 @@ touch_t		sysTouches[MAX_TOUCHES];
 touch_t		gameTouches[MAX_TOUCHES];
 
 #define FRAME_HERTZ 30.0f
+#if !TARGET_OS_TV
 const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
+#endif
 
 /*
  ========================
@@ -58,13 +60,17 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
     // Disable Screen Dimming.
     [[ UIApplication sharedApplication] setIdleTimerDisabled: YES ];
     
+#if !TARGET_OS_TV
+    
     // Initial Application Style config.
     [ application setStatusBarHidden: YES ];
-	
-	// start the flow of accelerometer events
-	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
+    
+    // start the flow of accelerometer events
+    UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
     [ accelerometer setDelegate: self ];
     [ accelerometer setUpdateInterval: ACCELEROMETER_UPDATE_INTERVAL ];
+    
+#endif
     
     [self InitializeInterfaceBuilder ];
 
@@ -142,6 +148,8 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 	[super dealloc];
 }
 
+#if !TARGET_OS_TV
+
 /*
  ========================
  accelerometer 
@@ -158,6 +166,8 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
     
 	iphoneTiltEvent( acc );
 }
+
+#endif
 
 /*
  ========================
@@ -232,7 +242,10 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
     {
         extension = @"i6plus";
     }
-    
+    else if(IS_TV)
+    {
+        extension = @"-tvos";
+    }
     return [NSString stringWithFormat:@"%@%@", nibName, extension];
 }
 
