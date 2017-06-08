@@ -1519,6 +1519,7 @@ void P_SetupLevel(int episode, int map, int playermask, skill_t skill)
   players[consoleplayer].viewz = 1;
 
   // Make sure all sounds are stopped before Z_FreeTags.
+  //Gus Temporarily Disable
   S_Start();
 
   Z_FreeTags(PU_LEVEL, PU_PURGELEVEL-1);

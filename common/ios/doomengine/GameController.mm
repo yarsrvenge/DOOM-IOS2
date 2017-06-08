@@ -111,7 +111,7 @@ bool iphoneControllerIsAvailable() {
             controller = nil;
             for (int i = 0; i < controllers.count; i++)
             {
-                if([controller gamepad] || ![controller extendedGamepad]) {
+                if([controllers[i] gamepad] || [controllers[i] extendedGamepad]) {
                     controller = controllers[i];
                 }
             }

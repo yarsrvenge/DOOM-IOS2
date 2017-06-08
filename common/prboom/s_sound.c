@@ -175,8 +175,9 @@ void S_Start(void)
   // kill all playing sounds at start of level
   //  (trust me - a good idea)
 
-  S_Stop();
-
+  //S_Stop();
+  //Gus Temporarily Disable
+    
   //jff 1/22/98 return if music is not enabled
   if (!mus_card || nomusicparm)
     return;
