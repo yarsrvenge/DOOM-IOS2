@@ -1,3 +1,12 @@
+I created this fork of Baumhoto's code to primarily add tvOS support.  Some developers from Facebook apparently
+created a tvOS version of Doom but did not release the source code, so I decided to take a shot.
+
+I finally have the game running on the Apple TV, but there are numerous things that need to be fixed including the menu screens and various glitches.
+It does work, and I have game controller support working correctly with tvOS.
+
+
+======
+
 This is a fork of the original id software repository.
 
 Currently the following changes have been made:
