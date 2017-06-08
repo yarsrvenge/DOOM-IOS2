@@ -108,13 +108,13 @@ bool iphoneControllerIsAvailable() {
     if(!initialized) {
         NSArray *controllers = [GCController controllers];
         if(controllers.count > 0) {
-            controller = controllers[1]; // Just use the first one
-            
-            // If we have neither gamepad nor extended gamepad support, just make controller nil
-            if(![controller gamepad] && ![controller extendedGamepad]) {
-                controller = nil;
+            controller = nil;
+            for (int i = 0; i < controllers.count; i++)
+            {
+                if([controller gamepad] || ![controller extendedGamepad]) {
+                    controller = controllers[i];
+                }
             }
-            
             setupPauseButtonHandler(controller);
             
             // Register for controller connected/disconnected notifications
@@ -183,7 +183,9 @@ void iphoneControllerInput(ticcmd_t* cmd) {
         // If our controller has thumbsticks, use those for walking/turning/strafing
         if(controller.extendedGamepad && cmd->angleturn == 0 && cmd->forwardmove == 0) {
             GCExtendedGamepad *extendedGamepad = controller.extendedGamepad;
-            
+            if(extendedGamepad.rightTrigger.pressed) {
+                cmd->buttons |= BT_ATTACK;
+            }
             cmd->angleturn = extendedGamepad.rightThumbstick.xAxis.value * -ROTATETHRESHOLD;
             cmd->forwardmove = extendedGamepad.leftThumbstick.yAxis.value * TURBOTHRESHOLD;
             cmd->sidemove = extendedGamepad.leftThumbstick.xAxis.value * TURBOTHRESHOLD;
