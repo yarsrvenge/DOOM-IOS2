@@ -137,6 +137,7 @@
 		C5A2CF2E1EE7214E006CC1ED /* GameMenuView-tvos.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A2CF2D1EE7214E006CC1ED /* GameMenuView-tvos.xib */; };
 		C5FB66A21EE861BB0009FB62 /* DOOM_400.png in Resources */ = {isa = PBXBuildFile; fileRef = C5FB66A01EE861AE0009FB62 /* DOOM_400.png */; };
 		C5FB66A31EE861BD0009FB62 /* DOOM_400.png in Resources */ = {isa = PBXBuildFile; fileRef = C5FB66A01EE861AE0009FB62 /* DOOM_400.png */; };
+		C5FB66DF1EE994680009FB62 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5FB66DE1EE994680009FB62 /* icons.xcassets */; };
 		C8012E5114B5122700B0E213 /* MainMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E4F14B5122700B0E213 /* MainMenuViewController.mm */; };
 		C8012E5214B5122700B0E213 /* MainMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8012E5014B5122700B0E213 /* MainMenuView.xib */; };
 		C8012E6E14B6389B00B0E213 /* EpisodeMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E6C14B6389B00B0E213 /* EpisodeMenuViewController.mm */; };
@@ -326,6 +327,7 @@
 		C5A2CF2A1EE6F510006CC1ED /* libprboom tv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libprboom tv.a"; path = "../../../../../../Library/Developer/Xcode/DerivedData/Doom-gqzkppnendiovkguypdoyflwnbtr/Build/Products/Debug-appletvos/libprboom tv.a"; sourceTree = "<group>"; };
 		C5A2CF2D1EE7214E006CC1ED /* GameMenuView-tvos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "GameMenuView-tvos.xib"; sourceTree = "<group>"; };
 		C5FB66A01EE861AE0009FB62 /* DOOM_400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_400.png; sourceTree = "<group>"; };
+		C5FB66DE1EE994680009FB62 /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icons.xcassets; sourceTree = "<group>"; };
 		C8012E4E14B5122700B0E213 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		C8012E4F14B5122700B0E213 /* MainMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainMenuViewController.mm; sourceTree = "<group>"; };
 		C8012E5014B5122700B0E213 /* MainMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuView.xib; sourceTree = "<group>"; };
@@ -744,6 +746,7 @@
 				D2B96EBA1ABC268C00179F75 /* SubMenuButton.png */,
 				D2B96EBB1ABC268C00179F75 /* UpArrow_Highlighted.png */,
 				D2B96EBC1ABC268C00179F75 /* UpArrow.png */,
+				C5FB66DE1EE994680009FB62 /* icons.xcassets */,
 			);
 			name = "Icons & Defaults";
 			sourceTree = "<group>";
@@ -1153,6 +1156,7 @@
 				C56382A91EE5F59600C84D94 /* Default-Landscape~ipad.png in Resources */,
 				C56382AA1EE5F59600C84D94 /* Default-Portrait~ipad.png in Resources */,
 				C56382AC1EE5F59600C84D94 /* DoomLogo.png in Resources */,
+				C5FB66DF1EE994680009FB62 /* icons.xcassets in Resources */,
 				C56382AD1EE5F59600C84D94 /* SelectedBracket.png in Resources */,
 				C56382AE1EE5F59600C84D94 /* Hard.png in Resources */,
 				C56382B01EE5F59600C84D94 /* Episode4Background.png in Resources */,
@@ -1602,6 +1606,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
@@ -1644,6 +1650,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
@@ -1683,6 +1691,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
@@ -1722,6 +1732,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";

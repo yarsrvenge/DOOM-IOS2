@@ -27,113 +27,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="37">
-                    <rect key="frame" x="584" y="97" width="690" height="772"/>
+                    <rect key="frame" x="589" y="176" width="698" height="753"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="48" customClass="idLabelButton">
-                            <rect key="frame" x="100" y="187" width="491" height="139"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                            <state key="normal" image="Episode2Background.png">
-                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <state key="disabled" image="Episode2Background_Highlighted.png"/>
-                            <state key="highlighted" image="Episode2Background_Highlighted.png">
-                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <state key="focused" image="Episode2Background_Highlighted"/>
-                            <connections>
-                                <action selector="SelectDoom2" destination="-1" eventType="primaryActionTriggered" id="SZy-Se-oMP"/>
-                                <outlet property="label" destination="40" id="52"/>
-                                <outlet property="label2" destination="41" id="53"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="47" customClass="idLabelButton">
-                            <rect key="frame" x="100" y="361" width="491" height="139"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                            <state key="normal" image="Episode3Background.png">
-                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <state key="disabled" image="Episode3Background_Highlighted.png"/>
-                            <state key="highlighted" image="Episode3Background_Highlighted.png">
-                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <state key="focused" image="Episode3Background_Highlighted"/>
-                            <connections>
-                                <action selector="SelectFinalDoomPlutonia" destination="-1" eventType="primaryActionTriggered" id="U7w-im-jp4"/>
-                                <outlet property="label" destination="42" id="54"/>
-                                <outlet property="label2" destination="43" id="55"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="46" customClass="idLabelButton">
-                            <rect key="frame" x="100" y="541" width="491" height="139"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                            <state key="normal" image="Episode4Background.png">
-                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <state key="disabled" image="Episode4Background_Highlighted.png"/>
-                            <state key="highlighted" image="Episode4Background_Highlighted.png">
-                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <state key="focused" image="Episode4Background_Highlighted"/>
-                            <connections>
-                                <action selector="SelectFinalDoomTnt" destination="-1" eventType="primaryActionTriggered" id="VHu-9J-JVG"/>
-                                <outlet property="label" destination="45" id="56"/>
-                                <outlet property="label2" destination="44" id="57"/>
-                            </connections>
-                        </button>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="#EPISODE_IV" lineBreakMode="tailTruncation" minimumFontSize="10" id="45" customClass="idLabel">
-                            <rect key="frame" x="126" y="567" width="252" height="78"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Doom TNT" lineBreakMode="tailTruncation" minimumFontSize="10" id="44" customClass="idLabel">
-                            <rect key="frame" x="126" y="582" width="363" height="84"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                            <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Doom Plutonia" lineBreakMode="tailTruncation" minimumFontSize="10" id="43" customClass="idLabel">
-                            <rect key="frame" x="126" y="403" width="234" height="84"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                            <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="#EPISODE_III" lineBreakMode="tailTruncation" minimumFontSize="10" id="42" customClass="idLabel">
-                            <rect key="frame" x="126" y="388" width="250" height="78"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Doom 2" lineBreakMode="tailTruncation" minimumFontSize="10" id="41" customClass="idLabel">
-                            <rect key="frame" x="125" y="229" width="340" height="84"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                            <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="#EPISODE_II" lineBreakMode="tailTruncation" minimumFontSize="10" id="40" customClass="idLabel">
-                            <rect key="frame" x="125" y="214" width="246" height="78"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="49" customClass="idLabelButton">
-                            <rect key="frame" x="100" y="8" width="491" height="139"/>
+                            <rect key="frame" x="104" y="51" width="491" height="139"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                            <state key="normal" image="Episode1Background.png">
+                            <state key="normal" image="Episode1Background">
                                 <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
@@ -149,15 +50,114 @@
                                 <outlet property="label2" destination="39" id="51"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="48" customClass="idLabelButton">
+                            <rect key="frame" x="104" y="216" width="491" height="139"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="Episode2Background">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Episode2Background_Highlighted.png"/>
+                            <state key="highlighted" image="Episode2Background_Highlighted.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="focused" image="Episode2Background_Highlighted"/>
+                            <connections>
+                                <action selector="SelectDoom2" destination="-1" eventType="primaryActionTriggered" id="SZy-Se-oMP"/>
+                                <outlet property="label" destination="40" id="52"/>
+                                <outlet property="label2" destination="41" id="53"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="47" customClass="idLabelButton">
+                            <rect key="frame" x="104" y="373" width="491" height="139"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="Episode3Background">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Episode3Background_Highlighted.png"/>
+                            <state key="highlighted" image="Episode3Background_Highlighted.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="focused" image="Episode3Background_Highlighted"/>
+                            <connections>
+                                <action selector="SelectFinalDoomPlutonia" destination="-1" eventType="primaryActionTriggered" id="U7w-im-jp4"/>
+                                <outlet property="label" destination="42" id="54"/>
+                                <outlet property="label2" destination="43" id="55"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="46" customClass="idLabelButton">
+                            <rect key="frame" x="104" y="538" width="491" height="139"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="Episode4Background">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Episode4Background_Highlighted.png"/>
+                            <state key="highlighted" image="Episode4Background_Highlighted.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="focused" image="Episode4Background_Highlighted"/>
+                            <connections>
+                                <action selector="SelectFinalDoomTnt" destination="-1" eventType="primaryActionTriggered" id="VHu-9J-JVG"/>
+                                <outlet property="label" destination="45" id="56"/>
+                                <outlet property="label2" destination="44" id="57"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="#EPISODE_IV" lineBreakMode="tailTruncation" minimumFontSize="10" id="45" customClass="idLabel">
+                            <rect key="frame" x="126" y="550" width="252" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Doom TNT" lineBreakMode="tailTruncation" minimumFontSize="10" id="44" customClass="idLabel">
+                            <rect key="frame" x="126" y="565" width="363" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Doom Plutonia" lineBreakMode="tailTruncation" minimumFontSize="10" id="43" customClass="idLabel">
+                            <rect key="frame" x="126" y="401" width="234" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="#EPISODE_III" lineBreakMode="tailTruncation" minimumFontSize="10" id="42" customClass="idLabel">
+                            <rect key="frame" x="126" y="386" width="250" height="42"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Doom 2" lineBreakMode="tailTruncation" minimumFontSize="10" id="41" customClass="idLabel">
+                            <rect key="frame" x="125" y="226" width="340" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="#EPISODE_II" lineBreakMode="tailTruncation" minimumFontSize="10" id="40" customClass="idLabel">
+                            <rect key="frame" x="125" y="211" width="246" height="78"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Ultimate Doom" lineBreakMode="tailTruncation" minimumFontSize="10" id="39" customClass="idLabel">
-                            <rect key="frame" x="126" y="49" width="383" height="84"/>
+                            <rect key="frame" x="126" y="63" width="383" height="84"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                             <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="#EPISODE_I" lineBreakMode="tailTruncation" minimumFontSize="10" id="38" customClass="idLabel">
-                            <rect key="frame" x="126" y="34" width="242" height="78"/>
+                            <rect key="frame" x="126" y="48" width="242" height="78"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                             <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -172,19 +172,19 @@
         </view>
     </objects>
     <resources>
-        <image name="Episode1Background.png" width="601" height="150"/>
+        <image name="Episode1Background" width="601" height="150"/>
         <image name="Episode1Background_Highlighted" width="601" height="150"/>
         <image name="Episode1Background_Highlighted.png" width="601" height="150"/>
-        <image name="Episode2Background.png" width="601" height="150"/>
+        <image name="Episode2Background" width="601" height="150"/>
         <image name="Episode2Background_Highlighted" width="601" height="150"/>
         <image name="Episode2Background_Highlighted.png" width="601" height="150"/>
-        <image name="Episode3Background.png" width="601" height="150"/>
+        <image name="Episode3Background" width="601" height="150"/>
         <image name="Episode3Background_Highlighted" width="601" height="150"/>
         <image name="Episode3Background_Highlighted.png" width="601" height="150"/>
-        <image name="Episode4Background.png" width="601" height="150"/>
+        <image name="Episode4Background" width="601" height="150"/>
         <image name="Episode4Background_Highlighted" width="601" height="150"/>
         <image name="Episode4Background_Highlighted.png" width="601" height="150"/>
-        <image name="MenuBackground" width="960" height="640"/>
+        <image name="MenuBackground" width="3840" height="2160"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>

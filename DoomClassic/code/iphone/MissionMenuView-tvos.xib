@@ -34,12 +34,12 @@
             <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="MenuBackground.png" id="25" userLabel="Background">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="MenuBackground" id="25" userLabel="Background">
                     <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="DifficultyBackground.png" id="14">
-                    <rect key="frame" x="440" y="688" width="1124" height="239"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="DifficultyBackground" id="14">
+                    <rect key="frame" x="415" y="688" width="1149" height="239"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="SelectedBracket.png" id="10">
@@ -58,7 +58,7 @@
                     <rect key="frame" x="972" y="767" width="50" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="MissonBackground.png" id="20">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="MissonBackground" id="20">
                     <rect key="frame" x="388" y="169" width="1176" height="481"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -633,7 +633,7 @@
                     <rect key="frame" x="818" y="767" width="50" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                    <state key="normal" backgroundImage="Easy.png">
+                    <state key="normal" backgroundImage="Easy">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -751,6 +751,9 @@
                             <state key="highlighted">
                                 <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <state key="focused">
+                                <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="E1M1" destination="-1" eventType="touchUpInside" id="90"/>
                                 <action selector="E1M1" destination="-1" eventType="primaryActionTriggered" id="d4c-Rz-lhu"/>
@@ -771,6 +774,9 @@
                             <state key="highlighted">
                                 <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <state key="focused">
+                                <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="E1M2" destination="-1" eventType="touchUpInside" id="91"/>
                             </connections>
@@ -789,6 +795,9 @@
                             </state>
                             <state key="highlighted">
                                 <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="focused">
+                                <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="E1M3" destination="-1" eventType="touchUpInside" id="92"/>
@@ -809,6 +818,9 @@
                             <state key="highlighted">
                                 <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <state key="focused">
+                                <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="E1M4" destination="-1" eventType="touchUpInside" id="93"/>
                             </connections>
@@ -827,6 +839,9 @@
                             </state>
                             <state key="highlighted">
                                 <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="focused">
+                                <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="E1M5" destination="-1" eventType="touchUpInside" id="94"/>
@@ -847,6 +862,9 @@
                             <state key="highlighted">
                                 <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <state key="focused">
+                                <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="E1M6" destination="-1" eventType="touchUpInside" id="95"/>
                             </connections>
@@ -865,6 +883,9 @@
                             </state>
                             <state key="highlighted">
                                 <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="focused">
+                                <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="E1M7" destination="-1" eventType="touchUpInside" id="96"/>
@@ -885,6 +906,9 @@
                             <state key="highlighted">
                                 <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <state key="focused">
+                                <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="E1M8" destination="-1" eventType="touchUpInside" id="97"/>
                             </connections>
@@ -904,6 +928,9 @@
                             <state key="highlighted">
                                 <color key="titleColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <state key="focused">
+                                <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="E1M9" destination="-1" eventType="touchUpInside" id="104"/>
                             </connections>
@@ -919,14 +946,14 @@
         </view>
     </objects>
     <resources>
-        <image name="DifficultyBackground.png" width="636" height="152"/>
+        <image name="DifficultyBackground" width="636" height="152"/>
         <image name="DownArrow" width="80" height="36"/>
         <image name="DownArrow_Highlighted.png" width="80" height="36"/>
-        <image name="Easy.png" width="123" height="123"/>
+        <image name="Easy" width="123" height="123"/>
         <image name="Hard.png" width="121" height="121"/>
         <image name="Medium.png" width="121" height="121"/>
-        <image name="MenuBackground.png" width="960" height="640"/>
-        <image name="MissonBackground.png" width="656" height="363"/>
+        <image name="MenuBackground" width="3840" height="2160"/>
+        <image name="MissonBackground" width="656" height="363"/>
         <image name="Nightmare.png" width="121" height="121"/>
         <image name="SelectedBracket.png" width="133" height="133"/>
         <image name="UpArrow" width="80" height="36"/>

@@ -514,7 +514,7 @@ void AuthenticateLocalPlayer( id currentViewController, idGameCenterMatchHandler
         return;
     }
     
-    // FIXME: Unavailable on tvOS
+    // FIXME: Need to Replace AudioToolbox
 #if !TARGET_OS_TV
     
     GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
@@ -536,7 +536,7 @@ void AuthenticateLocalPlayer( id currentViewController, idGameCenterMatchHandler
             
             playerIdentifier = newPlayerIdentifier;
             
-            // FIXME: Unavailable on tvOS
+            // FIXME: Need to Replace AudioToolbox
 #if !TARGET_OS_TV
             
             // Set up the invitation handler. This code handles the cases where a friend
