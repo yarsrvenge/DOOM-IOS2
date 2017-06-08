@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="MenuBackground.png" id="32" userLabel="Background">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="MenuBackground" id="32" userLabel="Background">
                     <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -184,7 +184,7 @@
         <image name="Episode4Background.png" width="601" height="150"/>
         <image name="Episode4Background_Highlighted" width="601" height="150"/>
         <image name="Episode4Background_Highlighted.png" width="601" height="150"/>
-        <image name="MenuBackground.png" width="960" height="640"/>
+        <image name="MenuBackground" width="960" height="640"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
