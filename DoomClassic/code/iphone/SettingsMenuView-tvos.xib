@@ -286,7 +286,7 @@
         </view>
     </objects>
     <resources>
-        <image name="MenuBackground" width="3840" height="2160"/>
+        <image name="MenuBackground" width="1920" height="1080"/>
         <image name="NextButton.png" width="93" height="94"/>
         <image name="SettingsButton" width="80" height="89"/>
         <image name="SettingsButton.png" width="80" height="89"/>
